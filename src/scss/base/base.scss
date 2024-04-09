@@ -109,69 +109,8 @@ legend {
     padding-right: 20px;
 }
 
-.container-2 {
-    width: 100%;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-
-    @media (max-width: 1280px) {
-        max-width: 100%;
-        padding-left: 22px;
-        padding-right: 22px;
-    }
-
-    @media (max-width: 1280px) {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-.container-2.content-container {
-    margin-top: -40px;
-    background-color: #fff;
-    border-radius: 8px 8px 0px 0px;
-    z-index: 9;
-
-    @media (max-width: 1280px) {
-        margin-top: 0;
-        border-radius: 0;
-    }
-}
-
-.content-container {
-    padding-top: 34px;
-    padding-bottom: 80px;
-    display: flex;
-    column-gap: 50px;
-
-    @media (max-width: 1280px) {
-        padding-bottom: 60px;
-    }
-
-    @media (max-width: 767px) {
-        padding-top: 24px;
-        padding-bottom: 50px;
-    }
-}
-
-.content-container .content {
-
-}
-
-.content-container .sidebar {
-    flex-shrink: 0;
-    width: 330px;
-}
-
 /* Utility */
 
 .d-none {
     display: none !important;
-}
-
-.z-9 {
-    z-index: 9;
 }
