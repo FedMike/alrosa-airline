@@ -11,6 +11,7 @@
     position: relative;
     overflow: hidden;
     height: 100%;
+    max-height: 320px;
     width: 100%;
     aspect-ratio: 1/1;
 }
@@ -20,12 +21,13 @@
     border-top: 2px solid red;
 }
 .airlines-menu-pages .menu-card:nth-child(2) {
-    height: 472px;
+    height: 100%;
+    max-height: 472px;
     aspect-ratio: 1/2;
 }
 .airlines-menu-pages .menu-card:nth-child(1),
 .airlines-menu-pages .menu-card:nth-child(3) {
-    height: 400px;
+    max-height: 400px;
     margin-top: 72px;
 }
 // .airlines-menu-pages .menu-card:last-child {
