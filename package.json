@@ -1,0 +1,37 @@
+{
+    "name": "gulp-2023",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "type": "module",
+    "scripts": {
+        "dev": "gulp",
+        "build": "gulp build --build",
+        "svgSprive": "gulp svgSprive"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "latest",
+        "del": "latest",
+        "gulp": "latest",
+        "gulp-autoprefixer": "latest",
+        "gulp-clean-css": "latest",
+        "gulp-file-include": "latest",
+        "gulp-fonter": "latest",
+        "gulp-group-css-media-queries": "latest",
+        "gulp-if": "latest",
+        "gulp-newer": "latest",
+        "gulp-notify": "latest",
+        "gulp-plumber": "latest",
+        "gulp-rename": "latest",
+        "gulp-replace": "latest",
+        "gulp-sass": "^5.1.0",
+        "gulp-svg-sprite": "latest",
+        "gulp-ttf2woff": "latest",
+        "gulp-ttf2woff2": "latest",
+        "sass": "^1.62.1",
+        "webpack": "latest",
+        "webpack-stream": "latest"
+    }
+}
