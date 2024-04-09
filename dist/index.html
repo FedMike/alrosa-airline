@@ -109,7 +109,7 @@
                     <img src="img/next-arrow.png" alt="next-arrow" />
                 </a>
             </div>
-            <div class="menu-card wide">
+            <div class="menu-card">
                 <div class="menu-card__img">
                     <img src="img/33939.jpg" alt="" />
                 </div>
@@ -118,7 +118,7 @@
                     <img src="img/next-arrow.png" alt="next-arrow" />
                 </a>
             </div>
-            <div class="menu-card wide">
+            <div class="menu-card">
                 <div class="menu-card__img">
                     <img
                         src="img/pmdg-boeing-737-800-alrosa-ra-73266-r9cuF.webp"
@@ -165,7 +165,7 @@
                     <img src="img/next-arrow.png" alt="next-arrow" />
                 </a>
             </div>
-            <div class="menu-card wide">
+            <div class="menu-card">
                 <div class="menu-card__img">
                     <img src="img/alrosa.jpeg" alt="" />
                 </div>
@@ -186,6 +186,17 @@
         </div>
     </div>
 </div>
+<script>
+    const menuCardsContainer = document.querySelector('.menu-cards')
+    const menuCards = menuCardsContainer.querySelectorAll('.menu-card')
+
+    menuCards.forEach((menuCard, index) => {
+        if (index === 4 || index === 5 || index === 10) {
+            menuCard.style.gridColumn = 'span 2'
+            menuCard.style.aspectRatio = '2/1'
+        }
+    })
+</script>
 
         <footer class="footer"></footer>
         <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
