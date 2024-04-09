@@ -1,14 +1,15 @@
 // Base
-@import "./base/vars";
-@import "./base/mixins";
-@import "./base/fonts";
-@import "./base/base";
+@import './base/vars';
+@import './base/mixins';
+@import './base/fonts';
+@import './base/base';
 
 // Blocks
-@import "./blocks/titles";
-@import "./blocks/header";
-@import "./blocks/heading";
-@import "./blocks/footer";
+@import './blocks/titles';
+@import './blocks/header';
+@import './blocks/heading';
+@import './blocks/footer';
 
 // Pages
-@import "./pages/main-page";
+@import './pages/main-page';
+@import './pages/airlines-menu-pages.scss';

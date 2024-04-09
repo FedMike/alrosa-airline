@@ -1,0 +1,51 @@
+<div class="airlines-menu-pages">
+    <div class="container">
+        <div class="menu-cards" id="menu-cards"></div>
+    </div>
+</div>
+<script>
+    const airlinesData = [
+        { image: 'img/33939.jpg', title: 'Авиакомпания "АЛРОСА1"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА2"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА3"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА4"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА5"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА6"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА7"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА8"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА9"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА10"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА11"' },
+        { image: 'img/alrosa.jpeg', title: 'Авиакомпания "АЛРОСА12"' },
+    ]
+
+    const menuCardsContainer = document.getElementById('menu-cards')
+
+    airlinesData.forEach((airline, index) => {
+        const menuCard = document.createElement('div')
+        menuCard.classList.add('menu-card')
+
+        if (index === 4 || index === 5 || index === 10) {
+            menuCard.classList.add('wide')
+        }
+
+        const imgContainer = document.createElement('div')
+        imgContainer.classList.add('menu-card__img')
+        imgContainer.innerHTML = `<img src="${airline.image}" alt="" />`
+
+        const title = document.createElement('div')
+        title.classList.add('menu-card__title')
+        title.innerHTML = airline.title
+
+        const link = document.createElement('a')
+        link.setAttribute('href', '#')
+        link.classList.add('menu-card__link')
+        link.innerHTML = `<img src="img/next-arrow.png" alt="next-arrow" />`
+
+        menuCard.appendChild(imgContainer)
+        menuCard.appendChild(title)
+        menuCard.appendChild(link)
+
+        menuCardsContainer.appendChild(menuCard)
+    })
+</script>
