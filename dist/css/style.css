@@ -1,36 +1,43 @@
 @font-face {
-  font-family: Roboto;
+  font-family: avenirnextcyr;
   font-display: swap;
-  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
+  src: url("../fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../fonts/avenirnextcyr-demi.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: Roboto;
+  font-family: avenirnextcyr;
   font-display: swap;
-  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
+  src: url("../fonts/avenirnextcyr-medium.woff2") format("woff2"), url("../fonts/avenirnextcyr-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: Roboto;
+  font-family: avenirnextcyr;
   font-display: swap;
-  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: Roboto;
-  font-display: swap;
-  src: url("../fonts/Roboto.woff2") format("woff2"), url("../fonts/Roboto.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: RobotoItalic;
-  font-display: swap;
-  src: url("../fonts/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto-Italic.woff") format("woff");
+  src: url("../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../fonts/avenirnextcyr-regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: inter;
+  font-display: swap;
+  src: url("../fonts/inter-medium.woff2") format("woff2"), url("../fonts/inter-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: inter;
+  font-display: swap;
+  src: url("../fonts/inter-regular.woff2") format("woff2"), url("../fonts/inter-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: inter;
+  font-display: swap;
+  src: url("../fonts/inter-bold.woff2") format("woff2"), url("../fonts/inter-bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 /* Reset and base styles  */
@@ -51,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: Roboto;
+  font-family: avenirnextcyr;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -140,69 +147,7 @@ legend {
   padding-right: 20px;
 }
 
-.container-2 {
-  width: 100%;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-@media (max-width: 1280px) {
-  .container-2 {
-    max-width: 100%;
-    padding-left: 22px;
-    padding-right: 22px;
-  }
-}
-@media (max-width: 1280px) {
-  .container-2 {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-.container-2.content-container {
-  margin-top: -40px;
-  background-color: #fff;
-  border-radius: 8px 8px 0px 0px;
-  z-index: 9;
-}
-@media (max-width: 1280px) {
-  .container-2.content-container {
-    margin-top: 0;
-    border-radius: 0;
-  }
-}
-
-.content-container {
-  padding-top: 34px;
-  padding-bottom: 80px;
-  display: flex;
-  column-gap: 50px;
-}
-@media (max-width: 1280px) {
-  .content-container {
-    padding-bottom: 60px;
-  }
-}
-@media (max-width: 767px) {
-  .content-container {
-    padding-top: 24px;
-    padding-bottom: 50px;
-  }
-}
-
-.content-container .sidebar {
-  flex-shrink: 0;
-  width: 330px;
-}
-
 /* Utility */
 .d-none {
   display: none !important;
-}
-
-.z-9 {
-  z-index: 9;
 }
