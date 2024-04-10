@@ -63,7 +63,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #000;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 body.lock {
   overflow-y: hidden;
@@ -140,7 +140,7 @@ legend {
 
 .container {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1208px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
@@ -635,4 +635,127 @@ legend {
 .airlines-menu-pages .wide {
   grid-column: span 2;
   aspect-ratio: 2/1;
+}
+
+.about-pages .about-inner-container {
+  display: grid;
+  grid-template-columns: 324px 1fr;
+  grid-gap: 36px;
+  padding: 72px 24px;
+}
+
+.about-pages .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-pages .sidebar .sidebar-item {
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.about-pages .sidebar .sidebar-item:first-child {
+  font-weight: 450;
+}
+
+.about-pages .section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.about-pages .section-container section {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  gap: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255);
+}
+.about-pages .section-container section .title {
+  color: rgb(33, 37, 41);
+  font-size: 22px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.about-pages .section-container section .description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.about-pages .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+.about-pages .cards .card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  border-radius: 4px;
+  background: rgb(222, 243, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-pages .cards .card .card-title {
+  position: relative;
+  color: rgb(33, 37, 41);
+  font-size: 22px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+}
+.about-pages .cards .card .card-description {
+  position: relative;
+  color: rgb(151, 153, 155);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+  height: 20px;
+}
+.about-pages .cards .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about-pages .card-image-last {
+  padding: 24px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgb(222, 243, 255);
+}
+
+.about-pages .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-text-list .card-text-item {
+  margin-left: 20px;
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  list-style-type: initial;
 }
