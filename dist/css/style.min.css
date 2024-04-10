@@ -637,17 +637,20 @@ legend {
   aspect-ratio: 2/1;
 }
 
-.about-pages .about-inner-container {
-  display: grid;
-  grid-template-columns: 324px 1fr;
-  grid-gap: 36px;
-  padding: 72px 24px;
+.about-pages {
+  padding: 72px 0;
+}
+.about-pages .container {
+  display: flex;
+  gap: 36px;
 }
 
 .about-pages .sidebar {
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   gap: 24px;
+  width: 324px;
 }
 .about-pages .sidebar .sidebar-item {
   color: rgb(33, 37, 41);
@@ -660,11 +663,17 @@ legend {
 .about-pages .sidebar .sidebar-item:first-child {
   font-weight: 450;
 }
+@media (max-width: 1023px) {
+  .about-pages .sidebar {
+    display: none;
+  }
+}
 
 .about-pages .section-container {
   display: flex;
   flex-direction: column;
   gap: 48px;
+  flex-grow: 1;
 }
 
 .about-pages .section-container section {
@@ -719,6 +728,11 @@ legend {
   text-align: left;
   width: 100%;
 }
+@media (max-width: 960px) {
+  .about-pages .cards .card .card-title {
+    word-wrap: break-word;
+  }
+}
 .about-pages .cards .card .card-description {
   position: relative;
   color: rgb(151, 153, 155);
@@ -749,7 +763,7 @@ legend {
   object-fit: contain;
 }
 
-.card-text-list .card-text-item {
+.about-pages .card-text-list .card-text-item {
   margin-left: 20px;
   color: rgb(33, 37, 41);
   font-size: 18px;
