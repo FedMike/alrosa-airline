@@ -17,6 +17,7 @@
         "gulp": "latest",
         "gulp-autoprefixer": "latest",
         "gulp-clean-css": "latest",
+        "gulp-concat": "^2.6.1",
         "gulp-file-include": "latest",
         "gulp-fonter": "latest",
         "gulp-group-css-media-queries": "latest",
@@ -30,6 +31,7 @@
         "gulp-svg-sprite": "latest",
         "gulp-ttf2woff": "latest",
         "gulp-ttf2woff2": "latest",
+        "gulp-uglify": "^3.0.2",
         "sass": "^1.62.1",
         "webpack": "latest",
         "webpack-stream": "latest"
