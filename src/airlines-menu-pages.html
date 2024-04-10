@@ -1,0 +1,129 @@
+<div class="airlines-menu-pages">
+    <div class="container">
+        <div class="menu-cards">
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/33939.jpg" alt="" />
+                </div>
+                <div class="menu-card__title">О нас</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/alrosa.jpeg" alt="" />
+                </div>
+                <div class="menu-card__title">Наш флот</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img
+                        src="img/pmdg-boeing-737-800-alrosa-ra-73266-r9cuF.webp"
+                        alt="" />
+                </div>
+                <div class="menu-card__title">Техническое обслуживание ВС</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/обложка-ОК.jpg" alt="" />
+                </div>
+                <div class="menu-card__title">Сертификаты и лицензии</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/33939.jpg" alt="" />
+                </div>
+                <div class="menu-card__title">Услуги</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img
+                        src="img/pmdg-boeing-737-800-alrosa-ra-73266-r9cuF.webp"
+                        alt="" />
+                </div>
+                <div class="menu-card__title">Новости</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/gray.png" alt="" />
+                </div>
+                <div class="menu-card__title">Фотогалерея</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/gray.png" alt="" />
+                </div>
+                <div class="menu-card__title">Представительства</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/gray.png" alt="" />
+                </div>
+                <div class="menu-card__title">Контакты</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/gray.png" alt="" />
+                </div>
+                <div class="menu-card__title">Партнеры</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/alrosa.jpeg" alt="" />
+                </div>
+                <div class="menu-card__title">Пункты продаж</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+            <div class="menu-card">
+                <div class="menu-card__img">
+                    <img src="img/gray.png" alt="" />
+                </div>
+                <div class="menu-card__title">Вакансии и карьера</div>
+                <a href="#" class="menu-card__link">
+                    <img src="img/next-arrow.png" alt="next-arrow" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const menuCardsContainer = document.querySelector('.menu-cards')
+    const menuCards = menuCardsContainer.querySelectorAll('.menu-card')
+
+    menuCards.forEach((menuCard, index) => {
+        if (index === 4 || index === 5 || index === 10) {
+            menuCard.style.gridColumn = 'span 2'
+            menuCard.style.aspectRatio = '2/1'
+        }
+    })
+</script>
