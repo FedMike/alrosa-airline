@@ -23,7 +23,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: #000;
-    background-color: #FBFBFB;
+    background-color: #fbfbfb;
     // overflow: hidden;
 
     &.lock {
@@ -73,7 +73,7 @@ a {
 }
 
 a.link {
-    color: #0078D2;
+    color: #0078d2;
 }
 
 ul {
@@ -107,6 +107,7 @@ legend {
     margin-right: auto;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 72px;
 }
 
 /* Utility */
