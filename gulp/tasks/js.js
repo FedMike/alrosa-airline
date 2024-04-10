@@ -1,4 +1,6 @@
 import webpack from "webpack-stream";
+import concat from "gulp-concat";
+import uglify from "gulp-uglify";
 
 export const js = () => {
     return app.gulp
@@ -11,14 +13,16 @@ export const js = () => {
                 })
             )
         )
-        .pipe(
-            webpack({
-                mode: app.isBuild ? "production" : "development",
-                output: {
-                    filename: "main.min.js",
-                },
-            })
-        )
+        // .pipe(
+        //     webpack({
+        //         mode: app.isBuild ? "production" : "development",
+        //         output: {
+        //             filename: "main.min.js",
+        //         },
+        //     })
+        // )
+        // .pipe(uglify())
+        .pipe(concat('main.min.js'))
         .pipe(app.gulp.dest(app.path.build.js))
         .pipe(app.plugins.browsersync.stream());
 };
