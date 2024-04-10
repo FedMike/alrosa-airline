@@ -140,14 +140,141 @@ legend {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* Utility */
 .d-none {
   display: none !important;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.header__logo {
+  max-width: 182px;
+}
+
+.header-menu__desktop-list {
+  display: flex;
+  column-gap: 20px;
+}
+
+.header-menu__desktop-item {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu__desktop-item a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header-menu__desktop-item > * {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header__tools {
+  display: flex;
+  column-gap: 20px;
+}
+
+.header-tools__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .theme-change {
+  position: relative;
+  justify-self: unset;
+}
+
+.header .theme-change span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 43px;
+  height: 100%;
+  background-color: #6DCDF6;
+  border-radius: 999px;
+}
+
+.header .theme-change span:after {
+  position: absolute;
+  content: "";
+  right: 3px;
+  width: 22px;
+  height: 22px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.header .theme-change svg {
+  position: absolute;
+  right: 6px;
+  z-index: 9;
+}
+
+.header__lk-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  cursor: pointer;
+}
+
+.header-menu__desktop-list > .header-menu__desktop-item {
+  display: inline-block;
+}
+
+.header-menu__desktop-list > .header-menu__desktop-item > a {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1280px) {
+  .header-menu__desktop-list > .header-menu__desktop-item > a {
+    text-decoration: underline;
+  }
+}
+
+.header-menu__desktop-list > .header-menu__desktop-item > a:before,
+.header-menu__desktop-list > .header-menu__desktop-item > a:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  width: 0%;
+  height: 2px;
+  background: #ED1C24;
+  transition: all 0.3s ease;
+}
+
+.header-menu__desktop-list > .header-menu__desktop-item > a.active:before {
+  right: 50%;
+}
+
+.header-menu__desktop-list > .header-menu__desktop-item > a.active:after {
+  left: 50%;
+}
+
+.header-menu__desktop-list > .header-menu__desktop-item > a.active:before,
+.header-menu__desktop-list > .header-menu__desktop-item > a.active:after {
+  width: 50%;
 }
