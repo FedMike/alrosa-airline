@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    align-items: end;
+    @media (max-width: 550px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .airlines-menu-pages .menu-card {
     background-color: rgb(151, 153, 155);
@@ -14,6 +18,9 @@
     max-height: 320px;
     width: 100%;
     aspect-ratio: 1/1;
+    @media (max-width: 550px) {
+        max-height: 448px;
+    }
 }
 .airlines-menu-pages .menu-card:nth-child(1),
 .airlines-menu-pages .menu-card:nth-child(2),
@@ -28,13 +35,41 @@
 .airlines-menu-pages .menu-card:nth-child(1),
 .airlines-menu-pages .menu-card:nth-child(3) {
     max-height: 400px;
-    margin-top: 72px;
+
+    // margin-top: 72px;
 }
 // .airlines-menu-pages .menu-card:last-child {
 //     grid-column: span 3;
 //     aspect-ratio: 16/9;
 // }
+.airlines-menu-pages .menu-card:nth-child(5),
+.airlines-menu-pages .menu-card:nth-child(6),
+.airlines-menu-pages .menu-card:nth-child(11) {
+    grid-column: span 2;
+    aspect-ratio: 2/1;
+    @media (max-width: 550px) {
+        grid-column: unset;
+    }
+}
 
+.airlines-menu-pages .menu-card:nth-child(1),
+.airlines-menu-pages .menu-card:nth-child(4),
+.airlines-menu-pages .menu-card:nth-child(5),
+.airlines-menu-pages .menu-card:nth-child(8),
+.airlines-menu-pages .menu-card:nth-child(9),
+.airlines-menu-pages .menu-card:nth-child(12) {
+    @media (max-width: 550px) {
+        max-height: 448px;
+        grid-column: span 2;
+        aspect-ratio: 1/1;
+    }
+}
+.airlines-menu-pages .menu-card:nth-child(2),
+.airlines-menu-pages .menu-card:nth-child(3) {
+    @media (max-width: 550px) {
+        max-height: 340px;
+    }
+}
 .airlines-menu-pages .menu-card__img {
     position: absolute;
     top: 0;
@@ -58,6 +93,13 @@
     padding: 32px;
     width: 100%;
     height: 32px;
+    @media (max-width: 800px) {
+        padding: 24px;
+    }
+    @media (max-width: 700px) {
+        padding: 18px;
+        font-size: 18px;
+    }
 }
 .airlines-menu-pages .menu-card__link {
     position: absolute;
@@ -66,6 +108,16 @@
     right: 32px;
     width: 45px;
     height: 45px;
+    @media (max-width: 700px) {
+        bottom: 20px;
+        right: 20px;
+    }
+    @media (max-width: 550px) {
+        bottom: 18px;
+        right: 18px;
+        width: 29px;
+        height: 29px;
+    }
 }
 .airlines-menu-pages .wide {
     grid-column: span 2;
