@@ -499,7 +499,7 @@ legend {
   grid-gap: 10px;
   align-items: end;
 }
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .airlines-menu-pages .menu-cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -514,7 +514,7 @@ legend {
   width: 100%;
   aspect-ratio: 1/1;
 }
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .airlines-menu-pages .menu-card {
     max-height: 448px;
   }
@@ -543,7 +543,7 @@ legend {
   grid-column: span 2;
   aspect-ratio: 2/1;
 }
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .airlines-menu-pages .menu-card:nth-child(5),
   .airlines-menu-pages .menu-card:nth-child(6),
   .airlines-menu-pages .menu-card:nth-child(11) {
@@ -551,7 +551,7 @@ legend {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .airlines-menu-pages .menu-card:nth-child(1),
   .airlines-menu-pages .menu-card:nth-child(4),
   .airlines-menu-pages .menu-card:nth-child(5),
@@ -564,7 +564,7 @@ legend {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .airlines-menu-pages .menu-card:nth-child(2),
   .airlines-menu-pages .menu-card:nth-child(3) {
     max-height: 340px;
@@ -623,7 +623,7 @@ legend {
     right: 20px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 767px) {
   .airlines-menu-pages .menu-card__link {
     bottom: 18px;
     right: 18px;
