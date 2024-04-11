@@ -1122,3 +1122,274 @@ legend {
   text-align: left;
   list-style-type: initial;
 }
+
+.ourfleet-pages {
+  padding: 72px 0;
+}
+.ourfleet-pages .container {
+  display: flex;
+  gap: 36px;
+}
+
+.ourfleet-pages .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.ourfleet-pages .cards .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  padding: 36px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+  background: rgb(255, 255, 255);
+}
+@media (max-width: 1023px) {
+  .ourfleet-pages .cards .card {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.ourfleet-pages .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 273px;
+}
+
+.ourfleet-pages .card-title {
+  color: rgb(33, 37, 41);
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.ourfleet-pages .card-text-list {
+  width: 100%;
+  max-width: 273px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.ourfleet-pages .card-text-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.ourfleet-pages .menu-card__link {
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.ourfleet-pages .card-img {
+  width: 100%;
+  max-width: 404px;
+  height: 100%;
+  max-height: 128px;
+}
+
+.aircraftsevice-page {
+  padding: 72px 0;
+}
+.aircraftsevice-page .container {
+  display: flex;
+  gap: 36px;
+}
+
+.aircraftsevice-page .sidebar {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 24px;
+  width: 324px;
+}
+.aircraftsevice-page .sidebar .sidebar-item {
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.aircraftsevice-page .sidebar .sidebar-item:first-child {
+  font-weight: 450;
+}
+@media (max-width: 1023px) {
+  .aircraftsevice-page .sidebar {
+    display: none;
+  }
+}
+
+.aircraftsevice-page .section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex-grow: 1;
+}
+
+.aircraftsevice-page .section-container section {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  gap: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255);
+}
+.aircraftsevice-page .section-container section .title {
+  color: rgb(33, 37, 41);
+  font-size: 22px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.aircraftsevice-page .section-container section .description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.aircraftsevice-page .section-container section a {
+  color: rgb(0, 61, 165);
+  font-weight: bold;
+}
+
+.aircraftsevice-page .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+@media (max-width: 767px) {
+  .aircraftsevice-page .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.aircraftsevice-page .cards .card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  border-radius: 4px;
+  background: rgb(222, 243, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.aircraftsevice-page .cards .card .card-title {
+  position: relative;
+  color: rgb(33, 37, 41);
+  font-size: 22px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+}
+@media (max-width: 960px) {
+  .aircraftsevice-page .cards .card .card-title {
+    word-wrap: break-word;
+  }
+}
+.aircraftsevice-page .cards .card .card-description {
+  position: relative;
+  color: rgb(151, 153, 155);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+  height: 20px;
+}
+.aircraftsevice-page .cards .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.aircraftsevice-page .card-image-last {
+  padding: 24px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgb(222, 243, 255);
+}
+
+.aircraftsevice-page .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.aircraftsevice-page .card-text-list .card-text-item {
+  margin-left: 20px;
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  list-style-type: initial;
+  display: flex;
+  align-items: center;
+}
+
+.aircraftsevice-page .card-text-list-num .card-text-item {
+  margin-left: 20px;
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  list-style-type: decimal;
+}
+
+.aircraftsevice-page .links {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 32px;
+}
+
+.aircraftsevice-page .links .link-item {
+  color: rgb(33, 37, 41);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aircraftsevice-page .links .link-item svg {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
