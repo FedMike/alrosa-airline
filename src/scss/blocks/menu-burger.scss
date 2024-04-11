@@ -1,0 +1,53 @@
+/* Nav Icon */
+
+.header__mobile-menu-btn {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+
+    span {
+        display: block;
+        position: relative;
+        top: 30%;
+        left: 0;
+        width: 18px;
+        height: 2px;
+        background-color: #212529;
+    }
+
+    span::before {
+        content: "";
+        display: block;
+
+        position: absolute;
+        right: 0;
+
+        width: 12px;
+        height: 2px;
+
+        background-color: #212529;
+        transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
+    }
+
+    span::before {
+        top: calc(1px * 6);
+    }
+
+    span.active {
+        background-color: transparent;
+    }
+
+    span.active::before {
+        top: 0;
+        transition: top 0.1s linear, transform 0.1s ease-in 0.1s;
+    }
+
+    span.active::before {
+        transform: rotate(45deg);
+    }
+}
