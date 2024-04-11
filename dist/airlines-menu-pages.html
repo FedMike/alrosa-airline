@@ -1,129 +1,370 @@
-<div class="airlines-menu-pages">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./css/libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Title -->
+    <title>Авиакомпания</title>
+    <!-- Favicon -->
+</head>
+
+<body>
+    <header class="header" id="header">
     <div class="container">
-        <div class="menu-cards">
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/33939.jpg" alt="" />
-                </div>
-                <div class="menu-card__title">О нас</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
+        <a href="./index.html" class="header__logo">
+            <img src="./img/logo.png" alt="Алроса Авиакомпания">
+        </a>
+        <div class="header-menu__desktop">
+            <ul class="header-menu__desktop-list">
+                <li class="header-menu__desktop-item">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link active">Покупка и
+                        управление</a>
+                    <ul class="header-sub-menu__desktop-list">
+                        <li>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-menu__desktop-item">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">Алмазная миля</a>
+                    <ul class="header-sub-menu__desktop-list">
+                        <li>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-menu__desktop-item">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">Сотрудникам</a>
+                    <ul class="header-sub-menu__desktop-list">
+                        <li>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-menu__desktop-item">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">Бизнесу</a>
+                    <ul class="header-sub-menu__desktop-list">
+                        <li>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-menu__desktop-item">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">Еще</a>
+                    <ul class="header-sub-menu__desktop-list">
+                        <li>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="header__tools">
+            <a href="javascript:void(0)" class="header-tools__item">
+                <svg width="23" height="23">
+                    <use xlink:href="./img/svg/sprite.svg#search"></use>
+                </svg>
+            </a>
+            <a href="javascript:void(0)" class="header-tools__item">
+                <svg width="24" height="24">
+                    <use xlink:href="./img/svg/sprite.svg#eye"></use>
+                </svg>
+            </a>
+            <a href="javascript:void(0)" class="header-tools__item">
+                <span>RU</span>
+            </a>
+            <div class="header-tools__item theme-change">
+                <span></span>
+                <svg width="16" height="16">
+                    <use xlink:href="./img/svg/sprite.svg#sun"></use>
+                </svg>
             </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/alrosa.jpeg" alt="" />
+        </div>
+        <div class="header__lk-link">
+            <a href="javascript:void(0)">Войти</a>
+        </div>
+    </div>
+</header>
+
+    <div class="airlines-menu-pages">
+        <div class="container">
+            <div class="menu-cards">
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/33939.jpg" alt="" />
+                    </div>
+                    <div class="menu-card__title">О нас</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Наш флот</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img
-                        src="img/pmdg-boeing-737-800-alrosa-ra-73266-r9cuF.webp"
-                        alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/alrosa.jpeg" alt="" />
+                    </div>
+                    <div class="menu-card__title">Наш флот</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Техническое обслуживание ВС</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/обложка-ОК.jpg" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/pmdg-boeing-737-800-alrosa-ra-73266-r9cuF.webp" alt="" />
+                    </div>
+                    <div class="menu-card__title">Техническое обслуживание ВС</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Сертификаты и лицензии</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/33939.jpg" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/обложка-ОК.jpg" alt="" />
+                    </div>
+                    <div class="menu-card__title">Сертификаты и лицензии</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Услуги</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img
-                        src="img/pmdg-boeing-737-800-alrosa-ra-73266-r9cuF.webp"
-                        alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/33939.jpg" alt="" />
+                    </div>
+                    <div class="menu-card__title">Услуги</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Новости</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/gray.png" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/pmdg-boeing-737-800-alrosa-ra-73266-r9cuF.webp" alt="" />
+                    </div>
+                    <div class="menu-card__title">Новости</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Фотогалерея</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/gray.png" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/gray.png" alt="" />
+                    </div>
+                    <div class="menu-card__title">Фотогалерея</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Представительства</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/gray.png" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/gray.png" alt="" />
+                    </div>
+                    <div class="menu-card__title">Представительства</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Контакты</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/gray.png" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/gray.png" alt="" />
+                    </div>
+                    <div class="menu-card__title">Контакты</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Партнеры</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/alrosa.jpeg" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/gray.png" alt="" />
+                    </div>
+                    <div class="menu-card__title">Партнеры</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Пункты продаж</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
-            </div>
-            <div class="menu-card">
-                <div class="menu-card__img">
-                    <img src="img/gray.png" alt="" />
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/alrosa.jpeg" alt="" />
+                    </div>
+                    <div class="menu-card__title">Пункты продаж</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
                 </div>
-                <div class="menu-card__title">Вакансии и карьера</div>
-                <a href="#" class="menu-card__link">
-                    <img src="img/next-arrow.png" alt="next-arrow" />
-                </a>
+                <div class="menu-card">
+                    <div class="menu-card__img">
+                        <img src="img/gray.png" alt="" />
+                    </div>
+                    <div class="menu-card__title">Вакансии и карьера</div>
+                    <a href="#" class="menu-card__link">
+                        <img src="img/next-arrow.png" alt="next-arrow" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<script>
-    const menuCardsContainer = document.querySelector('.menu-cards')
-    const menuCards = menuCardsContainer.querySelectorAll('.menu-card')
+    <script>
+        const menuCardsContainer = document.querySelector('.menu-cards')
+        const menuCards = menuCardsContainer.querySelectorAll('.menu-card')
 
-    menuCards.forEach((menuCard, index) => {
-        if (index === 4 || index === 5 || index === 10) {
-            menuCard.style.gridColumn = 'span 2'
-            menuCard.style.aspectRatio = '2/1'
-        }
-    })
-</script>
+        menuCards.forEach((menuCard, index) => {
+            if (index === 4 || index === 5 || index === 10) {
+                menuCard.style.gridColumn = 'span 2'
+                menuCard.style.aspectRatio = '2/1'
+            }
+        })
+    </script>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__newsletter">
+            <div class="newsletter__text">Подпишитесь на рассылку,<br> рассказываем полезное</div>
+            <form class="newsletter__form">
+                <input type="text" placeholder="Ваш E-mail">
+                <button class="newsletter__form-btn">Подписаться</button>
+            </form>
+        </div>
+        <div class="footer__menus">
+            <div class="footer__menus__left">
+                <a href="./index.html" class="footer__logo">
+                    <img src="./img/logo.png" alt="Алроса Авиакомпания">
+                </a>
+                <div class="footer__menus-wrapper">
+                    <div class="footer__menus-block">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">Для сотрудников</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Представительства</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Пресс-центр</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menus-block">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">Офисы продаж</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Карта полетов</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Вакансии</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__menus-block">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)">Новости</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Карта полетов</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__menus__right">
+                <div class="footer__qr">
+                    <div class="footer__qr-img">
+                        <img src="./img/qr-apple-app.png" alt="apple-app">
+                        <div class="footer__qr-diamond">
+                            <img src="./img/diamond.png" alt="diamond">
+                        </div>
+                    </div>
+                    <div class="footer__qr-text">Приложение
+                        для iOS</div>
+                </div>
+                <div class="footer__qr">
+                    <div class="footer__qr-img">
+                        <img src="./img/qr-android-app.png" alt="android-app">
+                        <div class="footer__qr-diamond">
+                            <img src="./img/diamond.png" alt="diamond">
+                        </div>
+                    </div>
+                    <div class="footer__qr-text">Приложение
+                        для Android</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__contacts">
+            <div class="footer__contacts-diamond">
+                <img src="./img/diamond-big.png" alt="diamond">
+            </div>
+            <div class="footer__contacts-content">
+                <a href="tel:+78005005095" class="footer__contacts-item">
+                    <div class="footer__contacts-img">
+                        <svg>
+                            <use xlink:href="./img/svg/sprite.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__contacts-text">8 800 500 50 95</div>
+                </a>
+                <a href="javascript:void(0)" class="footer__contacts-item">
+                    <div class="footer__contacts-img">
+                        <svg>
+                            <use xlink:href="./img/svg/sprite.svg#letter"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__contacts-text">Обратная связь</div>
+                </a>
+                <a href="javascript:void(0)" class="footer__contacts-item">
+                    <div class="footer__contacts-img">
+                        <svg>
+                            <use xlink:href="./img/svg/sprite.svg#stop"></use>
+                        </svg>
+                    </div>
+                    <div class="footer__contacts-text">Сообщение о фактах коррупции</div>
+                </a>
+            </div>
+            <div class="footer__contacts-socials">
+                <div class="contacts-socials-item">
+                    <svg width="22" height="16">
+                        <use xlink:href="./img/svg/sprite.svg#youtube"></use>
+                    </svg>
+                </div>
+                <div class="contacts-socials-item">
+                    <svg width="20" height="20">
+                        <use xlink:href="./img/svg/sprite.svg#vk"></use>
+                    </svg>
+                </div>
+                <div class="contacts-socials-item">
+                    <svg width="20" height="20">
+                        <use xlink:href="./img/svg/sprite.svg#telegram"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="footer__additional">
+            <div class="footer__additional-copyright">&#169; 2023 АО «Авиакомпания АЛРОСА». Все права защищены</div>
+            <div class="footer__additional-links">
+                <a href="javascript:void(0)">Карта сайта</a>
+                <a href="javascript:void(0)">Для сотрудников</a>
+            </div>
+            <div class="footer__additional-brand">
+                <div class="additional-brand__logo">
+                    <img src="./img/logo-bw.png" alt="Алроса">
+                </div>
+                <div class="additional-brand__group">
+                    <img src="./img/alrosa-group-company.png" alt="Группа компаний Алроса">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

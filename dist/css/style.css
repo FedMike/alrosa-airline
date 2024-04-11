@@ -65,7 +65,6 @@ body {
   color: #000;
   background-color: #F8F8F8;
 }
-
 body.lock {
   overflow-y: hidden;
 }
@@ -154,17 +153,23 @@ legend {
   display: none !important;
 }
 
+.header {
+  background-color: #fff;
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header__logo {
   max-width: 182px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .header-menu__desktop-list {
@@ -173,9 +178,11 @@ legend {
 }
 
 .header-menu__desktop-item {
-  height: 40px;
+  position: relative;
   display: flex;
   align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .header-menu__desktop-item a {
@@ -184,7 +191,7 @@ legend {
   align-items: center;
 }
 
-.header-menu__desktop-item > * {
+.header-menu__desktop-item > a {
   height: 100%;
   display: flex;
   align-items: center;
@@ -279,6 +286,15 @@ legend {
 .header-menu__desktop-list > .header-menu__desktop-item > a.active:before,
 .header-menu__desktop-list > .header-menu__desktop-item > a.active:after {
   width: 50%;
+}
+
+.header-sub-menu__desktop-list {
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
 }
 
 .footer .container {
