@@ -624,6 +624,10 @@ legend {
   flex-grow: 1;
 }
 
+.airlines-menu-pages {
+  padding: 72px 0;
+}
+
 .airlines-menu-pages .menu-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
