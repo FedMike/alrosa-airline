@@ -17,71 +17,63 @@
     <body>
         <header class="header" id="header">
     <div class="container">
+        <div class="header__mobile-menu">
+            <div class="header__mobile-menu-btn">
+                <span></span>
+            </div>
+        </div>
         <a href="./index.html" class="header__logo">
             <img src="./img/logo.png" alt="Алроса Авиакомпания" />
         </a>
+        <div class="header__mobile-search">
+            <svg width="24" height="24">
+                <use xlink:href="./img/svg/sprite.svg#search-mobile"></use>
+            </svg>
+        </div>
         <div class="header-menu__desktop">
             <ul class="header-menu__desktop-list">
                 <li class="header-menu__desktop-item">
-                    <a
-                        href="javascript:void(0)"
-                        class="header-menu__desktop-item--link">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">
                         Покупка и управление
                     </a>
                 </li>
                 <li class="header-menu__desktop-item">
-                    <a
-                        href="javascript:void(0)"
-                        class="header-menu__desktop-item--link">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">
                         Алмазная миля
                     </a>
                     <ul class="header-sub-menu__desktop-list">
                         <li>
-                            <a
-                                class="header-sub-menu__desktop-link"
-                                href="javascript:void(0)"></a>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
                         </li>
                     </ul>
                 </li>
                 <li class="header-menu__desktop-item">
-                    <a
-                        href="javascript:void(0)"
-                        class="header-menu__desktop-item--link">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">
                         Сотрудникам
                     </a>
                     <ul class="header-sub-menu__desktop-list">
                         <li>
-                            <a
-                                class="header-sub-menu__desktop-link"
-                                href="javascript:void(0)"></a>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
                         </li>
                     </ul>
                 </li>
                 <li class="header-menu__desktop-item">
-                    <a
-                        href="javascript:void(0)"
-                        class="header-menu__desktop-item--link">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">
                         Бизнесу
                     </a>
                     <ul class="header-sub-menu__desktop-list">
                         <li>
-                            <a
-                                class="header-sub-menu__desktop-link"
-                                href="javascript:void(0)"></a>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
                         </li>
                     </ul>
                 </li>
                 <li class="header-menu__desktop-item">
-                    <a
-                        href="javascript:void(0)"
-                        class="header-menu__desktop-item--link">
+                    <a href="javascript:void(0)" class="header-menu__desktop-item--link">
                         Еще
                     </a>
                     <ul class="header-sub-menu__desktop-list">
                         <li>
-                            <a
-                                class="header-sub-menu__desktop-link"
-                                href="javascript:void(0)"></a>
+                            <a class="header-sub-menu__desktop-link" href="javascript:void(0)"></a>
                         </li>
                     </ul>
                 </li>
@@ -160,9 +152,7 @@
                     </div>
                     <div class="header__qr">
                         <div class="header__qr-img">
-                            <img
-                                src="./img/qr-android-app.png"
-                                alt="android-app" />
+                            <img src="./img/qr-android-app.png" alt="android-app" />
                             <div class="header__qr-diamond">
                                 <img src="./img/diamond.png" alt="diamond" />
                             </div>
@@ -207,9 +197,7 @@
                     </div>
                     <div class="header__qr">
                         <div class="header__qr-img">
-                            <img
-                                src="./img/qr-android-app.png"
-                                alt="android-app" />
+                            <img src="./img/qr-android-app.png" alt="android-app" />
                             <div class="header__qr-diamond">
                                 <img src="./img/diamond.png" alt="diamond" />
                             </div>
@@ -254,9 +242,7 @@
                     </div>
                     <div class="header__qr">
                         <div class="header__qr-img">
-                            <img
-                                src="./img/qr-android-app.png"
-                                alt="android-app" />
+                            <img src="./img/qr-android-app.png" alt="android-app" />
                             <div class="header__qr-diamond">
                                 <img src="./img/diamond.png" alt="diamond" />
                             </div>
@@ -503,7 +489,6 @@
     </div>
 </header>
 
-
         <div class="aircraftsevice-page">
             <div class="container">
                 <div class="sidebar">
@@ -647,7 +632,7 @@
         <footer class="footer">
     <div class="container">
         <div class="footer__newsletter">
-            <div class="newsletter__text">Подпишитесь на рассылку,<br> рассказываем полезное</div>
+            <div class="newsletter__text">Подпишитесь на рассылку, рассказываем полезное</div>
             <form class="newsletter__form">
                 <input type="text" placeholder="Ваш E-mail">
                 <button class="newsletter__form-btn">Подписаться</button>
@@ -701,7 +686,8 @@
                 </div>
             </div>
             <div class="footer__menus__right">
-                <div class="footer__qr">
+                <a href="https://www.alrosa.aero/wp-content/uploads/2023/05/2023_MAY_alrosa_aero_Android_app.apk"
+                    class="footer__qr">
                     <div class="footer__qr-img">
                         <img src="./img/qr-apple-app.png" alt="apple-app">
                         <div class="footer__qr-diamond">
@@ -710,8 +696,9 @@
                     </div>
                     <div class="footer__qr-text">Приложение
                         для iOS</div>
-                </div>
-                <div class="footer__qr">
+                </a>
+                <a href="https://www.alrosa.aero/wp-content/uploads/2023/05/2023_MAY_alrosa_aero_Android_app.apk"
+                    class="footer__qr">
                     <div class="footer__qr-img">
                         <img src="./img/qr-android-app.png" alt="android-app">
                         <div class="footer__qr-diamond">
@@ -720,7 +707,7 @@
                     </div>
                     <div class="footer__qr-text">Приложение
                         для Android</div>
-                </div>
+                </a>
             </div>
         </div>
         <div class="footer__contacts">
@@ -754,21 +741,21 @@
                 </a>
             </div>
             <div class="footer__contacts-socials">
-                <div class="contacts-socials-item">
-                    <svg width="22" height="16">
+                <a href="javascript:void(0)" class="contacts-socials-item">
+                    <svg width="22" height="16" viewBox="0 0 22 16">
                         <use xlink:href="./img/svg/sprite.svg#youtube"></use>
                     </svg>
-                </div>
-                <div class="contacts-socials-item">
-                    <svg width="20" height="20">
+                </a>
+                <a href="javascript:void(0)" class="contacts-socials-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./img/svg/sprite.svg#vk"></use>
                     </svg>
-                </div>
-                <div class="contacts-socials-item">
-                    <svg width="20" height="20">
+                </a>
+                <a href="javascript:void(0)" class="contacts-socials-item">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
                         <use xlink:href="./img/svg/sprite.svg#telegram"></use>
                     </svg>
-                </div>
+                </a>
             </div>
         </div>
         <div class="footer__additional">
