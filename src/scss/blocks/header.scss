@@ -9,18 +9,46 @@
     font-size: 18px;
     padding-top: 26px;
     padding-bottom: 26px;
+    column-gap: 20px;
 }
 
 .header__logo {
     max-width: 182px;
+    flex-shrink: 0;
+}
+
+.header__mobile-menu {
+    display: none;
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}
+
+.header__mobile-search {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    @media (max-width: 1023px) {
+        display: flex;
+    }
 }
 
 .header-menu__desktop {
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
 }
 
 .header-menu__desktop-list {
     display: flex;
     column-gap: 20px;
+    flex-wrap: wrap;
 }
 
 .header-menu__desktop-item {
@@ -50,6 +78,10 @@
 .header__tools {
     display: flex;
     column-gap: 20px;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
 }
 
 .header-tools__item {
@@ -95,6 +127,10 @@
     justify-content: center;
     height: 40px;
     cursor: pointer;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
 }
 
 
