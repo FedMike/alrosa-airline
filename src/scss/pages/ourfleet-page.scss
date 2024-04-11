@@ -1,0 +1,75 @@
+.ourfleet-pages {
+    padding: 72px 0;
+    .container {
+        display: flex;
+        gap: 36px;
+    }
+}
+.ourfleet-pages .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.ourfleet-pages .cards .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 36px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+    background: rgb(255, 255, 255);
+    @media (max-width: 1023px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+.ourfleet-pages .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 273px;
+}
+.ourfleet-pages .card-title {
+    color: rgb(33, 37, 41);
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+.ourfleet-pages .card-text-list {
+    width: 100%;
+    max-width: 273px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+.ourfleet-pages .card-text-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(33, 37, 41);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.ourfleet-pages .menu-card__link {
+    color: rgb(33, 37, 41);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.ourfleet-pages .card-img {
+    width: 100%;
+    max-width: 404px;
+    height: 100%;
+    max-height: 128px;
+}
