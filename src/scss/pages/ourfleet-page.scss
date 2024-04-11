@@ -49,6 +49,9 @@
     text-align: left;
 }
 .ourfleet-pages .card-text-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: rgb(33, 37, 41);
     font-size: 15px;
     font-weight: 400;
