@@ -165,10 +165,16 @@
     align-items: center;
     gap: 10px;
 }
-.aircraftsevice-page .links .link-item svg {
+.aircraftsevice-page .links .link-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
-    display: flex;
-
-    align-items: center;
+    border-radius: 8px;
+    background: rgb(222, 244, 253);
 }
+// .aircraftsevice-page .links .link-item svg {
+//     display: flex;
+//
+// }
