@@ -1,45 +1,3 @@
-@font-face {
-  font-family: avenirnextcyr;
-  font-display: swap;
-  src: url("../fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../fonts/avenirnextcyr-demi.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: avenirnextcyr;
-  font-display: swap;
-  src: url("../fonts/avenirnextcyr-medium.woff2") format("woff2"), url("../fonts/avenirnextcyr-medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: avenirnextcyr;
-  font-display: swap;
-  src: url("../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../fonts/avenirnextcyr-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: inter;
-  font-display: swap;
-  src: url("../fonts/inter-medium.woff2") format("woff2"), url("../fonts/inter-medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: inter;
-  font-display: swap;
-  src: url("../fonts/inter-regular.woff2") format("woff2"), url("../fonts/inter-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: inter;
-  font-display: swap;
-  src: url("../fonts/inter-bold.woff2") format("woff2"), url("../fonts/inter-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
 /* Reset and base styles  */
 *,
 *::before,
@@ -153,6 +111,48 @@ legend {
   display: none !important;
 }
 
+@font-face {
+  font-family: avenirnextcyr;
+  font-display: swap;
+  src: url("../fonts/avenirnextcyr-demi.woff2") format("woff2"), url("../fonts/avenirnextcyr-demi.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: avenirnextcyr;
+  font-display: swap;
+  src: url("../fonts/avenirnextcyr-medium.woff2") format("woff2"), url("../fonts/avenirnextcyr-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: avenirnextcyr;
+  font-display: swap;
+  src: url("../fonts/avenirnextcyr-regular.woff2") format("woff2"), url("../fonts/avenirnextcyr-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: inter;
+  font-display: swap;
+  src: url("../fonts/inter-medium.woff2") format("woff2"), url("../fonts/inter-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: inter;
+  font-display: swap;
+  src: url("../fonts/inter-regular.woff2") format("woff2"), url("../fonts/inter-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: inter;
+  font-display: swap;
+  src: url("../fonts/inter-bold.woff2") format("woff2"), url("../fonts/inter-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 .header {
   background-color: #fff;
 }
@@ -511,6 +511,94 @@ legend {
 }
 .header__mobile-menu-btn span.active::before {
   transform: rotate(45deg);
+}
+
+/* 
+.sidebar {
+    // padding-left: 20px;
+
+    @media (max-width: 1280px) {
+        display: none;
+    }
+}
+
+.sidebar__menu {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // padding-left: 20px;
+}
+
+.sidebar-menu__list {
+    display: flex;
+    flex-direction: column;
+    // row-gap: 32px;
+}
+
+.sidebar-menu__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-left: 1px solid #A6C6E3;
+}
+
+.sidebar-menu__item.active {
+    padding-left: 19px;
+    border-left: 2px solid #005291;
+}
+
+.sidebar-menu__item a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 20px;
+    line-height: 1;
+    color: #4E4E5B;
+    transition: 0.3s;
+}
+
+.sidebar-menu__item a:hover {
+    color: #000000;
+}
+
+.sidebar-menu__item.active a {
+    color: #005291;
+}
+
+.sidebar-menu__item.active a:hover {
+    color: #00335a;
+}
+*/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 324px;
+}
+.sidebar .sidebar__menu {
+  font-size: 18px;
+  color: #212529;
+}
+.sidebar .sidebar__menu a {
+  color: #212529;
+}
+.sidebar .sidebar__menu .sidebar-menu__title {
+  font-weight: 450;
+  margin-bottom: 24px;
+}
+.sidebar .sidebar-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.sidebar .sidebar-menu__list .sidebar-menu__item {
+  line-height: 1.3;
+}
+.sidebar .sidebar-menu__list .sidebar-menu__item.active a {
+  color: #428FDE;
+}
+@media (max-width: 1023px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .footer .container {
@@ -991,30 +1079,6 @@ legend {
 .about-pages .container {
   display: flex;
   gap: 36px;
-}
-
-.about-pages .sidebar {
-  display: flex;
-  flex-shrink: 0;
-  flex-direction: column;
-  gap: 24px;
-  width: 324px;
-}
-.about-pages .sidebar .sidebar-item {
-  color: rgb(33, 37, 41);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-.about-pages .sidebar .sidebar-item:first-child {
-  font-weight: 450;
-}
-@media (max-width: 1023px) {
-  .about-pages .sidebar {
-    display: none;
-  }
 }
 
 .about-pages .section-container {

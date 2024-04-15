@@ -6,25 +6,6 @@
     }
 }
 .about-pages .sidebar {
-    display: flex;
-    flex-shrink: 0;
-    flex-direction: column;
-    gap: 24px;
-    width: 324px;
-    .sidebar-item {
-        color: rgb(33, 37, 41);
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-    .sidebar-item:first-child {
-        font-weight: 450;
-    }
-    @media (max-width: 1023px) {
-        display: none;
-    }
 }
 .about-pages .section-container {
     display: flex;

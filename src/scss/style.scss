@@ -1,19 +1,20 @@
 // Base
+@import './base/base';
 @import './base/vars';
 @import './base/mixins';
 @import './base/fonts';
-@import './base/base';
 
 // Blocks
 @import './blocks/titles';
 @import './blocks/header';
 @import './blocks/menu-burger';
 @import './blocks/heading';
+@import './blocks/sidebar';
 @import './blocks/footer';
 
 // Pages
 @import './pages/main-page';
 @import './pages/airlines-menu-pages.scss';
-@import './pages/about-page.scss';
-@import './pages/ourfleet-page.scss';
-@import './pages/aircraftsevices-page.scss';
+@import './pages/airlines-about-page.scss';
+@import './pages/airlines-ourfleet-page.scss';
+@import './pages/airlines-aircraftsevices-page.scss';
