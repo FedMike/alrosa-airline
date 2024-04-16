@@ -1652,3 +1652,27 @@ legend {
   text-align: left;
   list-style-type: initial;
 }
+
+.news-pages {
+  padding: 72px 0;
+}
+.news-pages .container {
+  display: flex;
+  gap: 36px;
+}
+
+.news-pages .section-container {
+  display: flex;
+  flex-direction: column;
+}
+.news-pages .section-container .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.news-pages .card {
+  display: flex;
+  padding: 36px;
+  background-color: rgb(255, 255, 255);
+}
