@@ -1,221 +1,171 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/head.html',{ "title": "О нас" })
+    @@include('html/head.html',{ "title": "О нас" })
 
-<body>
-    @@include('html/header.html',{})
+    <body>
+        @@include('html/header.html',{})
 
-    <div class="aircraftsevice-page">
-        <div class="container">
-            <div class="sidebar">
+        <div class="aircraftsevice-page">
+            <div class="container">
+                <div class="sidebar">
+                    @@include('html/sidebar-menu.html',{ "menuTitle":
+                    "Авиакомпания", "menuTitleLink":
+                    "./airlines-menu-pages.html", "menuItem1": "О нас",
+                    "menuLink1": "./airlines-about-page.html", "menuActive1":
+                    "", "menuItem2": "Наш флот", "menuLink2":
+                    "./airlines-ourfleet-page.html", "menuActive2": "active",
+                    "menuItem3": "Техническое обслуживание ВС", "menuLink3":
+                    "./airlines-aircraftsevices-page.html", "menuActive3": "",
+                    "menuItem4": "Сертификаты и лицензии", "menuLink4":
+                    "./airlines-license-page.html", "menuActive4": "",
+                    "menuItem5": "Услуги", "menuLink5":
+                    "./airlines-services-page.html", "menuActive5": "",
+                    "menuItem6": "Новости", "menuLink6":
+                    "./airlines-news-page.html", "menuActive6": "", "menuItem7":
+                    "Фотогалерея", "menuLink7": "./airlines-gallery-page.html",
+                    "menuActive7": "", "menuItem8": "Представительства",
+                    "menuLink8": "./airlines-offices-page.html", "menuActive8":
+                    "", "menuItem9": "Контакты", "menuLink9":
+                    "./airlines-contacts-page.html", "menuActive9": "",
+                    "menuItem10": "Партнёры", "menuLink10":
+                    "./airlines-partners-page.html", "menuActive10": "",
+                    "menuItem11": "Пункты продаж", "menuLink11":
+                    "./airlines-salespoints-page.html", "menuActive11": "",
+                    "menuItem12": "Вакансии и карьера", "menuLink12":
+                    "./airlines-jobsandcareer-page.html", "menuActive12": "",
+                    "menuItem13": "", "menuLink13": "", "menuActive13":
+                    "d-none", "menuItem14": "", "menuLink14": "",
+                    "menuActive14": "d-none", "menuItem15": "", "menuLink15":
+                    "", "menuActive15": "d-none", "menuItem16": "",
+                    "menuLink16": "", "menuActive16": "d-none", "menuItem17":
+                    "", "menuLink17": "", "menuActive17": "d-none",
+                    "menuItem18": "", "menuLink18": "", "menuActive18":
+                    "d-none", "menuItem19": "", "menuLink19": "",
+                    "menuActive19": "d-none", "menuItem20": "", "menuLink20":
+                    "", "menuActive20": "d-none", })
+                </div>
+                <div class="section-container">
+                    <section>
+                        <div class="title">Общая информация</div>
+                        <div class="description">
+                            АО «Авиакомпания АЛРОСА» имеет инженерную службу,
+                            которая представлена производственными площадками,
+                            оснащенными всем необходимым инструментом и
+                            сертифицированным персоналом.
+                            <a href="#">
+                                Сертификат Авиакомпании АЛРОСА по ТО ВС.
+                            </a>
+                        </div>
+                        <div class="description">
+                            Мы рады предложить вам следующие услуги по базовому
+                            техническому и наземному обслуживанию самолётов в
+                            соответствии с требованиями Федеральных авиационных
+                            правил, утвержденных приказом Министерства
+                            Транспорта Российской Федерации от 25.09.2015 г. №
+                            285.
+                        </div>
+                    </section>
+                    <section>
+                        <div class="title">Виды услуг</div>
+                        <div class="description">
+                            Оперативное и периодическое обслуживание по
+                            ФАП-285Участки технического обслуживания
+                            осуществляется в аэропортах городов:Якутск, Ленск,
+                            Полярный, и в аэропортах Внуково и Пашковский
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card-title">Вертолеты:</div>
+                                <ul class="card-text-list-num">
+                                    <li class="card-text-item">Ми-8Т;</li>
+                                    <li class="card-text-item">Ми-8МТВ-1;</li>
+                                    <li class="card-text-item">Ми-171;</li>
+                                    <li class="card-text-item">Ми-26Т</li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="card-title">Самолеты:</div>
 
-                @@include('html/sidebar-menu.html',{
-                "menuTitle": "Авиакомпания",
-                "menuTitleLink": "./airlines-menu-pages.html",
+                                <ul class="card-text-list">
+                                    <li class="card-text-item">
+                                        Ан-38, Ан-24, Ан-26, Ту-154М;
+                                    </li>
+                                    <li class="card-text-item">Ил-76;</li>
+                                    <li class="card-text-item">
+                                        Boeing 737-700/800 (оперативное ТО)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="title">
+                            Буксировка воздушных судов в аэропорту Полярный
+                        </div>
 
-                "menuItem1": "О нас",
-                "menuLink1": "./airlines-about-page.html",
-                "menuActive1": "",
-
-                "menuItem2": "Наш флот",
-                "menuLink2": "./airlines-ourfleet-page.html",
-                "menuActive2": "",
-
-                "menuItem3": "Техническое обслуживание ВС",
-                "menuLink3": "./airlines-aircraftsevices-page.html",
-                "menuActive3": "active",
-
-                "menuItem4": "Сертификаты и лицензии",
-                "menuLink4": "",
-                "menuActive4": "",
-
-                "menuItem5": "Услуги",
-                "menuLink5": "",
-                "menuActive5": "",
-
-                "menuItem6": "Новости",
-                "menuLink6": "",
-                "menuActive6": "",
-
-                "menuItem7": "Фотогалерея",
-                "menuLink7": "",
-                "menuActive7": "",
-
-                "menuItem8": "Представительства",
-                "menuLink8": "",
-                "menuActive8": "",
-
-                "menuItem9": "Контакты",
-                "menuLink9": "",
-                "menuActive9": "",
-
-                "menuItem10": "Партнёры",
-                "menuLink10": "",
-                "menuActive10": "",
-
-                "menuItem11": "Пункты продаж",
-                "menuLink11": "",
-                "menuActive11": "",
-
-                "menuItem12": "Вакансии и карьера",
-                "menuLink12": "",
-                "menuActive12": "",
-
-                "menuItem13": "",
-                "menuLink13": "",
-                "menuActive13": "d-none",
-
-                "menuItem14": "",
-                "menuLink14": "",
-                "menuActive14": "d-none",
-
-                "menuItem15": "",
-                "menuLink15": "",
-                "menuActive15": "d-none",
-
-                "menuItem16": "",
-                "menuLink16": "",
-                "menuActive16": "d-none",
-
-                "menuItem17": "",
-                "menuLink17": "",
-                "menuActive17": "d-none",
-
-                "menuItem18": "",
-                "menuLink18": "",
-                "menuActive18": "d-none",
-
-                "menuItem19": "",
-                "menuLink19": "",
-                "menuActive19": "d-none",
-
-                "menuItem20": "",
-                "menuLink20": "",
-                "menuActive20": "d-none",
-                })
-
-            </div>
-            <div class="section-container">
-                <section>
-                    <div class="title">Общая информация</div>
-                    <div class="description">
-                        АО «Авиакомпания АЛРОСА» имеет инженерную службу,
-                        которая представлена производственными площадками,
-                        оснащенными всем необходимым инструментом и
-                        сертифицированным персоналом.
                         <a href="#">
-                            Сертификат Авиакомпании АЛРОСА по ТО ВС.
+                            Тарифы на техническое и наземное обслуживание ВС
+                            российских эксплуатантов в аэропортах Мирный, Ленск,
+                            Полярный, Якутск, Москва, Краснодар (с 01.01.2024)
                         </a>
-                    </div>
-                    <div class="description">
-                        Мы рады предложить вам следующие услуги по базовому
-                        техническому и наземному обслуживанию самолётов в
-                        соответствии с требованиями Федеральных авиационных
-                        правил, утвержденных приказом Министерства
-                        Транспорта Российской Федерации от 25.09.2015 г. №
-                        285.
-                    </div>
-                </section>
-                <section>
-                    <div class="title">Виды услуг</div>
-                    <div class="description">
-                        Оперативное и периодическое обслуживание по
-                        ФАП-285Участки технического обслуживания
-                        осуществляется в аэропортах городов:Якутск, Ленск,
-                        Полярный, и в аэропортах Внуково и Пашковский
-                    </div>
-                    <div class="cards">
-                        <div class="card">
-                            <div class="card-title">Вертолеты:</div>
-                            <ul class="card-text-list-num">
-                                <li class="card-text-item">Ми-8Т;</li>
-                                <li class="card-text-item">Ми-8МТВ-1;</li>
-                                <li class="card-text-item">Ми-171;</li>
-                                <li class="card-text-item">Ми-26Т</li>
-                            </ul>
+                    </section>
+                    <section>
+                        <div class="title">Персонал ИАС:</div>
+                        <ul class="card-text-list">
+                            <li class="card-text-item">
+                                укомплектован профессиональными специалистами с
+                                огромным опытом работы в условиях крайнего
+                                севера и в отрыве от базы;
+                            </li>
+                            <li class="card-text-item">
+                                своевременно проходит периодическое обучение и
+                                дополнительные тренинги;
+                            </li>
+                            <li class="card-text-item">
+                                регулярно получает новые компетенции и расширяет
+                                свой рейтинг.
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="title">
+                            По вопросам предоставления услуг обращаться:
                         </div>
-                        <div class="card">
-                            <div class="card-title">Самолеты:</div>
-
-                            <ul class="card-text-list">
-                                <li class="card-text-item">
-                                    Ан-38, Ан-24, Ан-26, Ту-154М;
-                                </li>
-                                <li class="card-text-item">Ил-76;</li>
-                                <li class="card-text-item">
-                                    Boeing 737-700/800 (оперативное ТО)
-                                </li>
-                            </ul>
+                        <div class="description">
+                            Авиакомпания “Алроса” предоставляет услуги
+                            пассажирских и грузовых авиаперевозок по России и
+                            миру. Основные направления: из Москвы в города
+                            России, а также в страны СНГ, Европы, Азии, Ближнего
+                            Востока и Северной Африки.
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="title">
-                        Буксировка воздушных судов в аэропорту Полярный
-                    </div>
-
-                    <a href="#">
-                        Тарифы на техническое и наземное обслуживание ВС
-                        российских эксплуатантов в аэропортах Мирный, Ленск,
-                        Полярный, Якутск, Москва, Краснодар (с 01.01.2024)
-                    </a>
-                </section>
-                <section>
-                    <div class="title">Персонал ИАС:</div>
-                    <ul class="card-text-list">
-                        <li class="card-text-item">
-                            укомплектован профессиональными специалистами с
-                            огромным опытом работы в условиях крайнего
-                            севера и в отрыве от базы;
-                        </li>
-                        <li class="card-text-item">
-                            своевременно проходит периодическое обучение и
-                            дополнительные тренинги;
-                        </li>
-                        <li class="card-text-item">
-                            регулярно получает новые компетенции и расширяет
-                            свой рейтинг.
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <div class="title">
-                        По вопросам предоставления услуг обращаться:
-                    </div>
-                    <div class="description">
-                        Авиакомпания “Алроса” предоставляет услуги
-                        пассажирских и грузовых авиаперевозок по России и
-                        миру. Основные направления: из Москвы в города
-                        России, а также в страны СНГ, Европы, Азии, Ближнего
-                        Востока и Северной Африки.
-                    </div>
-                    <div class="links">
-                        <div class="link-item">
-                            <svg width="20" height="20">
-                                <use xlink:href="./img/svg/sprite.svg#email-icon"></use>
-                            </svg>
-                            <a href="mailto:avia-info@aero.alrosa.ru">
-                                avia-info@aero.alrosa.ru
-                            </a>
+                        <div class="links">
+                            <div class="link-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        xlink:href="./img/svg/sprite.svg#email-icon"></use>
+                                </svg>
+                                <a href="mailto:avia-info@aero.alrosa.ru">
+                                    avia-info@aero.alrosa.ru
+                                </a>
+                            </div>
+                            <div class="link-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        xlink:href="./img/svg/sprite.svg#tel-icon"></use>
+                                </svg>
+                                <a href="tel:+74113648-245">
+                                    +7 (41136) 48-245
+                                </a>
+                            </div>
                         </div>
-                        <div class="link-item">
-                            <svg width="20" height="20">
-                                <use xlink:href="./img/svg/sprite.svg#tel-icon"></use>
-                            </svg>
-                            <a href="tel:+74113648-245">
-                                +7 (41136) 48-245
-                            </a>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
-    </div>
 
-    @@include('html/footer.html',{})
-    <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+        @@include('html/footer.html',{})
+        <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
 
-    <script src="./js/main.min.js"></script>
-</body>
-
+        <script src="./js/main.min.js"></script>
+    </body>
 </html>
