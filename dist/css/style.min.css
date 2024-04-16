@@ -1461,3 +1461,67 @@ legend {
   display: flex;
   align-items: center;
 }
+
+.license-pages {
+  padding: 72px 0;
+}
+.license-pages .container {
+  display: flex;
+  gap: 36px;
+}
+
+.license-pages .cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 36px;
+}
+
+.license-pages .cards .card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+  background: rgb(255, 255, 255);
+}
+
+.license-pages .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.license-pages .card-title {
+  color: rgb(33, 37, 41);
+  font-size: 24px;
+  font-weight: 450;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.license-pages .card-text-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.license-pages .card-text-item p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(151, 153, 155);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
