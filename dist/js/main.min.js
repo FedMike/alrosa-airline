@@ -165,9 +165,9 @@ const swiper2 = new Swiper(".main-banner__content", {
     // },
 
     // If we need pagination
-    // pagination: {
-    //     el: ".swiper-pagination",
-    // },
+    pagination: {
+        el: ".main-banner__pagination",
+    },
 
     // Navigation arrows
     navigation: {
