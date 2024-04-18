@@ -64,7 +64,8 @@
 }
 .news-pages .pagination {
     display: flex;
-    gap: 22px;
+    gap: 34px;
+    margin-top: 32px;
 }
 .news-pages .pagination a {
     color: rgb(151, 153, 155);
@@ -74,4 +75,19 @@
     line-height: 20px;
     letter-spacing: 0%;
     text-align: left;
+    .chevron-container-link {
+        position: relative;
+    }
+    .chevron-container-link svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        vertical-align: sub;
+    }
+}
+.news-pages .reverse-chevron svg {
+    transform: rotate(180deg);
+}
+.news-pages .pagination .active {
+    color: rgb(0, 122, 194);
 }
