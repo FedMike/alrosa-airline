@@ -102,48 +102,9 @@ navSpoilerTitles.forEach((navSpoilerTitle) => {
 //     });
 // }
 
-// Slider Swiper for Apartment
+// Slider swiper for main banner
+
 const swiper = new Swiper(".main-banner__swiper", {
-    // direction: "horizontal",
-    // loop: false,
-    // autoHeight: false,
-    // sliderPerView: 1,
-    // spaceBetween: 30,
-    // centeredSlides: 1,
-    // initialSlide: 0,
-    // slidesPerColumn: 1,
-    // watchSlidesVisibility: true,
-    // touchRation: 1,
-    // touchAngle: 45,
-    // grabCursor: false,
-    // slideToClickedSlide: false,
-    // speed: 800,
-    // effect: "fade",
-    // fadeEffect: {
-    //     crossFade: true,
-    // },
-
-    // If we need pagination
-    // pagination: {
-    //     el: ".swiper-pagination",
-    // },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: ".main-banner__btn--next",
-        prevEl: ".main-banner__btn--prev",
-    },
-
-    // Mini Slider
-    // thumbs: {
-    //     swiper: {
-    //         el: ".image-mini-slider",
-    //         slidesPerView: 3,
-    //     },
-    // },
-});
-
-const swiper2 = new Swiper(".main-banner__content", {
     // direction: "horizontal",
     // loop: false,
     // autoHeight: false,
@@ -185,26 +146,6 @@ const swiper2 = new Swiper(".main-banner__content", {
     // },
 });
 
-const swiper3 = new Swiper(".pressroom-content__right", {
-    loop: true,
-    autoplay: {
-        delay: 3000,
-    },
-    speed: 1000,
-    // effect: "fade",
-    // fadeEffect: {
-    //     crossFade: true,
-    // },
-    pagination: {
-        el: ".pressroom-right-card__pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        1280: {
-            allowTouchMove: false,
-        }
-    }
-});
 
 // const headerMenuDesktopItems = document.querySelectorAll('.header-menu__desktop-item--link');
 

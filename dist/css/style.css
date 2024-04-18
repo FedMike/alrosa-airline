@@ -1010,6 +1010,7 @@ legend {
 
 .main-banner__btns {
   display: flex;
+  column-gap: 16px;
 }
 
 .main-banner__btn--prev,
@@ -1020,6 +1021,27 @@ legend {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.main-banner__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  width: auto !important;
+}
+
+.main-banner__btns .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  margin: 0 !important;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  background-color: transparent;
+}
+
+.main-banner__btns .swiper-pagination-bullet-active {
+  background-color: #fff;
 }
 
 .main-banner__btn--next {
