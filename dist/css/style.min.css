@@ -943,6 +943,11 @@ legend {
   transform: translateX(-50%);
   z-index: 9;
 }
+@media (max-width: 991px) {
+  .main-banner__wrapper > .container {
+    justify-content: start;
+  }
+}
 
 .main-banner__item {
   position: relative;
@@ -965,6 +970,12 @@ legend {
   width: 100%;
   height: 123%;
 }
+@media (max-width: 991px) {
+  .main-banner__layer {
+    top: -110px;
+    width: 120%;
+  }
+}
 
 .main-banner__layer img {
   width: 100%;
@@ -979,7 +990,6 @@ legend {
   width: 100%;
   height: 100%;
 }
-
 .main-banner__img-wrapper img {
   width: 100%;
   height: 100%;
@@ -992,14 +1002,29 @@ legend {
   text-transform: uppercase;
   letter-spacing: 8px;
 }
+@media (max-width: 991px) {
+  .main-banner__content {
+    padding-bottom: 64px;
+  }
+}
 
 .main-banner .content__direction {
   font-size: 42px;
   margin-bottom: 6px;
 }
+@media (max-width: 991px) {
+  .main-banner .content__direction {
+    font-size: 28px;
+  }
+}
 
 .main-banner .content__price {
   font-size: 28px;
+}
+@media (max-width: 991px) {
+  .main-banner .content__price {
+    font-size: 24px;
+  }
 }
 
 .main-banner .content__price span {
