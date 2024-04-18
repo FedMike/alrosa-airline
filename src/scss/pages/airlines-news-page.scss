@@ -14,6 +14,85 @@
         gap: 12px;
     }
 }
+.news-pages .datepiecker-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 24px;
+    margin: 24px 0px;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+
+    [type='date'] {
+        background: #fff
+            url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)
+            97% 50% no-repeat;
+    }
+    [type='date']::-webkit-inner-spin-button {
+        display: none;
+    }
+    [type='date']::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+    label {
+        display: block;
+    }
+    input {
+        border: 1px solid rgb(141, 200, 232);
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        padding: 10px 16px 10px 16px;
+        box-sizing: border-box;
+        box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+        width: 242.67px;
+    }
+    button {
+        padding: 8px 72px 8px 72px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgb(109, 205, 246);
+        border-radius: 8px;
+        background: rgb(109, 205, 246);
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        font-weight: 450;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
+.news-pages .datepiecker-item {
+    position: relative;
+    .placeholder {
+        position: absolute;
+        top: 50%;
+        left: 6px;
+        transform: translateY(-50%);
+        color: #999;
+        pointer-events: none;
+        transition: 0.2s;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    input[type='date'] + .placeholder {
+        position: absolute;
+        top: 50%;
+        left: 6px;
+        transform: translateY(-50%);
+        color: #999; /* Цвет placeholder */
+        pointer-events: none; /* Игнорировать события мыши */
+        transition: 0.2s; /* Плавное появление placeholder */
+    }
+
+    input[type='date']:focus + .placeholder {
+        display: none; /* Скрыть placeholder при фокусе */
+    }
+}
 .news-pages .card {
     display: flex;
     border-radius: 4px;
