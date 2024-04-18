@@ -10,6 +10,7 @@
     position: absolute;
     bottom: 0;
     left: 50%;
+    padding-bottom: 60px;
     display: flex;
     justify-content: end;
     transform: translateX(-50%);
@@ -109,6 +110,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.main-banner__pagination {
+    
 }
 
 .main-banner__btn--prev {

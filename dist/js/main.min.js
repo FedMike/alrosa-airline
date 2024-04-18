@@ -148,8 +148,8 @@ const swiper2 = new Swiper(".main-banner__content", {
     // loop: false,
     // autoHeight: false,
     // sliderPerView: 1,
-    spaceBetween: 20,
-    effect: "fade",
+    // spaceBetween: 20,
+    // effect: "fade",
     // centeredSlides: 1,
     // initialSlide: 0,
     // slidesPerColumn: 1,
@@ -167,6 +167,7 @@ const swiper2 = new Swiper(".main-banner__content", {
     // If we need pagination
     pagination: {
         el: ".main-banner__pagination",
+        clickable: true,
     },
 
     // Navigation arrows
