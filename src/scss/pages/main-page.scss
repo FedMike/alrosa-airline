@@ -1,7 +1,19 @@
 .main-banner {
+    max-width: 2130px;
 }
 
 .main-banner__wrapper {
+    position: relative;
+}
+
+.main-banner__wrapper > .container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    justify-content: end;
+    transform: translateX(-50%);
+    z-index: 9;
 }
 
 .main-banner__swiper {
@@ -16,6 +28,14 @@
     height: 500px;
 }
 
+.main-banner__item .container {
+    position: relative;
+    height: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: end;
+}
+
 .main-banner .swiper-slide {
 }
 
@@ -24,8 +44,13 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 123%;
+}
+
+.main-banner__layer img {
+    width: 100%;
     height: 100%;
-    z-index: 9;
+    object-fit: cover;
 }
 
 .main-banner__img-wrapper {
@@ -43,12 +68,25 @@
 }
 
 .main-banner__content {
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    // word-spacing: 2px;
+    letter-spacing: 8px;
 }
 
-.main-banner .content__top {
+.main-banner .content__direction {
+    font-size: 42px;
+    margin-bottom: 6px;
 }
 
-.main-banner .content__bottom {
+.main-banner .content__price {
+    font-size: 28px;
+}
+
+.main-banner .content__price span {
+    font-weight: 500;
+    font-family: 'Inter';
 }
 
 .main-banner .container {
@@ -58,13 +96,24 @@
 }
 
 .main-banner__btns {
+    display: flex;
 }
 
 .main-banner__btn {
+}
+
+.main-banner__btn--prev,
+.main-banner__btn--next {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-banner__btn--prev {
 }
 
 .main-banner__btn--next {
+    transform: rotate(180deg);
 }
