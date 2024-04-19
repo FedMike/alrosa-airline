@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html',{ "title": "Новости" })
+
+    <body>
+        @@include('html/header.html',{})
+
+        <div class="news-pages">
+            <div class="container">
+                <div class="sidebar">
+                    @@include('html/sidebar-menu.html',{ "menuTitle":
+                    "Авиакомпания", "menuTitleLink":
+                    "./airlines-menu-pages.html", "menuItem1": "О нас",
+                    "menuLink1": "./airlines-about-page.html", "menuActive1":
+                    "", "menuItem2": "Наш флот", "menuLink2":
+                    "./airlines-ourfleet-page.html", "menuActive2": "",
+                    "menuItem3": "Техническое обслуживание ВС", "menuLink3":
+                    "./airlines-aircraftsevices-page.html", "menuActive3": "",
+                    "menuItem4": "Сертификаты и лицензии", "menuLink4":
+                    "./airlines-license-page.html", "menuActive4": "",
+                    "menuItem5": "Услуги", "menuLink5":
+                    "./airlines-services-page.html", "menuActive5": "",
+                    "menuItem6": "Новости", "menuLink6":
+                    "./airlines-news-page.html", "menuActive6": "active",
+                    "menuItem7": "Фотогалерея", "menuLink7":
+                    "./airlines-gallery-page.html", "menuActive7": "",
+                    "menuItem8": "Представительства", "menuLink8":
+                    "./airlines-offices-page.html", "menuActive8": "",
+                    "menuItem9": "Контакты", "menuLink9":
+                    "./airlines-contacts-page.html", "menuActive9": "",
+                    "menuItem10": "Партнёры", "menuLink10":
+                    "./airlines-partners-page.html", "menuActive10": "",
+                    "menuItem11": "Пункты продаж", "menuLink11":
+                    "./airlines-salespoints-page.html", "menuActive11": "",
+                    "menuItem12": "Вакансии и карьера", "menuLink12":
+                    "./airlines-jobsandcareer-page.html", "menuActive12": "",
+                    "menuItem13": "", "menuLink13": "", "menuActive13":
+                    "d-none", "menuItem14": "", "menuLink14": "",
+                    "menuActive14": "d-none", "menuItem15": "", "menuLink15":
+                    "", "menuActive15": "d-none", "menuItem16": "",
+                    "menuLink16": "", "menuActive16": "d-none", "menuItem17":
+                    "", "menuLink17": "", "menuActive17": "d-none",
+                    "menuItem18": "", "menuLink18": "", "menuActive18":
+                    "d-none", "menuItem19": "", "menuLink19": "",
+                    "menuActive19": "d-none", "menuItem20": "", "menuLink20":
+                    "", "menuActive20": "d-none", })
+                </div>
+                <div class="section-container"></div>
+            </div>
+        </div>
+
+        @@include('html/footer.html',{})
+        <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+
+        <script src="./js/main.min.js"></script>
+    </body>
+</html>

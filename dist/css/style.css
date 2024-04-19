@@ -1978,3 +1978,21 @@ legend {
 .news-pages .pagination .active {
   color: rgb(0, 122, 194);
 }
+
+.news-pages {
+  padding: 72px 0;
+}
+.news-pages .container {
+  display: flex;
+  gap: 36px;
+}
+
+.news-pages .section-container {
+  display: flex;
+  flex-direction: column;
+}
+.news-pages .section-container .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
