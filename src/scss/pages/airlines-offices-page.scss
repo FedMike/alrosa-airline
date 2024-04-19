@@ -1,0 +1,13 @@
+.offices-page {
+    padding: 72px 0;
+    .container {
+        display: flex;
+        gap: 36px;
+    }
+}
+.offices-page .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    flex-grow: 1;
+}
