@@ -2161,3 +2161,18 @@ legend {
 .gallery-page .pagination .active {
   color: rgb(0, 122, 194);
 }
+
+.offices-page {
+  padding: 72px 0;
+}
+.offices-page .container {
+  display: flex;
+  gap: 36px;
+}
+
+.offices-page .section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex-grow: 1;
+}
