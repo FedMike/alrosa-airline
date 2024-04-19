@@ -2099,3 +2099,21 @@ legend {
   width: 262px;
   height: 413px;
 }
+
+.photogallery-page {
+  padding: 72px 0;
+}
+.photogallery-page .container {
+  display: flex;
+  gap: 36px;
+}
+
+.photogallery-page .section-container {
+  display: flex;
+  flex-direction: column;
+}
+.photogallery-page .section-container .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

@@ -1,0 +1,16 @@
+.photogallery-page {
+    padding: 72px 0;
+    .container {
+        display: flex;
+        gap: 36px;
+    }
+}
+.photogallery-page .section-container {
+    display: flex;
+    flex-direction: column;
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
