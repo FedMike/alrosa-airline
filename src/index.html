@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @@include('html/head.html',{ "title": "AЛРОСА | Авиакомпания" })
+@@include('html/head.html',{ "title": "AЛРОСА | Авиакомпания" })
 
-    <body>
-        @@include('html/header.html',{})
+<body>
+    @@include('html/header.html',{})
 
-<
     <section class="main-banner">
         <div class="main-banner__wrapper">
             <div class="swiper main-banner__swiper">
@@ -26,7 +25,7 @@
 
                             </div>
                         </div>
-
+                    </div>
 
                     <div class="main-banner__item swiper-slide">
                         <div class="main-banner__img-wrapper">
@@ -42,11 +41,10 @@
                                 </div>
                                 <div class="content__price">
                                     <span>от 6 950 ₽</span>
-
                                 </div>
                             </div>
                         </div>
-
+                    </div>
 
                     <div class="main-banner__item swiper-slide">
                         <div class="main-banner__img-wrapper">
@@ -62,7 +60,6 @@
                                 </div>
                                 <div class="content__price">
                                     <span>от 7 950 ₽</span>
-
                                 </div>
                             </div>
                         </div>
@@ -83,16 +80,28 @@
                             <svg width="11" height="18" viewBox="0 0 11 18">
                                 <use xlink:href="./img/svg/sprite.svg#chevron"></use>
                             </svg>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="main-panel">
+        <div class="container">
+            <div class="main-panel__top">
+                <button class="shareholders-doc-tablinks active">Купить билет</button>
+                <button class="shareholders-doc-tablinks">Мои бронирования</button>
+                <button class="shareholders-doc-tablinks">Онлайн-табло</button>
+            </div>
+            <div class="main-panel__middle"></div>
+            <div class="main-panel__bottom"></div>
+        </div>
+    </section>
 
-        @@include('html/footer.html',{})
-        <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+    @@include('html/footer.html',{})
+    <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
 
-        <script src="./js/main.min.js"></script>
-    </body>
+    <script src="./js/main.min.js"></script>
+</body>
+
 </html>
