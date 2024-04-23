@@ -167,6 +167,44 @@ const swiper2 = new Swiper(".best-deals__slider", {
     },
 });
 
+const swiper3 = new Swiper(".additional__slider", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+
+    // If we need pagination
+    // pagination: {
+    //     el: ".main-banner__pagination",
+    //     clickable: true,
+    // },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".additional__btn--next",
+        prevEl: ".additional__btn--prev",
+    },
+});
+
+const swiper4 = new Swiper(".stock__slider", {
+    slidesPerView: 2,
+    grid: {
+        rows: 2,
+    },
+    spaceBetween: 8,
+
+    // If we need pagination
+    // pagination: {
+    //     el: ".main-banner__pagination",
+    //     clickable: true,
+    // },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".stock__btn--next",
+        prevEl: ".stock__btn--prev",
+    },
+});
+
 
 // const headerMenuDesktopItems = document.querySelectorAll('.header-menu__desktop-item--link');
 
