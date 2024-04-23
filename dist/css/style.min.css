@@ -1512,7 +1512,7 @@ legend {
 
 .additional__slider-btns {
   position: absolute;
-  top: -135px;
+  top: -170px;
   right: 0;
   display: flex;
   column-gap: 16px;
@@ -1619,6 +1619,76 @@ legend {
 
 .stock .swiper-button-disabled {
   opacity: 0.3;
+}
+
+.diamond-mile__content {
+  position: relative;
+  height: 180px;
+  display: flex;
+  justify-content: end;
+  padding: 24px 32px;
+  color: #ffffff;
+}
+
+.diamond-mile__cards {
+  position: absolute;
+  top: 50%;
+  left: 34px;
+  display: flex;
+  transform: translateY(-50%);
+  z-index: 9;
+}
+
+.diamond-mile__cards > *:not(:first-child) {
+  margin-left: -225px;
+}
+
+.diamond-mile__card {
+  width: 337px;
+  height: 214px;
+}
+
+.diamond-mile__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.diamond-mile__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.diamond-mile__content-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  height: 100%;
+}
+
+.diamond-mile__title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.diamond-mile__text {
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+.diamond-mile__btn {
+  align-self: start;
+  display: block;
+  padding: 10px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #212529;
+  background-color: #fff;
+  border-radius: 40px;
 }
 
 .airlines-menu-pages {
