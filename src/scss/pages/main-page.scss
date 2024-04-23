@@ -438,6 +438,14 @@
     width: 50%;
 }
 
+.main-page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
 // Best deals section
 
 .best-deals {
@@ -448,14 +456,12 @@
 }
 
 .best-deals__title {
-    font-size: 42px;
-    font-weight: 700;
-    color: #212529;
     margin-bottom: 20px;
 }
 
 .best-deals__text {
     font-size: 24px;
+    font-weight: 500;
     color: #212529;
     margin-bottom: 36px;
 }
@@ -538,4 +544,246 @@
 
 .best-deals .card__price span{
     font-family: Inter;
+}
+
+.best-deals__slider-btns {
+    position: absolute;
+    top: -135px;
+    right: 0;
+    display: flex;
+    column-gap: 16px;
+}
+
+.best-deals__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.best-deals__btn--prev {
+}
+
+.best-deals__btn--next {
+    transform: rotate(180deg);
+}
+
+.best-deals .swiper-button-disabled {
+    opacity: 0.3;
+}
+
+// Additional services section
+
+.additional {
+}
+
+.additional .container {
+    overflow: hidden;
+}
+
+.additional__title {
+    margin-bottom: 20px;
+}
+
+.additional__text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #212529;
+    margin-bottom: 36px;
+}
+
+.additional__slider {
+    overflow: visible;
+}
+
+.additional .swiper {
+}
+.additional .swiper-wrapper {
+}
+
+.additional__card {
+    position: relative;
+    width: 275px;
+    height: 360px;
+    padding: 32px;
+    color: #212529;
+    background-color: #fff;
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+    opacity: 0;
+}
+
+.additional .swiper .swiper-slide-visible {
+    opacity: 1;
+}
+
+.additional .swiper-slide {
+}
+
+.additional .card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.additional .card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.additional .card__content {
+    position: relative;
+}
+
+.additional .card__price {
+    font-size: 14px;
+}
+
+.additional .card__price span {
+    font-family: Inter;
+}
+
+.additional .card__text {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.additional__slider-btns {
+    position: absolute;
+    top: -135px;
+    right: 0;
+    display: flex;
+    column-gap: 16px;
+}
+
+.additional__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.additional__btn--prev {
+}
+
+.additional__btn--next {
+    transform: rotate(180deg);
+}
+
+.additional .swiper-button-disabled {
+    opacity: 0.3;
+}
+
+// Stock section
+
+.stock {
+}
+
+.stock .container {
+    position: relative;
+    // overflow: hidden;
+}
+
+.stock__title {
+}
+
+.stock__slider {
+    // overflow: visible;
+}
+
+.stock .swiper {
+}
+
+.stock .swiper-wrapper {
+    height: 600px;
+}
+
+.stock__card {
+    position: relative;
+    width: 576px;
+    height: 296px;
+    padding: 32px;
+    color: #212529;
+    background-color: #fff;
+}
+
+.stock .swiper-slide {
+}
+
+.stock .card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.stock .card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stock .card__content {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    row-gap: 24px;
+    max-width: 328px;
+    line-height: 1.3;
+}
+
+.stock .card__title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.stock .card__text {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.stock .card__btn {
+    align-self: start;
+    display: block;
+    padding: 10px 32px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 40px;
+    background-color: #fff;
+}
+
+.stock__slider-btns {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.stock__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.stock__btn--prev {
+}
+
+.stock__btn--next {
+    transform: rotate(180deg);
+}
+
+.stock .swiper-button-disabled {
+    opacity: 0.3;
 }
