@@ -146,6 +146,27 @@ const swiper = new Swiper(".main-banner__swiper", {
     // },
 });
 
+const swiper2 = new Swiper(".best-deals__slider", {
+    slidesPerView: 3,
+    grid: {
+        rows: 2,
+    },
+    spaceBetween: 24,
+    watchSlidesProgress: true,
+
+    // If we need pagination
+    // pagination: {
+    //     el: ".main-banner__pagination",
+    //     clickable: true,
+    // },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: ".best-deals__btn--next",
+        prevEl: ".best-deals__btn--prev",
+    },
+});
+
 
 // const headerMenuDesktopItems = document.querySelectorAll('.header-menu__desktop-item--link');
 
