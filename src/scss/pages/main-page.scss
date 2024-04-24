@@ -868,3 +868,101 @@
     background-color: #fff;
     border-radius: 40px;
 }
+
+// Partner offers
+
+.offers {
+    overflow: hidden;
+}
+
+.offers .container {
+    position: relative;
+}
+
+.offers__title {
+}
+
+.offers .main-page-title {
+}
+
+.offers__slider {
+}
+
+.offers .swiper {
+    overflow: visible;
+}
+
+.offers .swiper-wrapper {
+}
+
+.offers__card {
+    width: 340px;
+    height: 370px;
+    padding: 32px;
+    background-color: #fff;
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+}
+
+.offers .swiper-slide {
+}
+
+.offers .card__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 100%;
+    color: #212529;
+    line-height: 1.3;
+}
+
+.offers .card__img-top {
+}
+
+.offers .card__title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.offers .card__text {
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.offers .card__img-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    align-self: end;
+    background-color: #6DCDF6;
+    border-radius: 50%;
+}
+
+.offers__slider-btns {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.offers__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.offers__btn--prev {
+}
+
+.offers__btn--next {
+    transform: rotate(180deg);
+}
+
+.offers .swiper-button-disabled {
+    opacity: 0.3;
+}
