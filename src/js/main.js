@@ -198,6 +198,16 @@ const swiper5 = new Swiper(".offers__slider", {
     },
 });
 
+const swiper6 = new Swiper(".last-news__slider", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    navigation: {
+        nextEl: ".last-news__btn--next",
+        prevEl: ".last-news__btn--prev",
+    },
+});
+
 
 // const headerMenuDesktopItems = document.querySelectorAll('.header-menu__desktop-item--link');
 
