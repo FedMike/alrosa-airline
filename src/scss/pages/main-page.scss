@@ -173,8 +173,17 @@
 
 .main-panel {
     // position: relative;
+    padding-bottom: 36px;
     z-index: 9;
     filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+
+    @media (max-width: 1023px) {
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-bottom: 5px;
+    }
 }
 
 .main-panel button {
@@ -444,15 +453,43 @@
     color: #212529;
     margin-bottom: 40px;
     letter-spacing: 2px;
+
+    @media (max-width: 767px) {
+        font-size: 30px;
+    }
 }
 
 // Best deals section
 
 .best-deals {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
 }
 
 .best-deals .container {
     overflow: hidden;
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
 }
 
 .best-deals__title {
@@ -464,6 +501,10 @@
     font-weight: 500;
     color: #212529;
     margin-bottom: 36px;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 }
 
 .best-deals__slider {
@@ -668,9 +709,22 @@
 // Additional services section
 
 .additional {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .additional .container {
+    position: relative;
     overflow: hidden;
 }
 
@@ -683,6 +737,10 @@
     font-weight: 500;
     color: #212529;
     margin-bottom: 36px;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 }
 
 .additional__slider {
@@ -703,6 +761,18 @@
     background-color: #fff;
     filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
     opacity: 0;
+
+    @media (max-width: 1208px) {
+        opacity: 1;
+    }
+
+    @media (max-width: 767px) {
+        height: 330px;
+    }
+
+    @media (max-width: 565px) {
+        height: 302px;
+    }
 }
 
 .additional .swiper .swiper-slide-visible {
@@ -732,6 +802,11 @@
 
 .additional .card__price {
     font-size: 14px;
+    font-weight: 500;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
 }
 
 .additional .card__price span {
@@ -741,14 +816,22 @@
 .additional .card__text {
     font-size: 24px;
     font-weight: 500;
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 }
 
 .additional__slider-btns {
     position: absolute;
-    top: -170px;
-    right: 0;
+    top: 20px;
+    right: 24px;
     display: flex;
     column-gap: 16px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .additional__btn {
@@ -774,6 +857,18 @@
 // Stock section
 
 .stock {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .stock .container {
@@ -793,6 +888,13 @@
 
 .stock .swiper-wrapper {
     height: 600px;
+
+    @media (max-width: 767px) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
 }
 
 .stock__card {
@@ -802,6 +904,27 @@
     padding: 32px;
     color: #212529;
     background-color: #fff;
+
+    @media (max-width: 767px) {
+        display: none;
+        width: 100%;
+    }
+}
+
+.stock__card:nth-child(1),
+.stock__card:nth-child(2),
+.stock__card:nth-child(3),
+.stock__card:nth-child(4) {
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.stock__card:nth-child(2) .card__title,
+.stock__card:nth-child(2) .card__text,
+.stock__card:nth-child(3) .card__title,
+.stock__card:nth-child(3) .card__text {
+    color: #ffffff;
 }
 
 .stock .swiper-slide {
@@ -829,16 +952,33 @@
     row-gap: 24px;
     max-width: 328px;
     line-height: 1.3;
+
+    @media (max-width: 767px) {
+        row-gap: 16px;
+    }
+
+    @media (max-width: 565px) {
+        max-width: unset;
+        width: 100%;
+    }
 }
 
 .stock .card__title {
     font-size: 24px;
     font-weight: 500;
+
+    @media (max-width: 565px) {
+        font-size: 18px;
+    }
 }
 
 .stock .card__text {
     font-size: 18px;
     flex-grow: 1;
+
+    @media (max-width: 565px) {
+        font-size: 16px;
+    }
 }
 
 .stock .card__btn {
@@ -849,6 +989,11 @@
     font-weight: 500;
     border-radius: 40px;
     background-color: #fff;
+
+    @media (max-width: 565px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .stock__slider-btns {
@@ -857,6 +1002,10 @@
     right: 24px;
     display: flex;
     column-gap: 16px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .stock__btn {
@@ -882,21 +1031,43 @@
 // Diamond mile section
 
 .diamond-mile {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .diamond-mile .container {
 }
 
 .diamond-mile__title {
+    margin-bottom: 32px;
 }
 
 .diamond-mile__content {
     position: relative;
-    height: 180px;
+    // height: 180px;
     display: flex;
     justify-content: end;
     padding: 24px 32px;
     color: #ffffff;
+
+    @media (max-width: 1208px) {
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    @media (max-width: 575px) {
+        height: 401px;
+    }
 }
 
 .diamond-mile__cards {
@@ -906,6 +1077,18 @@
     display: flex;
     transform: translateY(-50%);
     z-index: 9;
+
+    @media (max-width: 1208px) {
+        position: static;
+        transform: unset;
+    }
+
+    @media (max-width: 575px) {
+        position: absolute;
+        top: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .diamond-mile__cards > *:not(:first-child) {
@@ -915,6 +1098,16 @@
 .diamond-mile__card {
     width: 337px;
     height: 214px;
+
+    @media (max-width: 1208px) {
+        width: auto;
+        height: auto;
+    }
+
+    @media (max-width: 575px) {
+        width: 277px;
+        height: 175px;
+    }
 }
 
 .diamond-mile__img {
@@ -937,33 +1130,70 @@
     flex-direction: column;
     row-gap: 4px;
     height: 100%;
+    width: 494px;
+
+    @media (max-width: 1208px) {
+        width: 100%;
+        align-items: center;
+        // width: calc(494px - (1096px - 100%));
+    }
+
+    @media (max-width: 575px) {
+        justify-content: end;
+    }
 }
 
-.diamond-mile__title {
+.diamond-mile__content-title {
     font-size: 24px;
     font-weight: 500;
+
+    @media (max-width: 575px) {
+        font-size: 18px;
+    }
 }
 
 .diamond-mile__text {
     font-size: 18px;
     flex-grow: 1;
+
+    @media (max-width: 575px) {
+        font-size: 16px;
+        flex-grow: 0;
+    }
 }
 
 .diamond-mile__btn {
     align-self: start;
     display: block;
-    padding: 10px 32px;
+    margin-top: 20px;
+    padding: 10px 32px 8px 32px;
     font-size: 18px;
     font-weight: 500;
     color: #212529;
     background-color: #fff;
     border-radius: 40px;
+
+    @media (max-width: 1208px) {
+        align-self: unset;
+    }
 }
 
 // Partner offers section
 
 .offers {
+    padding-top: 36px;
+    padding-bottom: 36px;
     overflow: hidden;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .offers .container {
@@ -974,6 +1204,7 @@
 }
 
 .offers .main-page-title {
+    margin-bottom: 32px;
 }
 
 .offers__slider {
@@ -992,6 +1223,10 @@
     padding: 32px;
     background-color: #fff;
     filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.1));
+
+    @media (max-width: 767px) {
+        height: 342px;
+    }
 }
 
 .offers .swiper-slide {
@@ -1013,11 +1248,28 @@
     // height: 63px;
     font-size: 24px;
     font-weight: 500;
+    // line-height: 1.3;
+
+    @media (max-width: 1208px) {
+        font-size: 22px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
 }
 
 .offers .card__text {
     font-size: 18px;
     flex-grow: 1;
+
+    @media (max-width: 991px) {
+        font-size: 16px;
+    }
 }
 
 .offers .card__img-bottom {
@@ -1037,6 +1289,10 @@
     right: 24px;
     display: flex;
     column-gap: 16px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .offers__btn {
@@ -1065,12 +1321,30 @@
 }
 
 .information .container {
+    overflow: hidden;
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .information__title {
 }
 
 .information .main-page-title {
+    margin-bottom: 32px;
+}
+
+.information__slider {
+    overflow: visible;
 }
 
 .information__cards {
@@ -1117,11 +1391,35 @@
 // Last news section
 
 .last-news {
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .last-news .container {
     position: relative;
     overflow: hidden;
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    @media (max-width: 767px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 575px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 .last-news__title {
@@ -1133,6 +1431,10 @@
     right: 24px;
     display: flex;
     column-gap: 16px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .last-news__btn {
@@ -1183,6 +1485,12 @@
 .last-news .card__img-top {
     width: 100%;
     height: 123px;
+}
+
+.last-news .card__img-top img {
+    height: 123px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .last-news .card__content {
