@@ -177,45 +177,107 @@ function swiper2Init() {
 
 
 const swiper3 = new Swiper(".additional__slider", {
-    slidesPerView: 4,
+    slidesPerView: 1.3,
     spaceBetween: 20,
     watchSlidesProgress: true,
     navigation: {
         nextEl: ".additional__btn--next",
         prevEl: ".additional__btn--prev",
     },
+    breakpoints: {
+        565: {
+            slidesPerView: 2,
+        },
+        767: {
+            slidesPerView: 3,
+        },
+        991: {
+            slidesPerView: 4,
+        }
+    }
 });
 
-const swiper4 = new Swiper(".stock__slider", {
-    slidesPerView: 2,
-    grid: {
-        rows: 2,
-    },
-    spaceBetween: 8,
-    navigation: {
-        nextEl: ".stock__btn--next",
-        prevEl: ".stock__btn--prev",
-    },
-});
+if (window.innerWidth > 767) {
+    swiper4Init();
+}
 
+function swiper4Init() {
+    const swiper4 = new Swiper(".stock__slider", {
+        slidesPerView: 2,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 8,
+        navigation: {
+            nextEl: ".stock__btn--next",
+            prevEl: ".stock__btn--prev",
+        },
+    });
+}
 const swiper5 = new Swiper(".offers__slider", {
-    slidesPerView: 3.2777,
+    slidesPerView: 1.3,
     spaceBetween: 20,
     navigation: {
         nextEl: ".offers__btn--next",
         prevEl: ".offers__btn--prev",
     },
+    breakpoints: {
+        565: {
+            slidesPerView: 2,
+        },
+        767: {
+            slidesPerView: 2.5,
+        },
+        991: {
+            slidesPerView: 3.2777,
+        }
+    }
 });
 
 const swiper6 = new Swiper(".last-news__slider", {
-    slidesPerView: 3,
+    slidesPerView: 1.2,
     spaceBetween: 20,
     watchSlidesProgress: true,
     navigation: {
         nextEl: ".last-news__btn--next",
         prevEl: ".last-news__btn--prev",
     },
+    breakpoints: {
+        565: {
+            slidesPerView: 1.7,
+        },
+        767: {
+            slidesPerView: 2.1,
+        },
+        991: {
+            slidesPerView: 2.6,
+        },
+        1208: {
+            slidesPerView: 3,
+        }
+    }
 });
+
+const swiper7 = new Swiper(".information__slider", {
+    slidesPerView: 1.3,
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    breakpoints: {
+        565: {
+            slidesPerView: 2.2,
+        },
+        767: {
+            slidesPerView: 2.8,
+        },
+        991: {
+            slidesPerView: 3.6,
+        },
+        1208: {
+            slidesPerView: 4,
+        }
+    }
+});
+
 
 
 // const headerMenuDesktopItems = document.querySelectorAll('.header-menu__desktop-item--link');
