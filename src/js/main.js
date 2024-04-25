@@ -146,26 +146,35 @@ const swiper = new Swiper(".main-banner__swiper", {
     // },
 });
 
-const swiper2 = new Swiper(".best-deals__slider", {
-    slidesPerView: 3,
-    grid: {
-        rows: 2,
-    },
-    spaceBetween: 24,
-    watchSlidesProgress: true,
+console.log(window.innerWidth);
+if (window.innerWidth > 575) {
+    swiper2Init();
+}
 
-    // If we need pagination
-    // pagination: {
-    //     el: ".main-banner__pagination",
-    //     clickable: true,
-    // },
+function swiper2Init() {
+    const swiper2 = new Swiper(".best-deals__slider", {
+        slidesPerView: 1,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 24,
+        watchSlidesProgress: true,
+        navigation: {
+            nextEl: ".best-deals__btn--next",
+            prevEl: ".best-deals__btn--prev",
+        },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: ".best-deals__btn--next",
-        prevEl: ".best-deals__btn--prev",
-    },
-});
+        breakpoints: {
+            575: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            }
+        }
+    });
+}
+
 
 const swiper3 = new Swiper(".additional__slider", {
     slidesPerView: 4,
