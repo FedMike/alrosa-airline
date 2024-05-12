@@ -3625,3 +3625,163 @@ legend {
   letter-spacing: 0%;
   text-align: left;
 }
+
+.offices-page {
+  padding: 72px 0;
+}
+.offices-page .container {
+  display: flex;
+  gap: 36px;
+}
+
+.offices-page .section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex-grow: 1;
+}
+
+.offices-page .section-container section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.offices-page .section-container .card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  gap: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255);
+}
+.offices-page .section-container .card .title {
+  color: rgb(33, 37, 41);
+  font-size: 22px;
+  font-weight: 450;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.offices-page .section-container .card .description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.offices-page .input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.offices-page .input-container input {
+  width: 292px;
+  height: 44px;
+  padding: 10px 16px 10px 16px;
+  margin: 4px 0px;
+  box-sizing: border-box;
+  border: 1px solid rgb(141, 200, 232);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+  color: #999;
+  transition: 0.2s;
+  color: rgb(129, 140, 153);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  outline: none;
+}
+.offices-page .input-container .svg-container {
+  position: absolute;
+  left: 33%;
+  top: 33%;
+  transform: translateX(-50%, -50%);
+}
+
+.offices-page .section-container .contact-card {
+  display: flex;
+  padding: 36px;
+  gap: 36px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255);
+}
+.offices-page .section-container .contact-card .left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 392px;
+  width: 100%;
+}
+.offices-page .section-container .contact-card .left-section .left-section-title {
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 15%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.offices-page .section-container .contact-card .left-section .address-text {
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.offices-page .section-container .contact-card .right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0px;
+  width: 300px;
+  height: 106px;
+}
+.offices-page .section-container .contact-card .right-section .phone-container {
+  display: flex;
+}
+.offices-page .section-container .contact-card .right-section .phone-container .phone-title {
+  width: 124px;
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.offices-page .section-container .contact-card .right-section .phone-container .phone-text {
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.offices-page .section-container .contact-card .right-section .time-container {
+  display: flex;
+}
+.offices-page .section-container .contact-card .right-section .time-container .time-title {
+  width: 124px;
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.offices-page .section-container .contact-card .right-section .time-container .time-text {
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
