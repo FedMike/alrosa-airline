@@ -3679,6 +3679,8 @@ legend {
   flex-direction: column;
   justify-content: space-between;
   gap: 8px;
+  width: 100%;
+  max-width: 300px;
 }
 .contacts-page .section-container .card .column-left .card-btn {
   display: flex;
@@ -3695,6 +3697,17 @@ legend {
   border-radius: 8px;
   background: rgb(109, 205, 246);
 }
+.contacts-page .section-container .card .svg-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+.contacts-page .section-container .card .svg-container svg {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  vertical-align: sub;
+}
 .contacts-page .section-container .card .card-title {
   color: rgb(33, 37, 41);
   font-size: 15px;
@@ -3709,7 +3722,7 @@ legend {
   flex-direction: column;
   gap: 8px;
   width: 100%;
-  max-width: 300px;
+  max-width: 360px;
 }
 .contacts-page .section-container .card .text {
   color: rgb(33, 37, 41);

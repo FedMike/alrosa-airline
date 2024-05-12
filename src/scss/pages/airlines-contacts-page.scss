@@ -48,7 +48,8 @@
       flex-direction: column;
       justify-content: space-between;
       gap: 8px;
-
+      width: 100%;
+      max-width: 300px;
       .card-btn {
         display: flex;
         flex-direction: row;
@@ -65,6 +66,17 @@
         background: rgb(109, 205, 246);
       }
     }
+    .svg-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .svg-container svg {
+      width: 18px;
+      height: 18px;
+      object-fit: cover;
+      vertical-align: sub;
+    }
     .card-title {
       color: rgb(33, 37, 41);
       font-size: 15px;
@@ -79,7 +91,7 @@
       flex-direction: column;
       gap: 8px;
       width: 100%;
-      max-width: 300px;
+      max-width: 360px;
     }
     .text {
       color: rgb(33, 37, 41);
