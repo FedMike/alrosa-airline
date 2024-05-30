@@ -11,6 +11,11 @@
     padding-top: 26px;
     padding-bottom: 26px;
     column-gap: 20px;
+
+    @media (max-width: 1023px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 }
 
 .header__logo {
