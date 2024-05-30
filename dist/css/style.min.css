@@ -3670,6 +3670,12 @@ legend {
   border-radius: 8px;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.05);
   background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .offices-page .section-container .contact-card {
+    flex-direction: column;
+  }
 }
 .offices-page .section-container .contact-card .left-section {
   display: flex;
@@ -3677,6 +3683,11 @@ legend {
   gap: 24px;
   max-width: 392px;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .offices-page .section-container .contact-card .left-section {
+    max-width: unset;
+  }
 }
 .offices-page .section-container .contact-card .left-section .left-section-title {
   color: rgb(33, 37, 41);
@@ -3701,11 +3712,20 @@ legend {
   align-items: flex-start;
   gap: 24px;
   padding: 0px;
-  width: 300px;
-  height: 106px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .offices-page .section-container .contact-card .right-section {
+    max-width: unset;
+    height: auto;
+  }
 }
 .offices-page .section-container .contact-card .right-section .phone-container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .offices-page .section-container .contact-card .right-section .phone-container .phone-title {
   width: 124px;
@@ -3723,9 +3743,12 @@ legend {
   line-height: 20px;
   letter-spacing: 0%;
   text-align: left;
+  cursor: pointer;
 }
 .offices-page .section-container .contact-card .right-section .time-container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .offices-page .section-container .contact-card .right-section .time-container .time-title {
   width: 124px;
@@ -3742,7 +3765,7 @@ legend {
   font-weight: 450;
   line-height: 20px;
   letter-spacing: 0%;
-  text-align: left;
+  text-align: right;
 }
 
 .contacts-page {
