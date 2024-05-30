@@ -20,12 +20,19 @@
     max-width: 394px;
     width: 100%;
     height: 244px;
+    overflow: hidden;
 }
 
 .gallery-page .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 1s; /* Время эффекта */
+    display: block;
+
+    &:hover {
+        transform: scale(1.2); /* Увеличиваем масштаб */
+    }
 }
 .gallery-page .pagination {
     display: flex;
