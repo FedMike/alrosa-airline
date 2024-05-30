@@ -169,6 +169,9 @@ function swiper2Init() {
                 slidesPerView: 2,
             },
             767: {
+                slidesPerView: 2,
+            },
+            991: {
                 slidesPerView: 3,
             }
         }
@@ -207,15 +210,20 @@ function swiper4Init() {
         grid: {
             rows: 2,
         },
-        spaceBetween: 8,
+        spaceBetween: 16,
         navigation: {
             nextEl: ".stock__btn--next",
             prevEl: ".stock__btn--prev",
         },
+        breakpoints: {
+            991: {
+                spaceBetween: 8,
+            }
+        }
     });
 }
 const swiper5 = new Swiper(".offers__slider", {
-    slidesPerView: 1.3,
+    slidesPerView: 1.34,
     spaceBetween: 20,
     navigation: {
         nextEl: ".offers__btn--next",
@@ -235,7 +243,7 @@ const swiper5 = new Swiper(".offers__slider", {
 });
 
 const swiper6 = new Swiper(".last-news__slider", {
-    slidesPerView: 1.2,
+    slidesPerView: 1.13,
     spaceBetween: 20,
     watchSlidesProgress: true,
     navigation: {
@@ -259,7 +267,7 @@ const swiper6 = new Swiper(".last-news__slider", {
 });
 
 const swiper7 = new Swiper(".information__slider", {
-    slidesPerView: 1.3,
+    slidesPerView: 1.34,
     spaceBetween: 20,
     watchSlidesProgress: true,
     breakpoints: {
