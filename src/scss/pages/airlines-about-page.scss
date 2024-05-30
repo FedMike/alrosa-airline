@@ -55,6 +55,7 @@
         background: rgb(222, 243, 255);
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 12px;
         .card-title {
             position: relative;
