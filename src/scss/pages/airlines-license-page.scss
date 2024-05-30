@@ -44,7 +44,7 @@
     letter-spacing: 0%;
     text-align: left;
     &:hover {
-        text-decoration: underline;
+        cursor: pointer;
     }
 }
 .license-pages .card-text-item a {
@@ -56,10 +56,23 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    color: rgb(151, 153, 155);
+
     font-size: 14px;
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: 0%;
     text-align: left;
+}
+.license-pages {
+    .size {
+        color: rgb(151, 153, 155);
+        text-decoration: none !important;
+    }
+    .docName {
+        color: rgb(33, 37, 41);
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
 }
