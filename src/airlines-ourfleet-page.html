@@ -1,274 +1,290 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @@include('html/head.html',{ "title": "Наш флот" })
+@@include('html/head.html',{ "title": "Наш флот" })
 
-    <body>
-        @@include('html/header.html',{})
+<body>
+    @@include('html/header.html',{})
 
-        <div class="ourfleet-pages">
-            <div class="container content-wrapper">
-                <div class="sidebar">
-                    @@include('html/sidebar-menu.html',{ "menuTitle":
-                    "Авиакомпания", "menuTitleLink":
-                    "./airlines-menu-pages.html", "menuItem1": "О нас",
-                    "menuLink1": "./airlines-about-page.html", "menuActive1":
-                    "", "menuItem2": "Наш флот", "menuLink2":
-                    "./airlines-ourfleet-page.html", "menuActive2": "active",
-                    "menuItem3": "Техническое обслуживание ВС", "menuLink3":
-                    "./airlines-aircraftsevices-page.html", "menuActive3": "",
-                    "menuItem4": "Сертификаты и лицензии", "menuLink4":
-                    "./airlines-license-page.html", "menuActive4": "",
-                    "menuItem5": "Услуги", "menuLink5":
-                    "./airlines-services-page.html", "menuActive5": "",
-                    "menuItem6": "Новости", "menuLink6":
-                    "./airlines-news-page.html", "menuActive6": "", "menuItem7":
-                    "Фотогалерея", "menuLink7": "./airlines-gallery-page.html",
-                    "menuActive7": "", "menuItem8": "Представительства",
-                    "menuLink8": "./airlines-offices-page.html", "menuActive8":
-                    "", "menuItem9": "Контакты", "menuLink9":
-                    "./airlines-contacts-page.html", "menuActive9": "",
-                    "menuItem10": "Партнёры", "menuLink10":
-                    "./airlines-partners-page.html", "menuActive10": "",
-                    "menuItem11": "Пункты продаж", "menuLink11":
-                    "./airlines-salespoints-page.html", "menuActive11": "",
-                    "menuItem12": "Вакансии и карьера", "menuLink12":
-                    "./airlines-jobsandcareer-page.html", "menuActive12": "",
-                    "menuItem13": "", "menuLink13": "", "menuActive13":
-                    "d-none", "menuItem14": "", "menuLink14": "",
-                    "menuActive14": "d-none", "menuItem15": "", "menuLink15":
-                    "", "menuActive15": "d-none", "menuItem16": "",
-                    "menuLink16": "", "menuActive16": "d-none", "menuItem17":
-                    "", "menuLink17": "", "menuActive17": "d-none",
-                    "menuItem18": "", "menuLink18": "", "menuActive18":
-                    "d-none", "menuItem19": "", "menuLink19": "",
-                    "menuActive19": "d-none", "menuItem20": "", "menuLink20":
-                    "", "menuActive20": "d-none", })
+    <div class="ourfleet-pages">
+        <div class="container content-wrapper">
+            <div class="sidebar">
+                @@include('html/sidebar-menu.html',{ "menuTitle":
+                "Авиакомпания", "menuTitleLink":
+                "./airlines-menu-pages.html", "menuItem1": "О нас",
+                "menuLink1": "./airlines-about-page.html", "menuActive1":
+                "", "menuItem2": "Наш флот", "menuLink2":
+                "./airlines-ourfleet-page.html", "menuActive2": "active",
+                "menuItem3": "Техническое обслуживание ВС", "menuLink3":
+                "./airlines-aircraftsevices-page.html", "menuActive3": "",
+                "menuItem4": "Сертификаты и лицензии", "menuLink4":
+                "./airlines-license-page.html", "menuActive4": "",
+                "menuItem5": "Услуги", "menuLink5":
+                "./airlines-services-page.html", "menuActive5": "",
+                "menuItem6": "Новости", "menuLink6":
+                "./airlines-news-page.html", "menuActive6": "", "menuItem7":
+                "Фотогалерея", "menuLink7": "./airlines-gallery-page.html",
+                "menuActive7": "", "menuItem8": "Представительства",
+                "menuLink8": "./airlines-offices-page.html", "menuActive8":
+                "", "menuItem9": "Контакты", "menuLink9":
+                "./airlines-contacts-page.html", "menuActive9": "",
+                "menuItem10": "Партнёры", "menuLink10":
+                "./airlines-partners-page.html", "menuActive10": "",
+                "menuItem11": "Пункты продаж", "menuLink11":
+                "./airlines-salespoints-page.html", "menuActive11": "",
+                "menuItem12": "Вакансии и карьера", "menuLink12":
+                "./airlines-jobsandcareer-page.html", "menuActive12": "",
+                "menuItem13": "", "menuLink13": "", "menuActive13":
+                "d-none", "menuItem14": "", "menuLink14": "",
+                "menuActive14": "d-none", "menuItem15": "", "menuLink15":
+                "", "menuActive15": "d-none", "menuItem16": "",
+                "menuLink16": "", "menuActive16": "d-none", "menuItem17":
+                "", "menuLink17": "", "menuActive17": "d-none",
+                "menuItem18": "", "menuLink18": "", "menuActive18":
+                "d-none", "menuItem19": "", "menuLink19": "",
+                "menuActive19": "d-none", "menuItem20": "", "menuLink20":
+                "", "menuActive20": "d-none", })
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-title">Boeing 737-800</div>
+                        <ul class="card-text-list">
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="16" height="20">
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                    </svg>
+                                </div>
+                                8 мест в бизнес классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="16" height="20">
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                    </svg>
+                                </div>
+                                156 мест в экономическом классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="16">
+                                        <use xlink:href="./img/svg/sprite.svg#speed-icon"></use>
+                                    </svg>
+                                </div>
+                                852 км/час крейсерская скорость
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="23">
+                                        <use xlink:href="./img/svg/sprite.svg#geo-icon"></use>
+                                    </svg>
+                                </div>
+                                5 765 км дальность полета
+                            </li>
+                        </ul>
+                        <a href="#" class="menu-card__link">
+                            Схема посадочных мест
+                        </a>
+                    </div>
+
+                    <div class="card-img">
+                        <img src="img/737-800.png" alt="" />
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-title">Boeing 737-800</div>
+                        <ul class="card-text-list">
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="16" height="20">
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                    </svg>
+                                </div>
+                                8 мест в бизнес классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="16" height="20">
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                    </svg>
+                                </div>
+                                156 мест в экономическом классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="16">
+                                        <use xlink:href="./img/svg/sprite.svg#speed-icon"></use>
+                                    </svg>
+                                </div>
+                                852 км/час крейсерская скорость
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="23">
+                                        <use xlink:href="./img/svg/sprite.svg#geo-icon"></use>
+                                    </svg>
+                                </div>
+                                5 765 км дальность полета
+                            </li>
+                        </ul>
+                        <a href="#" class="menu-card__link">
+                            Схема посадочных мест
+                        </a>
+                    </div>
+
+                    <div class="card-img">
+                        <img src="img/737-800.png" alt="" />
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-title">Boeing 737-800</div>
+                        <ul class="card-text-list">
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="16" height="20">
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                    </svg>
+                                </div>
+                                8 мест в бизнес классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="16" height="20">
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                    </svg>
+                                </div>
+                                156 мест в экономическом классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="16">
+                                        <use xlink:href="./img/svg/sprite.svg#speed-icon"></use>
+                                    </svg>
+                                </div>
+                                852 км/час крейсерская скорость
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="23">
+                                        <use xlink:href="./img/svg/sprite.svg#geo-icon"></use>
+                                    </svg>
+                                </div>
+                                5 765 км дальность полета
+                            </li>
+                        </ul>
+                        <a href="#" class="menu-card__link">
+                            Схема посадочных мест
+                        </a>
+                    </div>
+
+                    <div class="card-img">
+                        <img src="img/737-800.png" alt="" />
+                    </div>
                 </div>
 
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-text">
-                            <div class="card-title">Boeing 737-800</div>
-                            <ul class="card-text-list">
-                                <li class="card-text-item">
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-title">Ан-24РВ</div>
+                        <ul class="card-text-list">
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
                                     <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
                                     </svg>
-                                    8 мест в бизнес классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="19" height="15">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
-                                    </svg>
-
-                                    156 мест в экономическом классе
-                                </li>
-                                <li class="card-text-item">
+                                </div>
+                                8 мест в бизнес классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
                                     <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#speed-icon"></use>
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
                                     </svg>
-                                    852 км/час крейсерская скорость
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="20" height="22">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#geo-icon"></use>
+                                </div>
+                                156 мест в экономическом классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="16">
+                                        <use xlink:href="./img/svg/sprite.svg#speed-icon"></use>
                                     </svg>
-                                    5 765 км дальность полета
-                                </li>
-                            </ul>
-                            <a href="#" class="menu-card__link">
-                                Схема посадочных мест
-                            </a>
-                        </div>
-
-                        <div class="card-img">
-                            <img src="img/737-800.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-text">
-                            <div class="card-title">Boeing 737-800</div>
-                            <ul class="card-text-list">
-                                <li class="card-text-item">
-                                    <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                </div>
+                                852 км/час крейсерская скорость
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="23">
+                                        <use xlink:href="./img/svg/sprite.svg#geo-icon"></use>
                                     </svg>
-                                    8 мест в бизнес классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="19" height="15">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
-                                    </svg>
-
-                                    156 мест в экономическом классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#speed-icon"></use>
-                                    </svg>
-                                    852 км/час крейсерская скорость
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="20" height="22">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#geo-icon"></use>
-                                    </svg>
-                                    5 765 км дальность полета
-                                </li>
-                            </ul>
-                            <a href="#" class="menu-card__link">
-                                Схема посадочных мест
-                            </a>
-                        </div>
-
-                        <div class="card-img">
-                            <img src="img/737-800.png" alt="" />
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-text">
-                            <div class="card-title">Boeing 737-800</div>
-                            <ul class="card-text-list">
-                                <li class="card-text-item">
-                                    <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
-                                    </svg>
-                                    8 мест в бизнес классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="19" height="15">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
-                                    </svg>
-
-                                    156 мест в экономическом классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#speed-icon"></use>
-                                    </svg>
-                                    852 км/час крейсерская скорость
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="20" height="22">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#geo-icon"></use>
-                                    </svg>
-                                    5 765 км дальность полета
-                                </li>
-                            </ul>
-                            <a href="#" class="menu-card__link">
-                                Схема посадочных мест
-                            </a>
-                        </div>
-
-                        <div class="card-img">
-                            <img src="img/737-800.png" alt="" />
-                        </div>
+                                </div>
+                                5 765 км дальность полета
+                            </li>
+                        </ul>
+                        <a href="#" class="menu-card__link">
+                            Схема посадочных мест
+                        </a>
                     </div>
 
-                    <div class="card">
-                        <div class="card-text">
-                            <div class="card-title">Ан-24РВ</div>
-                            <ul class="card-text-list">
-                                <li class="card-text-item">
-                                    <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
-                                    </svg>
-                                    8 мест в бизнес классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="19" height="15">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
-                                    </svg>
-
-                                    156 мест в экономическом классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#speed-icon"></use>
-                                    </svg>
-                                    852 км/час крейсерская скорость
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="20" height="22">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#geo-icon"></use>
-                                    </svg>
-                                    5 765 км дальность полета
-                                </li>
-                            </ul>
-                            <a href="#" class="menu-card__link">
-                                Схема посадочных мест
-                            </a>
-                        </div>
-
-                        <div class="card-img">
-                            <img src="img/Ah-24B.png" alt="" />
-                        </div>
+                    <div class="card-img">
+                        <img src="img/Ah-24B.png" alt="" />
                     </div>
-                    <div class="card">
-                        <div class="card-text">
-                            <div class="card-title">Ми-8Т / 8МТВ-1 / 171</div>
-                            <ul class="card-text-list">
-                                <li class="card-text-item">
+                </div>
+                <div class="card">
+                    <div class="card-text">
+                        <div class="card-title">Ми-8Т / 8МТВ-1 / 171</div>
+                        <ul class="card-text-list">
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
                                     <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
                                     </svg>
-                                    8 мест в бизнес классе
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="19" height="15">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#sit-icon"></use>
-                                    </svg>
-
-                                    156 мест в экономическом классе
-                                </li>
-                                <li class="card-text-item">
+                                </div>
+                                8 мест в бизнес классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
                                     <svg width="16" height="20">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#speed-icon"></use>
+                                        <use xlink:href="./img/svg/sprite.svg#sit-icon"></use>
                                     </svg>
-                                    852 км/час крейсерская скорость
-                                </li>
-                                <li class="card-text-item">
-                                    <svg width="20" height="22">
-                                        <use
-                                            xlink:href="./img/svg/sprite.svg#geo-icon"></use>
+                                </div>
+                                156 мест в экономическом классе
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="16">
+                                        <use xlink:href="./img/svg/sprite.svg#speed-icon"></use>
                                     </svg>
-                                    5 765 км дальность полета
-                                </li>
-                            </ul>
-                            <a href="#" class="menu-card__link">
-                                Схема посадочных мест
-                            </a>
-                        </div>
+                                </div>
+                                852 км/час крейсерская скорость
+                            </li>
+                            <li class="card-text-item">
+                                <div class="card-text-item-img">
+                                    <svg width="20" height="23">
+                                        <use xlink:href="./img/svg/sprite.svg#geo-icon"></use>
+                                    </svg>
+                                </div>
+                                5 765 км дальность полета
+                            </li>
+                        </ul>
+                        <a href="#" class="menu-card__link">
+                            Схема посадочных мест
+                        </a>
+                    </div>
 
-                        <div class="card-img">
-                            <img src="img/mi8t.png" alt="" />
-                        </div>
+                    <div class="card-img">
+                        <img src="img/mi8t.png" alt="" />
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        @@include('html/footer.html',{})
-        <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+    @@include('html/footer.html',{})
+    <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
 
-        <script src="./js/main.min.js"></script>
-    </body>
+    <script src="./js/main.min.js"></script>
+</body>
+
 </html>

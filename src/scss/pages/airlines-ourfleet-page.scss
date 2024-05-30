@@ -51,13 +51,20 @@
 .ourfleet-pages .card-text-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     color: rgb(33, 37, 41);
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0%;
     text-align: left;
+}
+.ourfleet-pages .card-text-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
 }
 .ourfleet-pages .menu-card__link {
     color: rgb(33, 37, 41);
