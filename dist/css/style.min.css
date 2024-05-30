@@ -2907,7 +2907,7 @@ legend {
 }
 .aircraftsevice-page .section-container section a {
   color: rgb(0, 61, 165);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .aircraftsevice-page .cards {
@@ -3027,8 +3027,6 @@ legend {
 }
 
 .aircraftsevice-page .links .link-item svg {
-  width: 44px;
-  height: 44px;
   display: flex;
   align-items: center;
 }
@@ -3085,7 +3083,7 @@ legend {
   text-align: left;
 }
 .license-pages .card-text-item:hover {
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 .license-pages .card-text-item a {
@@ -3098,12 +3096,23 @@ legend {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgb(151, 153, 155);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: 0%;
   text-align: left;
+}
+
+.license-pages .size {
+  color: rgb(151, 153, 155);
+  text-decoration: none !important;
+}
+.license-pages .docName {
+  color: rgb(33, 37, 41);
+}
+.license-pages .docName:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .services-page {
@@ -3166,6 +3175,7 @@ legend {
   background: rgb(222, 243, 255);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 12px;
 }
 .services-page .cards .card .card-title {

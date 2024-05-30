@@ -58,7 +58,7 @@
     }
     a {
         color: rgb(0, 61, 165);
-        font-weight: bold;
+        font-weight: 500;
     }
 }
 .aircraftsevice-page .cards {
@@ -170,9 +170,6 @@
     gap: 10px;
 }
 .aircraftsevice-page .links .link-item svg {
-    width: 44px;
-    height: 44px;
     display: flex;
-
     align-items: center;
 }
