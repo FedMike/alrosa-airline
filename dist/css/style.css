@@ -977,12 +977,6 @@ legend {
   column-gap: 15px;
 }
 
-.main-banner {
-  max-width: 2130px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .main-banner__wrapper {
   position: relative;
 }
@@ -3557,12 +3551,18 @@ legend {
   max-width: 394px;
   width: 100%;
   height: 244px;
+  overflow: hidden;
 }
 
 .gallery-page .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+.gallery-page .card img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
 }
 
 .gallery-page .pagination {
