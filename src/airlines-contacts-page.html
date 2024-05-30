@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html',{ "title": "Контакты" })
+
+  <body>
+    @@include('html/header.html',{})
+
+    <div class="contacts-page">
+      <div class="container">
+        <div class="sidebar">
+          @@include('html/sidebar-menu.html',{ "menuTitle": "Авиакомпания",
+          "menuTitleLink": "./airlines-menu-pages.html", "menuItem1": "О нас",
+          "menuLink1": "./airlines-about-page.html", "menuActive1": "",
+          "menuItem2": "Наш флот", "menuLink2": "./airlines-ourfleet-page.html",
+          "menuActive2": "", "menuItem3": "Техническое обслуживание ВС",
+          "menuLink3": "./airlines-aircraftsevices-page.html", "menuActive3":
+          "", "menuItem4": "Сертификаты и лицензии", "menuLink4":
+          "./airlines-license-page.html", "menuActive4": "", "menuItem5":
+          "Услуги", "menuLink5": "./airlines-services-page.html", "menuActive5":
+          "", "menuItem6": "Новости", "menuLink6": "./airlines-news-page.html",
+          "menuActive6": "", "menuItem7": "Фотогалерея", "menuLink7":
+          "./airlines-gallery-page.html", "menuActive7": "", "menuItem8":
+          "Представительства", "menuLink8": "./airlines-offices-page.html",
+          "menuActive8": "", "menuItem9": "Контакты", "menuLink9":
+          "./airlines-contacts-page.html", "menuActive9": "active",
+          "menuItem10": "Партнёры", "menuLink10":
+          "./airlines-partners-page.html", "menuActive10": "", "menuItem11":
+          "Пункты продаж", "menuLink11": "./airlines-salespoints-page.html",
+          "menuActive11": "", "menuItem12": "Вакансии и карьера", "menuLink12":
+          "./airlines-jobsandcareer-page.html", "menuActive12": "",
+          "menuItem13": "", "menuLink13": "", "menuActive13": "d-none",
+          "menuItem14": "", "menuLink14": "", "menuActive14": "d-none",
+          "menuItem15": "", "menuLink15": "", "menuActive15": "d-none",
+          "menuItem16": "", "menuLink16": "", "menuActive16": "d-none",
+          "menuItem17": "", "menuLink17": "", "menuActive17": "d-none",
+          "menuItem18": "", "menuLink18": "", "menuActive18": "d-none",
+          "menuItem19": "", "menuLink19": "", "menuActive19": "d-none",
+          "menuItem20": "", "menuLink20": "", "menuActive20": "d-none", })
+        </div>
+
+        <div class="section-container">
+          <div class="card">
+            <div class="card-content-container">
+              <div class="text-container">
+                <p class="card-text">Код ИАТА</p>
+                <p class="card-value">6R</p>
+              </div>
+              <div class="text-container">
+                <p class="card-text">Код ИКАО</p>
+                <p class="card-value">DRU</p>
+              </div>
+              <div class="text-container">
+                <p class="card-text">Внутренний код</p>
+                <p class="card-value">ЯМ</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content-container">
+              <div class="column-left">
+                <h3 class="card-title">Контактный центр</h3>
+                <a href="#" class="card-btn">Обратная связь</a>
+              </div>
+              <div class="column-right">
+                <h4 class="text phone-number">8 800 500 50 95</h4>
+                <p class="text">Звонок по России бесплатный</p>
+                <p class="text">Ежедневно 03:00 - 21:00*</p>
+                <p class="text description">* Время московское (UTC +3)</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">по вопросам сотрудничества</h3>
+            <div class="card-content-container">
+              <div class="column-left">
+                <a href="tel:+74113648121" class="svg-container">
+                  <svg width="16.000000" height="16.000000" viewBox="0 0 16 16">
+                    <use xlink:href="./img/svg/sprite.svg#phone-icon"></use>
+                  </svg>
+                  <p class="text">+7 (41136) 4-81-21/ 4-81-60</p>
+                </a>
+                <a href="tel:+74113648121" class="svg-container">
+                  <svg width="16.000000" height="16.000000" viewBox="0 0 16 16">
+                    <use xlink:href="./img/svg/sprite.svg#fax-icon"></use>
+                  </svg>
+                  <p class="text">+7 (41136) 4-81-21</p>
+                </a>
+                <a href="mailto:avia-info@aero.alrosa.ru" class="svg-container">
+                  <svg width="14.000000" height="14.000000" viewBox="0 0 14 14">
+                    <use
+                      xlink:href="./img/svg/sprite.svg#email-icon-gray"></use>
+                  </svg>
+                  <p class="text">avia-info@aero.alrosa.ru</p>
+                </a>
+              </div>
+              <div class="column-right">
+                <a href="#" class="svg-container">
+                  <svg width="16.000000" height="16.000000" viewBox="0 0 16 16">
+                    <use
+                      xlink:href="./img/svg/sprite.svg#location-icon-gray"></use>
+                  </svg>
+                  <p class="text">
+                    678174, Российская Федерация, Республика Саха (Якутия),
+                    город Мирный, шоссе Алмазников, зд. 5/1, 2 этаж
+                  </p>
+                </a>
+                <a href="#" class="svg-container">
+                  <svg width="16.000000" height="16.000000" viewBox="0 0 16 16">
+                    <use xlink:href="./img/svg/sprite.svg#calendar-icon"></use>
+                  </svg>
+                  <p class="text">
+                    ПН-ПТ: 08:00 - 17:30 СБ-ВС: выходной (время г. Мирного:
+                    UTC+9)
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+      </div>
+    </div>
+
+    @@include('html/footer.html',{})
+    <!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
