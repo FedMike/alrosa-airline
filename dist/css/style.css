@@ -111,6 +111,10 @@ legend {
   display: none !important;
 }
 
+.spoiler-body {
+  display: none;
+}
+
 @font-face {
   font-family: avenirnextcyr;
   font-display: swap;

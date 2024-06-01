@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{ "title": "AЛРОСА | Алмазная миля" })
+
+	<body>
+		@@include('html/header.html',{})
+
+		<section class="main-banner">
+			<div class="main-banner__wrapper">
+				<div class="swiper main-banner__swiper">
+					<div class="swiper-wrapper">
+						<div class="main-banner__item swiper-slide">
+							<picture class="main-banner__img-wrapper">
+								<source
+									srcset="./img/diamond-miles-banner.jpg"
+									media="(max-width: 767px)"
+								/>
+								<source
+									srcset="./img/diamond-miles-banner.jpg"
+									media="(max-width: 1200px)"
+								/>
+								<img
+									src="./img/diamond-miles-banner.jpg"
+									alt="Главный баннер"
+								/>
+							</picture>
+							<div class="main-banner__layer">
+								<img src="./img/main-banner-layer.png" alt="Сияние" />
+							</div>
+							<div class="container">
+								<div class="main-banner__content flex flex-col gap-[32px]">
+									<div class="content__direction">Алмазная миля</div>
+									<div
+										class="text-[18px] font-[450] leading-[24px] normal-case tracking-normal"
+									>
+										Зарегистрируйтесь и получите 600 приветственных миль
+									</div>
+									<div>
+										<a
+											href="#"
+											class="bg-[white] text-black text-[18px] font-[450] leading-[20px] normal-case tracking-normal rounded-xl px-[41px] py-[10px]"
+											>Вступить в программу</a
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-[72px]">
+			<div class="container">
+				<h2 class="font-[700] text-[42px] leading-[56px] mb-[40px]">
+					Зарегистрируйтесь в программе лояльности
+				</h2>
+				<div class="content">
+					<div class="flex p-[32px] gap-12 justify-between bg-white">
+						<div class="flex flex-col gap-[24px] flex-1">
+							<p class="font-[400] text-[18px] leading-[28px] text-[#212529]">
+								По мере начисления миль, участник программы может стать
+								обладателем элитного статуса, а также оформить премиальный
+								авиабилет
+							</p>
+							<p class="font-[400] text-[18px] leading-[28px] text-[#212529]">
+								Совершая перелеты регулярными рейсами АО «Авиакомпания АЛРОСА»,
+								каждый участник программы получает мили
+							</p>
+						</div>
+						<div class="flex flex-1 flex-col gap-[12px]">
+							<div class="flex justify-end">
+								<img src="./img/cards.png" alt="Cards" />
+							</div>
+							<div class="text-right">
+								<span
+									class="text-[#212529] font-[700] tracking-widest text-[28px] leading-[40px]"
+									>+ 600 мили</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-[72px]">
+			<div class="container">
+				<h2 class="font-[700] text-[42px] leading-[56px] mb-[40px]">
+					Как использовать мили
+				</h2>
+				<div class="content">
+					<div class="flex flex-col gap-[8px]">
+						<div class="flex gap-[8px]">
+							<div class="flex flex-1 relative h-[260px] overflow-hidden">
+								<div class="flex flex-1 w-full h-full">
+									<img
+										src="./img/dm-section-2-1.png"
+										alt="Image 1"
+										class="absolute left-0 top-0 bottom-0 right-0 w-full object-cover"
+									/>
+									<div class="flex flex-col w-full relative p-[32px]">
+										<div class="flex flex-col gap-[24px]">
+											<div>
+												<span
+													class="text-white font-[450] text-[24px] leading-[32px]"
+													>Авиабилеты за мили</span
+												>
+											</div>
+											<div class="max-w-[50%]">
+												<span
+													class="text-white font-[400] text-[18px] leading-[24px]"
+												>
+													Приобретайте авиабилеты за накопленные мили с выгодой
+												</span>
+											</div>
+										</div>
+										<div class="mt-auto">
+											<div class="flex">
+												<a
+													href="#"
+													class="bg-white rounded-full px-[32px] py-[10px]"
+												>
+													<span
+														class="text-[#212529] text-[18px] font-[450] leading-[24px]"
+														>Узнать больше</span
+													>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex flex-1 relative h-[260px] overflow-hidden">
+								<div class="flex flex-1 w-full h-full">
+									<img
+										src="./img/dm-section-2-2.png"
+										alt="Image 1"
+										class="absolute left-0 top-0 bottom-0 right-0 w-full object-cover"
+									/>
+									<div class="flex flex-col w-full relative p-[32px]">
+										<div class="flex flex-col gap-[24px]">
+											<div>
+												<span
+													class="text-white font-[450] text-[24px] leading-[32px]"
+													>Багаж за мили</span
+												>
+											</div>
+											<div class="max-w-[50%]">
+												<span
+													class="text-white font-[400] text-[18px] leading-[24px]"
+												>
+													Повышайте класс обслуживания за мили
+												</span>
+											</div>
+										</div>
+										<div class="mt-auto">
+											<div class="flex">
+												<a
+													href="#"
+													class="bg-white rounded-full px-[32px] py-[10px]"
+												>
+													<span
+														class="text-[#212529] text-[18px] font-[450] leading-[24px]"
+														>Узнать больше</span
+													>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex">
+							<div class="flex flex-1 relative h-[260px] overflow-hidden">
+								<div class="flex flex-1 w-full h-full">
+									<img
+										src="./img/dm-section-2-3.png"
+										alt="Image 1"
+										class="absolute left-0 top-0 bottom-0 right-0 w-full object-cover"
+									/>
+									<div class="flex flex-col w-full relative p-[32px]">
+										<div class="flex flex-col gap-[24px]">
+											<div>
+												<span
+													class="text-white font-[450] text-[24px] leading-[32px]"
+													>Не хватает миль?</span
+												>
+											</div>
+											<div class="max-w-[50%]">
+												<span
+													class="text-white font-[400] text-[18px] leading-[24px]"
+												>
+													Рассказываем как происходит начисление миль про
+													программе
+												</span>
+											</div>
+										</div>
+										<div class="mt-auto">
+											<div class="flex">
+												<a
+													href="#"
+													class="bg-white rounded-full px-[32px] py-[10px]"
+												>
+													<span
+														class="text-[#212529] text-[18px] font-[450] leading-[24px]"
+														>Узнать больше</span
+													>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-[72px]">
+			<div class="container">
+				<h2 class="font-[700] text-[42px] leading-[56px] mb-[40px]">
+					Статусы привилегии
+				</h2>
+				<div class="content">
+					<div class="flex flex-col gap-[40px]">
+						<div class="flex flex-col gap-[24px]">
+							<p class="text-[#212529] text-[18px] font-[400] leading-[24px]">
+								При начислении определенного количества миль или совершенных
+								полетов, участник приобретает элитный статус с полным набором
+								привилегий часто летающего пассажира. Ознакомиться с полным
+								перечнем привилегий для каждого статуса можно в разделе Статусы
+								и привилегии
+							</p>
+							<div class="flex">
+								<a
+									href="#"
+									class="bg-[#6DCDF6] rounded-full px-[32px] py-[10px]"
+								>
+									<span
+										class="text-[white] text-[18px] font-[450] leading-[24px]"
+										>Узнать больше</span
+									>
+								</a>
+							</div>
+						</div>
+						<div class="flex gap-[40px]">
+							<div class="flex flex-1">
+								<div class="flex flex-col gap-[20px]">
+									<div>
+										<img src="./img/card-silver.png" alt="Card Silver" />
+									</div>
+									<div class="flex justify-between items-center">
+										<div>
+											<span
+												class="font-[450] text-[24px] leading-[32px] text-[#212529]"
+												>Серебряный</span
+											>
+										</div>
+										<div>
+											<span
+												class="font-[400] text-[18px] leading-[24px] text-[#212529]"
+												>Кешбек 5%</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex flex-1">
+								<div class="flex flex-col gap-[20px]">
+									<div>
+										<img src="./img/card-gold.png" alt="Card Gold" />
+									</div>
+									<div class="flex justify-between items-center">
+										<div>
+											<span
+												class="font-[450] text-[24px] leading-[32px] text-[#212529]"
+												>Золотой</span
+											>
+										</div>
+										<div>
+											<span
+												class="font-[400] text-[18px] leading-[24px] text-[#212529]"
+												>Кешбек 10%</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="flex flex-1">
+								<div class="flex flex-col gap-[20px]">
+									<div>
+										<img src="./img/card-vip.png" alt="Card Diamond" />
+									</div>
+									<div class="flex justify-between items-center">
+										<div>
+											<span
+												class="font-[450] text-[24px] leading-[32px] text-[#212529]"
+												>Алмазный</span
+											>
+										</div>
+										<div>
+											<span
+												class="font-[400] text-[18px] leading-[24px] text-[#212529]"
+												>Кешбек 15%</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mt-[72px] mb-[72px]">
+			<div class="container">
+				<h2 class="font-[700] text-[42px] leading-[56px] mb-[40px]">
+					Остались вопросы
+				</h2>
+				<div class="content">
+					<div class="flex gap-[20px]">
+						<a href="#" class="flex flex-1">
+							<div class="flex w-full bg-[#6DCDF6] p-[32px] relative">
+								<div class="flex flex-col gap-[24px]">
+									<span
+										class="text-[white] font-[400] text-[24px] leading-[32px]"
+										>Правила программы</span
+									>
+									<div class="flex gap-[8px]">
+										<span
+											class="text-[white] font-[400] text-[18px] leading-[24px]"
+											>Узнать больше</span
+										>
+										<span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M8.32012 21.0451L6.80512 19.5151L14.2901 12.0301L6.74512 4.48508L8.27512 2.95508L17.3501 12.0301L8.32012 21.0451Z"
+													fill="white"
+												/>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<img
+									src="./img/dm-questions-1.png"
+									alt="Image"
+									class="absolute right-[32px] top-[50%] -translate-y-1/2"
+								/>
+							</div>
+						</a>
+						<a href="#" class="flex flex-1">
+							<div class="flex w-full bg-[#6DCDF6] p-[32px] relative">
+								<div class="flex flex-col gap-[24px]">
+									<span
+										class="text-[white] font-[400] text-[24px] leading-[32px]"
+										>Частые вопросы и ответы</span
+									>
+									<div class="flex gap-[8px]">
+										<span
+											class="text-[white] font-[400] text-[18px] leading-[24px]"
+											>Узнать больше</span
+										>
+										<span>
+											<svg
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M8.32012 21.0451L6.80512 19.5151L14.2901 12.0301L6.74512 4.48508L8.27512 2.95508L17.3501 12.0301L8.32012 21.0451Z"
+													fill="white"
+												/>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<img
+									src="./img/dm-questions-2.png"
+									alt="Image"
+									class="absolute right-[32px] top-[50%] -translate-y-1/2"
+								/>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		@@include('html/footer.html',{})
+		<!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>
