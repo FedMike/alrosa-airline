@@ -122,3 +122,12 @@ legend {
 .spoiler-body {
 	display: none;
 }
+
+.static-page {
+	padding: 72px 0;
+
+	.container {
+		display: flex;
+		gap: 36px;
+	}
+}

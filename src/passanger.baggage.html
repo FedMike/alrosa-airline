@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{ "title": "Всё о багаже", })
+
+	<body>
+		@@include('html/header.html',{}) @@include('html/heading.html',{parentTitle:
+		"Статичная страница", title: "Пример", title2: "Всё о багаже",})
+		<div class="py-[24px] xl:py-[72px]">
+			<div class="container flex gap-[32px]">
+				<div class="sidebar">
+					@@include('html/sidebar-menu.html',{ 
+						title: 'Пассажиру', 
+						link: '/passanger.index.html',
+						children: [
+							{ title: 'Онлайн-табло', link: 'passanger.timetable.html', class: "" },
+							{ title: 'Карта полетов', link: 'passanger.flymap.html', class: "" },
+							{ title: 'Правила воздушных перевозок', link: 'passanger.rules.html', class: "" },
+							{ title: 'Тарифы и условия', link: 'passanger.tariffs.html', class: "" },
+							{ title: 'Классы обслуживания', link: 'passanger.classes.html', class: "" },
+							{ title: 'Групповые перевозки', link: 'passanger.group.html', class: "" },
+							{ title: 'Субсидированные перевозки', link: 'passanger.subsidies.html', class: "" },
+							{ title: 'Справки о перелёте', link: 'passanger.certificates.html', class: "" },
+							{ title: 'Специальные предложения', link: 'passanger.special.html', class: "" },
+							{ title: 'Изменения данных в авиабилете', link: 'passanger.changes.html', class: "" },
+							{ title: 'Всё о багаже', link: 'passanger.baggage.html', class: "active" },
+							{ title: 'Перевозка спортивного инвентаря', link: 'passanger.sport.html', class: "" },
+							{ title: 'Прейскурант агентства', link: 'passanger.prices.html', class: "" },
+							{ title: 'Вопросы-ответы', link: 'passanger.faq.html', class: "" },
+							{ title: 'Мобильное приложение для Android', link: 'passanger.mobile.html', class: "" },
+						] 
+					})
+				</div>
+
+				<div class="flex flex-1">
+					<div
+						class="flex flex-1 flex-col gap-[12px] md:gap-[24px] xl:gap-[36px] -mx-[24px] md:mx-0"
+					>
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<h2
+								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+							>
+								Пример заголовка карточки
+							</h2>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Для всех участников программы лояльности «Алмазная миля»
+								предусмотрены особые привилегии для элитных статусов. В
+								программе «Алмазная миля» предусмотрены три основных элитных
+								статуса:
+							</p>
+							<ul class="list-disc pl-6">
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Москва, Москва — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Новосибирск, Новосибирск — Мирный.
+									</p>
+								</li>
+							</ul>
+							<ol class="list-decimal pl-6">
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Москва, Москва — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Новосибирск, Новосибирск — Мирный.
+									</p>
+								</li>
+							</ol>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/footer.html',{})
+		<!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>

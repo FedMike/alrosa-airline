@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{ "title": "Пример статичной страницы", })
+
+	<body>
+		@@include('html/header.html',{}) @@include('html/heading.html',{parentTitle:
+		"Статичная страница", title: "Пример", title2: "Основной заголовок",})
+		<div class="py-[24px] xl:py-[72px]">
+			<div class="container flex gap-[32px]">
+				<div class="sidebar">
+					@@include('html/sidebar-menu.html',{ "menuTitle": "Авиакомпания",
+					"menuTitleLink": "./airlines-menu-pages.html", "menuItem1": "О нас",
+					"menuLink1": "./airlines-about-page.html", "menuActive1": "",
+					"menuItem2": "Наш флот", "menuLink2": "./airlines-ourfleet-page.html",
+					"menuActive2": "", "menuItem3": "Техническое обслуживание ВС",
+					"menuLink3": "./airlines-aircraftsevices-page.html", "menuActive3":
+					"", "menuItem4": "Сертификаты и лицензии", "menuLink4":
+					"./airlines-license-page.html", "menuActive4": "", "menuItem5":
+					"Услуги", "menuLink5": "./airlines-services-page.html", "menuActive5":
+					"", "menuItem6": "Новости", "menuLink6": "./airlines-news-page.html",
+					"menuActive6": "", "menuItem7": "Фотогалерея", "menuLink7":
+					"./airlines-gallery-page.html", "menuActive7": "", "menuItem8":
+					"Представительства", "menuLink8": "./airlines-offices-page.html",
+					"menuActive8": "active", "menuItem9": "Контакты", "menuLink9":
+					"./airlines-contacts-page.html", "menuActive9": "", "menuItem10":
+					"Партнёры", "menuLink10": "./airlines-partners-page.html",
+					"menuActive10": "", "menuItem11": "Пункты продаж", "menuLink11":
+					"./airlines-salespoints-page.html", "menuActive11": "", "menuItem12":
+					"Вакансии и карьера", "menuLink12":
+					"./airlines-jobsandcareer-page.html", "menuActive12": "",
+					"menuItem13": "", "menuLink13": "", "menuActive13": "d-none",
+					"menuItem14": "", "menuLink14": "", "menuActive14": "d-none",
+					"menuItem15": "", "menuLink15": "", "menuActive15": "d-none",
+					"menuItem16": "", "menuLink16": "", "menuActive16": "d-none",
+					"menuItem17": "", "menuLink17": "", "menuActive17": "d-none",
+					"menuItem18": "", "menuLink18": "", "menuActive18": "d-none",
+					"menuItem19": "", "menuLink19": "", "menuActive19": "d-none",
+					"menuItem20": "", "menuLink20": "", "menuActive20": "d-none" })
+				</div>
+
+				<div class="flex flex-1">
+					<div
+						class="flex flex-1 flex-col gap-[12px] md:gap-[24px] xl:gap-[36px] -mx-[24px] md:mx-0"
+					>
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<h2
+								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+							>
+								Пример заголовка карточки
+							</h2>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Для всех участников программы лояльности «Алмазная миля»
+								предусмотрены особые привилегии для элитных статусов. В
+								программе «Алмазная миля» предусмотрены три основных элитных
+								статуса:
+							</p>
+							<ul class="list-disc pl-6">
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Москва, Москва — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Новосибирск, Новосибирск — Мирный.
+									</p>
+								</li>
+							</ul>
+							<ol class="list-decimal pl-6">
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Москва, Москва — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Новосибирск, Новосибирск — Мирный.
+									</p>
+								</li>
+							</ol>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/footer.html',{})
+		<!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>

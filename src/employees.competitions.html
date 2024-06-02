@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{ "title": "Конкурсы", })
+
+	<body>
+		@@include('html/header.html',{}) @@include('html/heading.html',{parentTitle:
+		"Статичная страница", title: "Пример", title2: "Конкурсы",})
+		<div class="py-[24px] xl:py-[72px]">
+			<div class="container flex gap-[32px]">
+				<div class="sidebar">
+					@@include('html/sidebar-menu.html',{ 
+						title: 'Сотрудникам', 
+						link: '/employees.index.html',
+						children: [
+							{ title: 'Базовые маршруты', link: 'employees.base.routes.html', class: "" }, 
+							{ title: 'Северный проезд', link: 'employees.north.passage.html', class: "" },
+							{ title: 'Скидка для членов Профсоюза ПРОФАЛМАЗ', link: 'employees.sales.diamond.html', class: "" },
+							{ title: 'Скидка для Сотрудников ГК АЛРОСА', link: 'employees.sales.alrosa.html', class: "" },
+							{ title: 'Конкурсы', link: 'employees.competitions.html', class: "active" },
+							{ title: 'Вход в ЛК Авиабит', link: 'employees.lk.html', class: "" },
+						] 
+					})
+				</div>
+
+				<div class="flex flex-1">
+					<div
+						class="flex flex-1 flex-col gap-[12px] md:gap-[24px] xl:gap-[36px] -mx-[24px] md:mx-0"
+					>
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<h2
+								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+							>
+								Пример заголовка карточки
+							</h2>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Для всех участников программы лояльности «Алмазная миля»
+								предусмотрены особые привилегии для элитных статусов. В
+								программе «Алмазная миля» предусмотрены три основных элитных
+								статуса:
+							</p>
+							<ul class="list-disc pl-6">
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Москва, Москва — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Новосибирск, Новосибирск — Мирный.
+									</p>
+								</li>
+							</ul>
+							<ol class="list-decimal pl-6">
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Москва, Москва — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
+									</p>
+								</li>
+								<li>
+									<p
+										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
+									>
+										Мирный — Новосибирск, Новосибирск — Мирный.
+									</p>
+								</li>
+							</ol>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		@@include('html/footer.html',{})
+		<!-- <script src="./js/libs/swiper/swiper-bundle.min.js"></script> -->
+
+		<script src="./js/main.min.js"></script>
+	</body>
+</html>

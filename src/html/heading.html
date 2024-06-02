@@ -1,27 +1,65 @@
-<section class="heading">
-    <div class="heading__img">
-        <img src="./img/heading-bg.png" alt="Баннер оглавления">
-    </div>
-    <div class="container">
-        <div class="heading__breadcrumbs">
-            <a href="index.html" class="breadcrumbs__text">Главная</a>
-            <div class="breadcrumbs__arrow">
-                <svg width="8" height="12">
-                    <use xlink:href="./img/svg/sprite.svg#breadcrumb-arrow"></use>
-                </svg>
-            </div>
-            <a href="@@parentLink" class="breadcrumbs__text">@@parentTitle</a>
-            <div class="breadcrumbs__arrow">
-                <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.910765 11.5894C0.585328 11.264 0.585328 10.7363 0.910765 10.4109L5.32151 6.00016L0.910765 1.58942C0.585328 1.26398 0.585328 0.736344 0.910765 0.410908C1.2362 0.0854702 1.76384 0.0854702 2.08928 0.410908L7.08928 5.41091C7.41471 5.73634 7.41471 6.26398 7.08928 6.58942L2.08928 11.5894C1.76384 11.9149 1.2362 11.9149 0.910765 11.5894Z"
-                        fill="white" fill-opacity="0.8" />
-                </svg>
-            </div>
-            <a href="@@pageLink" class="breadcrumbs__text">@@title</a>
-        </div>
-        <div class="heading__title">
-            <h1 class="title-1">@@title2</h1>
-        </div>
-    </div>
+<section class="relative h-[296px] overflow-hidden">
+	<div class="absolute w-full h-full flex flex-1">
+		<img
+			src="./img/heading-bg.png"
+			alt="Баннер оглавления"
+			class="w-full h-full object-cover"
+		/>
+	</div>
+	<div class="flex w-full h-full relative">
+		<div class="container">
+			<div class="flex py-[72px] gap-[8px] items-center text-white">
+				<a href="index.html" class="font-[700] text-[14px] leading-[20px]"
+					>Главная</a
+				>
+				<div class="breadcrumbs__arrow">
+					<svg
+						width="8"
+						height="12"
+						viewBox="0 0 8 12"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0.910765 11.5894C0.585328 11.264 0.585328 10.7363 0.910765 10.4109L5.32151 6.00016L0.910765 1.58942C0.585328 1.26398 0.585328 0.736344 0.910765 0.410908C1.2362 0.0854702 1.76384 0.0854702 2.08928 0.410908L7.08928 5.41091C7.41471 5.73634 7.41471 6.26398 7.08928 6.58942L2.08928 11.5894C1.76384 11.9149 1.2362 11.9149 0.910765 11.5894Z"
+							fill="white"
+							fill-opacity="0.8"
+						/>
+					</svg>
+				</div>
+				<a href="@@parentLink" class="font-[700] text-[14px] leading-[20px]"
+					>@@parentTitle</a
+				>
+				<div class="breadcrumbs__arrow">
+					<svg
+						width="8"
+						height="12"
+						viewBox="0 0 8 12"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M0.910765 11.5894C0.585328 11.264 0.585328 10.7363 0.910765 10.4109L5.32151 6.00016L0.910765 1.58942C0.585328 1.26398 0.585328 0.736344 0.910765 0.410908C1.2362 0.0854702 1.76384 0.0854702 2.08928 0.410908L7.08928 5.41091C7.41471 5.73634 7.41471 6.26398 7.08928 6.58942L2.08928 11.5894C1.76384 11.9149 1.2362 11.9149 0.910765 11.5894Z"
+							fill="white"
+							fill-opacity="0.8"
+						/>
+					</svg>
+				</div>
+				<a href="@@pageLink" class="font-[700] text-[14px] leading-[20px]"
+					>@@title</a
+				>
+			</div>
+			<div class="heading__title">
+				<h1
+					class="uppercase text-white font-[700] text-[25px] leading-[40px] tracking-widest md:text-[28px] xl:text-[42px] xl:leading-[56px]"
+				>
+					@@title2
+				</h1>
+			</div>
+		</div>
+	</div>
 </section>

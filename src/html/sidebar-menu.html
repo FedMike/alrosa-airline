@@ -1,67 +1,12 @@
 <div class="sidebar__menu">
-    <div class="sidebar-menu__title">
-        <a href="@@menuTitleLink">@@menuTitle</a>
-    </div>
-    <ul class="sidebar-menu__list">
-        <li class="sidebar-menu__item @@menuActive1">
-            <a href="@@menuLink1">@@menuItem1</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive2">
-            <a href="@@menuLink2">@@menuItem2</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive3">
-            <a href="@@menuLink3">@@menuItem3</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive4">
-            <a href="@@menuLink4">@@menuItem4</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive5">
-            <a href="@@menuLink5">@@menuItem5</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive6">
-            <a href="@@menuLink6">@@menuItem6</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive7">
-            <a href="@@menuLink7">@@menuItem7</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive8">
-            <a href="@@menuLink8">@@menuItem8</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive9">
-            <a href="@@menuLink9">@@menuItem9</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive10">
-            <a href="@@menuLink10">@@menuItem10</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive11">
-            <a href="@@menuLink11">@@menuItem11</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive12">
-            <a href="@@menuLink12">@@menuItem12</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive13">
-            <a href="@@menuLink13">@@menuItem13</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive14">
-            <a href="@@menuLink14">@@menuItem14</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive15">
-            <a href="@@menuLink15">@@menuItem15</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive16">
-            <a href="@@menuLink16">@@menuItem16</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive17">
-            <a href="@@menuLink17">@@menuItem17</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive18">
-            <a href="@@menuLink18">@@menuItem18</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive19">
-            <a href="@@menuLink19">@@menuItem19</a>
-        </li>
-        <li class="sidebar-menu__item @@menuActive20">
-            <a href="@@menuLink20">@@menuItem20</a>
-        </li>
-    </ul>
+	<div class="sidebar-menu__title">
+		<a href="@@link">@@title</a>
+	</div>
+	<ul class="sidebar-menu__list">
+		@@for(var i = 0; i < children.length; i++) { 
+                <li class="sidebar-menu__item `+children[i].class+`">
+                    <a href="./`+children[i].link+`">`+children[i].title+`</a>
+                </li>
+        }
+	</ul>
 </div>
