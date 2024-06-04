@@ -12,10 +12,10 @@
 						class="flex flex-1 flex-col gap-[12px] md:gap-[24px] xl:gap-[36px] -mx-[24px] md:mx-0"
 					>
 						<div class="xl:mt-[32px]">
-							<div class="grid grid-cols-6 gap-[4px] md:gap-[8px] xl:gap-[10px] [&>*:nth-child(-n+3)]:col-span-6 md:[&>*:nth-child(-n+3)]:col-span-2 [&>*]:col-span-6 md:[&>*]:col-span-3 xl:[&>*]:col-span-2 [&>*:nth-child(-n+3)]:border-t-2 [&>*:nth-child(-n+3)]:border-[#E4002B] [&>*:nth-child(-n+3)]:h-[376px]">
+							<div class="grid grid-cols-6 gap-[4px] md:gap-[8px] xl:gap-[10px] xl:[&>*:nth-child(2)]:!h-[calc(100%+72px)] xl:[&>*:nth-child(2)]:!-mt-[72px] [&>*:nth-child(-n+3)]:col-span-6 md:[&>*:nth-child(-n+3)]:col-span-2 [&>*]:col-span-6 md:[&>*]:col-span-3 xl:[&>*]:col-span-2 [&>*:nth-child(-n+3)]:border-t-2 [&>*:nth-child(-n+3)]:border-[#E4002B] [&>*:nth-child(-n+3)]:h-[376px]">
 								@@loop('./partials/card.section.html', [
 									{ title: 'Грузовые перевозки', link: 'business.freight.transportation.html', class: "" }, 
-									{ title: 'Чартерные перевозки', link: 'business.charter.transportation.html', class: "xl:!h-[calc(100%+72px)] xl:-mt-[72px]" },
+									{ title: 'Чартерные перевозки', link: 'business.charter.transportation.html', class: "" },
 									{ title: 'Групповые перевозки', link: 'business.group.transportation.html', class: "" },
 									{ title: 'Вертолетные перевозки', link: 'business.helicopter.transportation.html', class: "md:!col-span-6 xl:!col-span-4" },
 									{ title: 'Способы оплаты', link: 'business.payments.html', class: "" },
