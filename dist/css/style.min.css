@@ -1213,8 +1213,9 @@ legend {
 
 .main-panel .input {
   min-width: 10px;
-  padding: 16px 12px;
+  padding: 14px 12px;
   font-size: 15px;
+  line-height: 20px;
   font-weight: 500;
   color: #212529;
   border: 1px solid #97999B;
@@ -1365,6 +1366,9 @@ legend {
 }
 
 .main-panel .btn-exchange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 52px;
   height: 100%;
   flex-shrink: 0;
@@ -1433,6 +1437,9 @@ legend {
 }
 
 .main-panel .main-panel__bottom-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 16px;
   height: 16px;
 }
