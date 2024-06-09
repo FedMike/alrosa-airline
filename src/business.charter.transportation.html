@@ -31,63 +31,94 @@
 						<section
 							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
 						>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								АО «Авиакомпания АЛРОСА» предлагает возможность выполнения чартерных рейсов по России на ВС Boeing 737-700, Boeing 737-800 и международных рейсов в страны СНГ, в страны Азии и Европейские страны на ВС Boeing 737-700, Boeing 737-800. Так же АО «Авиакомпания АЛРОСА» оказывает услуги по выполнению заказных рейсов на вертолетах Ми-26Т, Ми-8Т / Ми-8МТВ-1 / Ми-171, самолетов Ан-38-100, Ан-38-120.
+							</p>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Воздушные суда подготовлены для выполнения международных рейсов. Мы предлагаем ВС, Boeing 737-700 в компоновке 138 кресел, Boeing 737-800 в компоновке 164 и 182 кресла. С описанием ВС можно ознакомиться в разделе «Наш флот»
+							</p>
+
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-[12px]">
+								<div class="bg-[#DEF3FF] p-[24px] flex flex-col gap-[12px] rounded-[4px]">
+									<div class="font-[450] text-[22px] leading-[24px] text-[#212529]">Boeing 737-800</div>
+									<img src="./img/737-800.png" alt="Boeing 737-800" class="flex">
+								</div>
+								<div class="bg-[#DEF3FF] p-[24px] flex flex-col gap-[12px] rounded-[4px]">
+									<div class="font-[450] text-[22px] leading-[24px] text-[#212529]">Boeing 737-800</div>
+									<img src="./img/737-800.png" alt="Boeing 737-800" class="flex">
+								</div>
+							</div>
+						</section>
+						
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
 							<h2
 								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
 							>
-								Пример заголовка карточки
+								По вопросам выполнения чартерных рейсов обращаться:
 							</h2>
-							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
-								Для всех участников программы лояльности «Алмазная миля»
-								предусмотрены особые привилегии для элитных статусов. В
-								программе «Алмазная миля» предусмотрены три основных элитных
-								статуса:
-							</p>
-							<ul class="list-disc pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ul>
-							<ol class="list-decimal pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ol>
+							<div class="flex flex-col gap-[12px]">
+								<h3 class="font-[450] text-[18px] leading-[24px] text-[#212529]">Служба организации перевозок</h3>
+
+								<div class="grid grid-cols-1 md:grid-cols-2 gap-[12px] md:gap-[24px]">
+									@@loop('./partials/item.contact.html', [
+										{
+											position: 'Начальник',
+											title: 'Гелла Татьяна Александровна',
+											email: 'GellaTA@alrosa.ru',
+											phone: '+7 (383) 363-18-43 доб. 2005',
+											time: '(время г. Москвы: UTC+4)'
+										},
+										{
+											position: 'Ведущий инженер по организации перевозок',
+											title: 'Кравец Руслан Викторович',
+											email: 'KravetsRV@aero.alrosa.ru',
+											phone: '+7 (861) 263-69-50 доб. 41',
+											time: '(время г. Москвы: UTC+4)'
+										},
+									])
+								</div>
+							</div>
+						</section>
+						
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<h2
+								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+							>
+								По вопросам оказания услуг на вертолетах и самолетах Ан-38 обращаться: 
+							</h2>
+							<div class="flex flex-col gap-[12px]">
+								<h3 class="font-[450] text-[18px] leading-[24px] text-[#212529]">Производственно-диспетчерская служба</h3>
+
+								<div class="grid grid-cols-1 md:grid-cols-2 gap-[12px] md:gap-[24px]">
+									@@loop('./partials/item.contact.html', [
+										{
+											position: 'Начальник',
+											title: 'Шепырев Игорь Игоревич',
+											email: 'ShepyryevII@aero.alrosa.ru',
+											phone: '+7 (41136) 48-179',
+											time: '(время г. Москвы: UTC+4)'
+										},
+										{
+											position: 'Заместитель начальника',
+											title: 'Устибаш Антон Олегович',
+											email: 'Ustibashao@aero.alrosa.ru,',
+											phone: '+7 (41136) 48-279',
+											time: '(время г. Москвы: UTC+4)'
+										},
+										{
+											position: 'Ведущий инженер',
+											title: 'Аюшеев Александр Владимирович',
+											email: 'AyusheevAV@aero.alrosa.ru',
+											phone: '+7 (41136) 48-216',
+											time: '(время г. Москвы: UTC+4)'
+										},
+									])
+								</div>
+							</div>
 						</section>
 					</div>
 				</div>
