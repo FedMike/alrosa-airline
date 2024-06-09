@@ -199,15 +199,19 @@ input[type=radio]:not(:checked) + label:before {
 }
 
 input[type=checkbox]:checked + label:before {
-  background-color: #007AC2;
-  border-color: #007AC2;
+  background-color: #6DCDF6;
+  border-color: #6DCDF6;
 }
 
 input[type=checkbox]:not(:checked) + label:before {
   background-color: #ffffff;
 }
 
-input[type=radio]:checked + label:before,
+input[type=radio]:checked + label:before {
+  border-radius: 100%;
+  border-color: #6DCDF6;
+}
+
 input[type=radio]:not(:checked) + label:before {
   border-radius: 100%;
 }
@@ -242,12 +246,12 @@ input[type=checkbox]:not(:checked) + label:after {
 
 input[type=radio]:checked + label:after,
 input[type=radio]:not(:checked) + label:after {
-  left: 5px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
-  background-color: #007AC2;
+  background-color: #6DCDF6;
 }
 
 input[type=checkbox]:not(:checked) + label:after,
