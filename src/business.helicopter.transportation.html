@@ -31,63 +31,37 @@
 						<section
 							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
 						>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Авиакомпания АЛРОСА перевозит грузы на всех пассажирских рейсах. 
+							</p>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Вы можете отправить свой груз, связавшись с грузовыми агентами авиакомпании, которые помогут Вам с отправкой груза и сообщат правила, условия и технические особенности авиационной перевозки грузов.
+							</p>
+						</section>
+
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
 							<h2
 								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
 							>
-								Пример заголовка карточки
+								По вопросам выполнения вертолетных перевозок обращаться:
 							</h2>
-							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
-								Для всех участников программы лояльности «Алмазная миля»
-								предусмотрены особые привилегии для элитных статусов. В
-								программе «Алмазная миля» предусмотрены три основных элитных
-								статуса:
-							</p>
-							<ul class="list-disc pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ul>
-							<ol class="list-decimal pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ol>
+							<div class="flex flex-col gap-[12px]">
+								<h3 class="font-[450] text-[18px] leading-[24px] text-[#212529]">Производственно-диспетчерская служба</h3>
+
+								<div class="grid grid-cols-1 md:grid-cols-2 gap-[12px] md:gap-[24px]">
+									@@loop('./partials/item.contact.html', [
+										{
+											position: 'Заместитель начальника',
+											title: 'Устибаш Антон Олегович',
+											email: 'Ustibashao@aero.alrosa.ru,',
+											phone: '+7 (41136) 48-279',
+											time: '(время г. Москвы: UTC+4)'
+										},
+									])
+								</div>
+							</div>
 						</section>
 					</div>
 				</div>
