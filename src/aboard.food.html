@@ -83,6 +83,577 @@
 								</li>
 							</ol>
 						</section>
+
+						<div class="flex flex-col gap-[36px]">
+							<!-- Tab links -->
+							<div class="tab flex gap-[36px] mt-[16px] mx-[16px] md:m-0">
+								<button class="tablinks group active" onclick="openCity(event, 'econom')">
+									<span class="font-[400] text-[18px] leading-[28px] text-[#212529] group-[.active]:border-b-2 border-[#E4002B] py-[4px]">Эконом класс</span>
+								</button>
+								<button class="tablinks group" onclick="openCity(event, 'business')">
+									<span class="font-[400] text-[18px] leading-[28px] text-[#212529] group-[.active]:border-b-2 border-[#E4002B] py-[4px]">Бизнес класс</span>
+								</button>
+							</div>
+	
+							<!-- Tab content -->
+							<div id="econom" class="tabcontent block">
+								<div class="flex flex-col gap-[24px]">
+									<section
+										class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+									>
+										<h2
+											class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+										>
+											Короткие рейсы (1-2 часа)
+										</h2>
+										<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+											На непродолжительных рейсах пассажирам предоставляются прохладительные напитки в ассортименте.
+										</p>
+										<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+											Напитки:<br>Вода минеральная без газа, Вода минеральная с газом, Вода фруктовая
+										</p>
+									</section>
+									
+									<section
+										class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+									>
+										<h2
+											class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+										>
+											Рейсы продолжительностью 2-3 часа
+										</h2>
+										<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+											На рейсах продолжительностью от 2 до 3 часов предоставляется рацион «Сэндвич» или рацион «Холодное питание» (в зависимости от рейса или аэропорта вылета). Рацион «Сэндвич» может встречаться на рейсах с вылетом из аэропортов Толмачёво и Внуково.
+										</p>
+
+										<div class="grid grid-cols-1 md:grid-cols-2 gap-[12px]">
+											<div class="bg-white shadow-[0px_8px_16px_0px_rgba(0,0,0,0.1)] flex flex-col flex-shrink-0 md:rounded-[8px]">
+												<div class="bg-[#F1F5F7] flex justify-center">
+													<img src="./img/food-1.png" alt="Food 1">
+												</div>
+												<div class="flex flex-col gap-[24px] px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px]">
+													<h3 class="font-[450] text-[18px] leading-[24px] md:text-[24px] md:leading-[32px] text-[#212529]">«Сэндвич»</h3>
+													<div>
+														<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+															В зависимости от рейса: Сэндвич с говядиной и сыром или с курицей
+														</p>
+														<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+															Напитки: Чай порционный/кофе, Вода минеральная без газа, Вода минеральная с газом, Вода фруктовая, Соки (апельсиновый, томатный, яблочный)
+														</p>
+														<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+															Дополнительно: Печенье гречневое со вкусом лесных ягод, Лимон, Молоко
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="bg-white shadow-[0px_8px_16px_0px_rgba(0,0,0,0.1)] flex flex-col flex-shrink-0 md:rounded-[8px]">
+												<div class="bg-[#F1F5F7] flex justify-center">
+													<img src="./img/food-1.png" alt="Food 1">
+												</div>
+												<div class="flex flex-col gap-[24px] px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px]">
+													<h3 class="font-[450] text-[18px] leading-[24px] md:text-[24px] md:leading-[32px] text-[#212529]">«Холодное питание»</h3>
+													<div>
+														<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+															В зависимости от рейса: Сэндвич с говядиной и сыром или с курицей
+														</p>
+														<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+															Напитки: Чай порционный/кофе, Вода минеральная без газа, Вода минеральная с газом, Вода фруктовая, Соки (апельсиновый, томатный, яблочный)
+														</p>
+														<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+															Дополнительно: Печенье гречневое со вкусом лесных ягод, Лимон, Молоко
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+	
+									<section
+										class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+									>
+										<h2
+											class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+										>
+											Длительные рейсы (3 часа и более)
+										</h2>
+										<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+											На рейсах продолжительностью полёта свыше 3-х часов пассажирам предоставляются напитки, закуска и горячее питание на выбор (в зависимости от рейса).
+										</p>
+										
+										<div class="grid grid-cols-1 gap-[12px]">
+											<div class="bg-white shadow-[0px_8px_16px_0px_rgba(0,0,0,0.1)] flex flex-col flex-shrink-0 md:rounded-[8px]">
+												<div class="bg-[#F1F5F7] flex justify-center">
+													<img src="./img/food-1.png" alt="Food 1">
+												</div>
+												<div class="flex flex-col gap-[24px] px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px]">
+													<h3 class="font-[450] text-[18px] leading-[24px] md:text-[24px] md:leading-[32px] text-[#212529]">«Горячее питание»</h3>
+													<div class="flex flex-col gap-[12px]">
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Закуска
+															</h3>
+															<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+																В зависимости от рейса:Комбинированная закуска (говядина варёно-копчёная, сыр гауда, сыр мраморный, маслины, салат айсберг)Овощная закуска (перец свежий, помидоры, огурцы, зелень)
+															</p>
+														</div>
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Горячее питание
+															</h3>
+															<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+																В зависимости от рейса:
+															</p>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Котлетки Особые, гречка отварная, соус томатный, фасоль на пару
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Наггетсы куриные жареные, рис припущенный, морковь, масло сливочное
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Треска запечённая, рис с куркумой, соус сливочный с травами, овощи на пару
+																	</p>
+																</li>
+															</ul>
+														</div>
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Напитки
+															</h3>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Чай порционный/кофе
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода минеральная без газа
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода минеральная с газом
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода фруктовая
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Соки (апельсиновый, томатный, яблочный)
+																	</p>
+																</li>
+															</ul>
+														</div>
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Дополнительно
+															</h3>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Булочка столичная
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Хлеб ржаной
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Масло сливочное
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Печенье гречневое со вкусом лесных ягод
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Лимон
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Молоко
+																	</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+	
+							<div id="business" class="tabcontent hidden">
+								<div class="flex flex-col gap-[24px]">
+									<section
+										class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+									>
+										<h2
+											class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+										>
+											Короткие рейсы (1-2 часа)
+										</h2>
+										<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+											На непродолжительных рейсах пассажирам бизнес-класса предоставляется специальное холодное питание.
+										</p>
+										
+										<div class="grid grid-cols-1 gap-[12px]">
+											<div class="bg-white shadow-[0px_8px_16px_0px_rgba(0,0,0,0.1)] flex flex-col flex-shrink-0 md:rounded-[8px]">
+												<div class="bg-[#F1F5F7] flex justify-center">
+													<img src="./img/food-1.png" alt="Food 1">
+												</div>
+												<div class="flex flex-col gap-[24px] px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px]">
+													<h3 class="font-[450] text-[18px] leading-[24px] md:text-[24px] md:leading-[32px] text-[#212529]">«Горячее питание»</h3>
+													<div class="flex flex-col gap-[12px]">
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Закуска
+															</h3>
+															<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+																В зависимости от рейса:
+															</p>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Закуска мясная (утиная грудка варёно-копчёная, карпаччо из мяса птицы сырокопчёное, бастурма, черри, розмарин)
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Закуска сырная (сыры дор блю, камамбер, гауда; виноград, грецкие орехи)
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Закуска овощная (салат Капрезе)
+																	</p>
+																</li>
+															</ul>
+														</div>
+														
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Напитки
+															</h3>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Чай зеленый
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Чай черный
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Кофе
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода минеральная без газа
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода минеральная с газом
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода фруктовая
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Соки (апельсиновый, томатный, яблочный)
+																	</p>
+																</li>
+															</ul>
+														</div>
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Дополнительно
+															</h3>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Булочка темная многозерновая
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Булочка Бриошь
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Масло сливочное
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Джем, конфитюр
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Пирожное мусс апельсин
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Лимон
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Сливки жидкие
+																	</p>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+									
+									<section
+										class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+									>
+										<h2
+											class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+										>
+											Рейсы продолжительностью свыше 2 часов
+										</h2>
+										<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+											На рейсах, где продолжительность полета составляет свыше двух часов, пассажирам бизнес-класса предоставляется горячее питание: завтрак или обед/ужин (в зависимости от времени вылета рейса).
+										</p>
+
+										<div class="grid grid-cols-1 gap-[12px]">
+											<div class="bg-white shadow-[0px_8px_16px_0px_rgba(0,0,0,0.1)] flex flex-col flex-shrink-0 md:rounded-[8px]">
+												<div class="bg-[#F1F5F7] flex justify-center">
+													<img src="./img/food-1.png" alt="Food 1">
+												</div>
+												<div class="flex flex-col gap-[24px] px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px]">
+													<h3 class="font-[450] text-[18px] leading-[24px] md:text-[24px] md:leading-[32px] text-[#212529]">Рацион «Завтрак»</h3>
+													<div class="flex flex-col gap-[12px]">
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Закуска
+															</h3>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																	Закуска мясная (филе куриное маринованное жареное, грудка индейки варёно-копчёная, огурец свежий, сельдерей, салат)
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Закуска сырная (сыры камамбер, мраморный, маасдам; чернослив)
+																	</p>
+																</li>
+															</ul>
+														</div>
+														
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Горячее питание
+															</h3>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Омлет натуральный, филе куриное маринованное жареное, овощная смесь
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Сырники с соусом из чёрной смородины, персик консервированный
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Каша молочная рисовая с чатни из яблок, масло сливочное
+																	</p>
+																</li>
+															</ul>
+														</div>
+														
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Напитки
+															</h3>
+															<ul class="list-disc pl-6">
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Чай зеленый
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Чай черный
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Кофе
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода минеральная без газа
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода минеральная с газом
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Вода фруктовая
+																	</p>
+																</li>
+																<li>
+																	<p
+																		class="font-[400] text-[15px] leading-[22px] text-[#212529]"
+																	>
+																		Соки (апельсиновый, томатный, яблочный)
+																	</p>
+																</li>
+															</ul>
+														</div>
+														<div class="flex flex-col gap-[12px]">
+															<h3 class="font-[450] text-[18px] leading-[24px]">
+																Алкоголь
+															</h3>
+															<p class="font-[400] text-[15px] leading-[22px] text-[#212529]">
+																Пассажирам, вылетающим из аэропортов Толмачёво (Новосибирск), Внуково (Москва), Сочи (Адлер), Мирный, также предлагаются алкогольные напитки включающие ассортимент вин и крепких напитков.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+
+						</div>
+
+
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+							>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								На рейсах по код-шер соглашению, где Авиакомпания АЛРОСА является маркетинговым перевозчиком, условия предоставления бортового питания устанавливает оперирующая сторона. Более подробную информацию о бортовом питании можно получить на сайтах авиакомпаний-партнёров, а также в контактном центре Авиакомпании АЛРОСА 8-800-500-50-95 (звонок по России бесплатный).
+							</p>
+							<p class="text-[#212529] font-[400] text-[12px] leading-[18px]">
+								На фотографиях показана возможная сервировка блюд. Состав рационов и их сервировка могут отличаться от представленных.
+							</p>
+						</section>
 					</div>
 				</div>
 			</div>
