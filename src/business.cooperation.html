@@ -5,7 +5,7 @@
 	<body>
 		@@include('html/header.html',{}) @@include('html/heading.html',{parentTitle:
 		"Статичная страница", title: "Пример", title2:
-		"Предложенияосотрудничестве",})
+		"Предложения о сотрудничестве",})
 		<div class="py-[24px] xl:py-[72px]">
 			<div class="container flex gap-[32px]">
 				<div class="sidebar">
@@ -38,57 +38,68 @@
 								Пример заголовка карточки
 							</h2>
 							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
-								Для всех участников программы лояльности «Алмазная миля»
-								предусмотрены особые привилегии для элитных статусов. В
-								программе «Алмазная миля» предусмотрены три основных элитных
-								статуса:
+								Пример текста
 							</p>
-							<ul class="list-disc pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ul>
-							<ol class="list-decimal pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ol>
+						</section>
+
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<h2
+								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+							>
+								Анкета для предложения
+							</h2>
+							<form action="#" class="flex flex-col gap-[36px] md:gap-[24px]">
+								<div class="grid grid-cols-2 md:grid-cols-4 gap-[24px]">
+									<div class="col-span-4">
+										<input type="text" class="h-[52px] text-[15px] leading-[20px] text-[#212529] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="Название компании">
+									</div>
+									<div class="col-span-4 md:col-span-2">
+										<input type="text" class="h-[52px] text-[15px] leading-[20px] text-[#212529] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="ИНН">
+									</div>
+									<div class="col-span-4 md:col-span-2">
+										<input type="text" class="h-[52px] text-[15px] leading-[20px] text-[#212529] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="ФИО контактного лица">
+									</div>
+
+									<div class="col-span-4 md:col-span-2">
+										<input type="tel" class="h-[52px] text-[15px] leading-[20px] text-[#212529] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="+- (---) --- -- --">
+									</div>
+									<div class="col-span-4 md:col-span-2">
+										<input type="email" class="h-[52px] text-[15px] leading-[20px] text-[#212529] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="E-mail">
+									</div>
+
+									<div class="col-span-4">
+										<select name="" id="" class="h-[52px] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="Тема обращения">
+											<option>Тема 1</option>
+											<option>Тема 2</option>
+											<option>Тема 3</option>
+										</select>
+									</div>
+									<div class="col-span-4">
+										<textarea class="h-[112px] text-[15px] leading-[20px] text-[#212529] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="Комментарий" ></textarea>
+									</div>
+
+									<div class="col-span-4">
+										<input type="file" class="h-[52px] text-[15px] leading-[20px] text-[#212529] w-full bg-[#F8F8F8] rounded-[6px] py-[12px] px-[16px]" placeholder="Прикрепить файлы">
+									</div>
+								</div>
+
+								<div class="flex flex-col gap-[24px]">
+									<!-- checkbox -->
+									<div class="flex items-center">
+										<input type="checkbox" id="cb4">
+										<label for="cb4" class="text-[#212529] font-[400] text-[15px] leading-[22px]">Ознакомлен и соглашаюсь с <a href="#" class="text-[#003DA5]">Условиями использования персональных данных</a> и с <a href="#" class="text-[#003DA5]">Политикой обработки персональных данных</a></label>
+									</div>
+								</div>
+								
+								<!-- actions -->
+								<div class="flex flex-col gap-[24px]">
+									<div>
+										<button type="submit" class="rounded-[8px] bg-[#6DCDF6] text-white px-[72px] py-[10px] text-[15px] font-[400] leading-[20px]">Отправить</button>
+									</div>
+								</div>
+							</form>
 						</section>
 					</div>
 				</div>
