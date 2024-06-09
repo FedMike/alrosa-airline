@@ -31,63 +31,151 @@
 						<section
 							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
 						>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Авиакомпания АЛРОСА перевозит грузы на всех пассажирских рейсах. 
+							</p>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Вы можете отправить свой груз, связавшись с грузовыми агентами авиакомпании, которые помогут Вам с отправкой груза и сообщат правила, условия и технические особенности авиационной перевозки грузов.
+								<br>
+								Авиакомпания АЛРОСА оказывает свои услуги грузовых перевозок с помощью партнеров – грузовых агентов. 
+							</p>
+						</section>
+
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
 							<h2
 								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
 							>
-								Пример заголовка карточки
+								По вопросам выполнения грузовых перевозок обращаться:
 							</h2>
-							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
-								Для всех участников программы лояльности «Алмазная миля»
-								предусмотрены особые привилегии для элитных статусов. В
-								программе «Алмазная миля» предусмотрены три основных элитных
-								статуса:
-							</p>
-							<ul class="list-disc pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ul>
-							<ol class="list-decimal pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ol>
+							
+							<div class="flex flex-col gap-[12px]">
+								<h3 class="font-[450] text-[18px] leading-[24px] text-[#212529]">Производственно-диспетчерская служба</h3>
+
+								<div class="grid grid-cols-1 md:grid-cols-2 gap-[12px]">
+									@@loop('./partials/item.contact.html', [
+										{
+											position: 'Заместитель начальника',
+											title: 'Устибаш Антон Олегович',
+											email: 'Ustibashao@aero.alrosa.ru',
+											phone: '+7 (41136) 48-279',
+											time: '(время г. Москвы: UTC+4)'
+										}
+									])
+								</div>
+							</div>
+
+							<section class="pl-[16px] my-[24px] mx-[16px] md:my-0 md:mx-0 border-l border-l-4 border-l-[#428FDE]">
+								<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+									Если вы желаете отправить или получить груз с помощью грузовых агентов, свяжитесь с одним из них. Наши агенты также помогут с упаковкой, доставкой и всем необходимым для отправления Вашего груза (посылки). 
+								</p>
+							</section>
+						</section>
+
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<h2
+								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+							>
+								Как работать с грузовыми агентами:
+							</h2>
+							<div class="flex flex-col gap-[12px]">
+								<div class="flex gap-[24px] bg-[#DEF3FF] p-[24px] items-center rounded-[4px]">
+									<div class="w-[32px] h-[32px] flex justify-center items-center bg-[#428FDE] rounded-full flex-shrink-0">
+										<span class="text-[#002159] font-[400] text-[18px] leading-[28px]">1</span>
+									</div>
+									<div class="flex flex-col justify-center">
+										<p class="font-[400] text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] text-[#212529]">Свяжитесь с нашим агентом</p>
+									</div>
+								</div>
+								
+								<div class="flex gap-[24px] bg-[#DEF3FF] p-[24px] items-center rounded-[4px]">
+									<div class="w-[32px] h-[32px] flex justify-center items-center bg-[#428FDE] rounded-full flex-shrink-0">
+										<span class="text-[#002159] font-[400] text-[18px] leading-[28px]">2</span>
+									</div>
+									<div class="flex flex-col justify-center">
+										<p class="font-[400] text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] text-[#212529]">Договоритесь о грузовой перевозке</p>
+									</div>
+								</div>
+								
+								<div class="flex gap-[24px] bg-[#DEF3FF] p-[24px] items-center rounded-[4px]">
+									<div class="w-[32px] h-[32px] flex justify-center items-center bg-[#428FDE] rounded-full flex-shrink-0">
+										<span class="text-[#002159] font-[400] text-[18px] leading-[28px]">3</span>
+									</div>
+									<div class="flex flex-col justify-center">
+										<p class="font-[400] text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] text-[#212529]">Доставьте груз к агенту и на грузовой терминала (это подскажет Вам грузовой агент), получите номер грузовой авианакладной</p>
+									</div>
+								</div>
+								
+								<div class="flex gap-[24px] bg-[#DEF3FF] p-[24px] items-center rounded-[4px]">
+									<div class="w-[32px] h-[32px] flex justify-center items-center bg-[#428FDE] rounded-full flex-shrink-0">
+										<span class="text-[#002159] font-[400] text-[18px] leading-[28px]">4</span>
+									</div>
+									<div class="flex flex-col justify-center">
+										<p class="font-[400] text-[16px] leading-[24px] md:text-[18px] md:leading-[28px] text-[#212529]">Ожидайте доставку груза в пункт назначения</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section
+							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<h2
+								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
+							>
+								Найти грузового агента в городе
+							</h2>
+							<div class="flex flex-col gap-[36px]">
+								<form action="#" class="flex gap-[24px]">
+									<div class="flex flex-1 search-input">
+										<input type="text" placeholder="Якутск" class="pl-[40px] w-full border-b-2 border-[#97999B] focus:border-[#6DCDF6] outline-none">
+									</div>
+									<div>
+										<button type="submit" class="rounded-[8px] bg-[#6DCDF6] text-white px-[72px] py-[10px] text-[15px] font-[400] leading-[20px]">Найти</button>
+									</div>
+								</form>
+
+								<div class="flex flex-col gap-[24px]">
+									<!-- item -->
+									<div class="flex flex-col gap-[12px]">
+										<div class="flex gap-[8px] items-center">
+											<div class="flex">
+												<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M13.3334 6.33333C13.3334 10.3333 8.00008 15 8.00008 15C8.00008 15 2.66675 10.3333 2.66675 6.33333C2.66675 4.91885 3.22865 3.56229 4.22885 2.5621C5.22904 1.5619 6.58559 1 8.00008 1C9.41457 1 10.7711 1.5619 11.7713 2.5621C12.7715 3.56229 13.3334 4.91885 13.3334 6.33333Z" stroke="#212529" stroke-width="1.5" stroke-miterlimit="10"/>
+													<path d="M9 5V8H7V5" stroke="#212529" stroke-width="1.5" stroke-miterlimit="10"/>
+													<path d="M5.33325 6.3335L7.99992 4.3335L10.6666 6.3335" stroke="#212529" stroke-width="1.5" stroke-miterlimit="10"/>
+												</svg>
+											</div>
+											<span class="font-[450] text-[18px] leading-[24px]">Якутск</span>
+										</div>
+										<p>
+											Грузовой агент
+											<b>АО "Авиакомпания АЛРОСА"</b>
+										</p>
+										<div class="grid grid-cols-1 md:grid-cols-2 gap-[12px]">
+											@@loop('./partials/item.contact.html', [
+												{
+													position: '',
+													title: 'Алексеев Иван Анатольевич',
+													email: 'alekseevia@aero.alrosa.ru',
+													phone: '+7-914-251-51-93',
+													time: ''
+												},
+												{
+													position: '',
+													title: 'Алексеев Анатолий Иванович',
+													email: 'alekseevaiv@aero.alrosa.ru',
+													phone: '+7-968-161-60-61',
+													time: '(время г. Москвы: UTC+4)'
+												}
+											])
+										</div>
+									</div>
+								</div>
+							</div>
 						</section>
 					</div>
 				</div>
