@@ -233,21 +233,25 @@ function swiper4Init() {
 	});
 }
 const swiper5 = new Swiper('.offers__slider', {
-	slidesPerView: 1.34,
+	slidesPerView: 1.13,
 	spaceBetween: 20,
+	watchSlidesProgress: true,
 	navigation: {
 		nextEl: '.offers__btn--next',
 		prevEl: '.offers__btn--prev',
 	},
 	breakpoints: {
 		565: {
-			slidesPerView: 2,
+			slidesPerView: 1.7,
 		},
 		767: {
-			slidesPerView: 2.5,
+			slidesPerView: 2.1,
 		},
 		991: {
-			slidesPerView: 3.2777,
+			slidesPerView: 2.6,
+		},
+		1208: {
+			slidesPerView: 3,
 		},
 	},
 });
