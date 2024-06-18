@@ -7,95 +7,36 @@
 		"Статичная страница", title: "Пример", title2: "Вопросы-ответы",})
 		<div class="py-[24px] xl:py-[72px]">
 			<div class="container flex gap-[32px]">
-				<div class="sidebar">
-					@@include('html/sidebar-menu.html',{ 
-						title: 'Пассажиру', 
-						link: '/passanger.index.html',
-						children: [
-							{ title: 'Онлайн-табло', link: 'passanger.timetable.html', class: "" },
-							{ title: 'Карта полетов', link: 'passanger.flymap.html', class: "" },
-							{ title: 'Правила воздушных перевозок', link: 'passanger.rules.html', class: "" },
-							{ title: 'Тарифы и условия', link: 'passanger.tariffs.html', class: "" },
-							{ title: 'Классы обслуживания', link: 'passanger.classes.html', class: "" },
-							{ title: 'Групповые перевозки', link: 'passanger.group.html', class: "" },
-							{ title: 'Субсидированные перевозки', link: 'passanger.subsidies.html', class: "" },
-							{ title: 'Справки о перелёте', link: 'passanger.certificates.html', class: "" },
-							{ title: 'Специальные предложения', link: 'passanger.special.html', class: "" },
-							{ title: 'Изменения данных в авиабилете', link: 'passanger.changes.html', class: "" },
-							{ title: 'Всё о багаже', link: 'passanger.baggage.html', class: "" },
-							{ title: 'Перевозка спортивного инвентаря', link: 'passanger.sport.html', class: "" },
-							{ title: 'Прейскурант агентства', link: 'passanger.prices.html', class: "" },
-							{ title: 'Вопросы-ответы', link: 'passanger.faq.html', class: "active" },
-							{ title: 'Мобильное приложение для Android', link: 'passanger.mobile.html', class: "" },
-						] 
-					})
-				</div>
-
 				<div class="flex flex-1">
 					<div
 						class="flex flex-1 flex-col gap-[12px] md:gap-[24px] xl:gap-[36px] -mx-[24px] md:mx-0"
 					>
 						<section
-							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+							class="bg-white flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] gap-[24px]"
 						>
-							<h2
-								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
-							>
-								Пример заголовка карточки
-							</h2>
-							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
-								Для всех участников программы лояльности «Алмазная миля»
-								предусмотрены особые привилегии для элитных статусов. В
-								программе «Алмазная миля» предусмотрены три основных элитных
-								статуса:
+							<p class="text-[#212529] font-[400] text-[22px] leading-[24px]">
+								Найти ответ
 							</p>
-							<ul class="list-disc pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ul>
-							<ol class="list-decimal pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ol>
+							<form action="#" class="flex gap-[24px]">
+								<div class="flex flex-1 search-input">
+									<input type="text" placeholder="Ваш вопрос" class="pl-[40px] py-[10px] w-full border-b-2 border-[#6DCDF6] outline-none text-[18px] leading-[28px] font-[400]">
+								</div>
+								<!-- <div>
+									<button type="submit" class="rounded-[8px] bg-[#6DCDF6] text-white px-[72px] py-[10px] text-[15px] font-[400] leading-[20px]">Найти</button>
+								</div> -->
+							</form>
 						</section>
+
+						<div class="grid grid-cols-1 md:grid-cols-3 gap-[4px] md:gap-[8px] xl:gap-[10px]">
+							@@loop('./partials/card.section.html', [
+								{ title: 'Оформление авиабилета', link: '#', class: "" },
+								{ title: 'Подготовка к полету', link: '#', class: "" },
+								{ title: 'Изменения в бронировании', link: '#', class: "" },
+								{ title: 'Онлайн-регистрация', link: '#', class: "" },
+								{ title: 'В полете', link: '#', class: "" },
+								{ title: 'Программа лояльности "Алмазная миля"', link: '#', class: "" },
+							])
+						</div>
 					</div>
 				</div>
 			</div>
