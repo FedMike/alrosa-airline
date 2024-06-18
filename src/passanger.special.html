@@ -36,65 +36,60 @@
 						class="flex flex-1 flex-col gap-[12px] md:gap-[24px] xl:gap-[36px] -mx-[24px] md:mx-0"
 					>
 						<section
-							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+							class="flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
 						>
-							<h2
-								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
-							>
-								Пример заголовка карточки
-							</h2>
-							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
-								Для всех участников программы лояльности «Алмазная миля»
-								предусмотрены особые привилегии для элитных статусов. В
-								программе «Алмазная миля» предусмотрены три основных элитных
-								статуса:
-							</p>
-							<ul class="list-disc pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ul>
-							<ol class="list-decimal pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ol>
+						<div class="grid grid-cols-1 md: grid-cols-2 gap-[20px]">
+							@@loop('./partials/item.special.html', [
+								{
+									title: 'Грозный',
+									subtitle: 'из Якутска',
+									value: '9 700',
+									img: './img/best-deals-02.png'
+								},
+								{
+									title: 'Москва',
+									subtitle: 'из Якутска',
+									value: '8 200',
+									img: './img/best-deals-03.png'
+								},
+								{
+									title: 'Владивосток',
+									subtitle: 'из Якутска',
+									value: '12 700',
+									img: './img/best-deals-04.png'
+								},
+								{
+									title: 'Санкт-Петербург',
+									subtitle: 'из Якутска',
+									value: '15 500',
+									img: './img/best-deals-05.png'
+								},
+								{
+									title: 'Грозный',
+									subtitle: 'из Якутска',
+									value: '9 700',
+									img: './img/best-deals-02.png'
+								},
+								{
+									title: 'Москва',
+									subtitle: 'из Якутска',
+									value: '8 200',
+									img: './img/best-deals-03.png'
+								},
+								{
+									title: 'Владивосток',
+									subtitle: 'из Якутска',
+									value: '12 700',
+									img: './img/best-deals-04.png'
+								},
+								{
+									title: 'Санкт-Петербург',
+									subtitle: 'из Якутска',
+									value: '15 500',
+									img: './img/best-deals-05.png'
+								},
+							])
+						</div>
 						</section>
 					</div>
 				</div>
