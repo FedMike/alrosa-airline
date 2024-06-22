@@ -35,66 +35,1080 @@
 					<div
 						class="flex flex-1 flex-col gap-[12px] md:gap-[24px] xl:gap-[36px] -mx-[24px] md:mx-0"
 					>
+
+						<div class="flex flex-col gap-[36px]">
+							<!-- Tab links -->
+							<div class="tab flex gap-[36px] mt-[16px] mx-[16px] md:m-0">
+								<button class="tablinks group active" onclick="openCity(event, 'econom')">
+									<span class="font-[400] text-[18px] leading-[28px] text-[#212529] group-[.active]:border-b-2 border-[#E4002B] py-[4px]">Эконом класс</span>
+								</button>
+								<button class="tablinks group" onclick="openCity(event, 'business')">
+									<span class="font-[400] text-[18px] leading-[28px] text-[#212529] group-[.active]:border-b-2 border-[#E4002B] py-[4px]">Бизнес класс</span>
+								</button>
+							</div>
+
+							<!-- Tab content -->
+							<div id="econom" class="tabcontent block">
+								<div class="flex flex-col gap-[24px]">
+
+									<section class="flex mx-[16px] md:mx-0 bg-white p-[12px] md:p-[16px] gap-[8px] flex-col">
+										<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B]">
+											Классы бронирования
+										</h3>
+										<div>
+											<span class="text-[15px] leading-[20px] font-[450] text-[#212529]">Y, B, H, K, L, M, N, T, E, O, Q, W, S</span>
+										</div>
+									</section>
+
+									<div class="flex max-w-[100vw] snap-x px-[16px] md:px-0 gap-[16px] overflow-x-auto touch-auto">
+										<div class="snap-start scroll-ml-[16px] w-full min-w-[250px]">
+											<div class="flex flex-col gap-[4px]">
+												<div class="flex bg-white justify-center p-[14px]">
+													<span class="text-[15px] leading-[22px] font-[450] text-[#0A84CC] text-center">
+														Промо
+													</span>
+												</div>
+												<!-- ... -->
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Код тарифа<br>(где * – класс бронирования)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															*PROW
+														</span>
+													</div>
+												</div>
+												
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Скидка от тарифа для детей 2-12 лет
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															10%
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Предварительное бронирование (TL) 1
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Ручная кладь<br>(размер 55*40*20см)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 место 10 кг
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Дополнительно место ручной клади
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 5 000 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 2 500 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 800 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Норма бесплатного провоза багажа
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Без багажа
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center flex gap-[8px] items-center justify-center">
+														Спортивное снаряжение
+														<span data-tippy-content="lorem ipsum?">
+															<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+															</svg>
+														</span>
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Бесплатно
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Тяжеловесный багаж
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 6 000 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Негабаритный багаж
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 место 10 кг
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Домашнее животное в салоне самолета
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 3 200 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места на борту<br>(на сайте более, чем за 36 часов до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Платно
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места на борту<br>(на сайте менее, чем за 36 часов, но более 3 часов до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Платно
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места при регистрации в аэропорту (за 3 часа до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Бесплатно
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор стандартного места
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 200 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор комфортного места
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 500 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Начисление «Алмазных миль» (% от тарифа)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															25%
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Срок годности билета (с даты вылета рейса)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 месяц
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Стоповер — стыковка между рейсами более 24ч
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Обмен билета при изменении даты вылета более, чем за 40 минут до вылета рейса
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Обмен билета при изменении в билете менее, чем за 40 минут до вылета рейса (услуга в аэропорту)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Возврат добровольный более 40 минут до вылета рейса
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Возврат добровольный менее 40 минут до вылета либо после вылета рейса	
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 500 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Меню бортового питания
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Напитки
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Закуски
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Горячее питание
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Оформление Несопровождаемые дети от 6 до 12 и от 12 до 16 лет
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<!-- ... -->
+											</div>
+										</div>
+										<div class="snap-start scroll-ml-[16px] w-full min-w-[250px]">
+											<div class="flex flex-col gap-[4px]">
+												<div class="flex bg-white justify-center p-[14px]">
+													<span class="text-[15px] leading-[22px] font-[450] text-[#0A84CC] text-center">
+														Лайт
+													</span>
+												</div>
+												<!-- ... -->
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Код тарифа<br>(где * – класс бронирования)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															*LTOW
+														</span>
+													</div>
+												</div>
+												
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Скидка от тарифа для детей 2-12 лет
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															25%
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Предварительное бронирование (TL) 1
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															500 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Ручная кладь<br>(размер 55*40*20см)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 место 10 кг
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Дополнительно место ручной клади
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 5 000 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 2 500 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 800 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Норма бесплатного провоза багажа
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Без багажа
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center flex gap-[8px] items-center justify-center">
+														Спортивное снаряжение
+														<span data-tippy-content="lorem ipsum?">
+															<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+															</svg>
+														</span>
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Бесплатно
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Тяжеловесный багаж
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 6 000 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Негабаритный багаж
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 место 10 кг
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Домашнее животное в салоне самолета
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 3 200 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места на борту<br>(на сайте более, чем за 36 часов до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Платно
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места на борту<br>(на сайте менее, чем за 36 часов, но более 3 часов до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Платно
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места при регистрации в аэропорту (за 3 часа до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Бесплатно
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор стандартного места
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 200 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор комфортного места
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 500 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Начисление «Алмазных миль» (% от тарифа)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															50%
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Срок годности билета (с даты вылета рейса)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															6 месяц
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Стоповер — стыковка между рейсами более 24ч
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Обмен билета при изменении даты вылета более, чем за 40 минут до вылета рейса
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Обмен билета при изменении в билете менее, чем за 40 минут до вылета рейса (услуга в аэропорту)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															3 000 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Возврат добровольный более 40 минут до вылета рейса
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															5 000 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Возврат добровольный менее 40 минут до вылета либо после вылета рейса	
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 500 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Меню бортового питания
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Напитки
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Закуски
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Горячее питание
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Оформление Несопровождаемые дети от 6 до 12 и от 12 до 16 лет
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="#387E23"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<!-- ... -->
+											</div>
+										</div>
+										<div class="snap-start scroll-ml-[16px] w-full min-w-[250px]">
+											<div class="flex flex-col gap-[4px]">
+												<div class="flex bg-white justify-center p-[14px]">
+													<span class="text-[15px] leading-[22px] font-[450] text-[#0A84CC] text-center">
+														Стандарт
+													</span>
+												</div>
+												<!-- ... -->
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Код тарифа<br>(где * – класс бронирования)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															*STDOW
+														</span>
+													</div>
+												</div>
+												
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Скидка от тарифа для детей 2-12 лет
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															25%
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Предварительное бронирование (TL) 1
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															500 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Ручная кладь<br>(размер 55*40*20см)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 место 10 кг
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Дополнительно место ручной клади
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 5 000 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 2 500 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 800 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Норма бесплатного провоза багажа
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 место 23 кг
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center flex gap-[8px] items-center justify-center">
+														Спортивное снаряжение
+														<span data-tippy-content="lorem ipsum?">
+															<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+															</svg>
+														</span>
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Бесплатно
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Тяжеловесный багаж
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 6 000 ₽
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Негабаритный багаж
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															1 место 10 кг
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Домашнее животное в салоне самолета
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 3 200 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места на борту<br>(на сайте более, чем за 36 часов до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Платно
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места на борту<br>(на сайте менее, чем за 36 часов, но более 3 часов до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Платно
+															<span data-tippy-content="lorem ipsum?">
+																<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M8.33367 0.929688C6.93536 0.929688 5.56845 1.34434 4.40579 2.1212C3.24314 2.89806 2.33696 4.00224 1.80185 5.29412C1.26674 6.58599 1.12673 8.00753 1.39952 9.37898C1.67232 10.7504 2.34567 12.0102 3.33443 12.9989C4.32319 13.9877 5.58294 14.661 6.95439 14.9338C8.32583 15.2066 9.74737 15.0666 11.0392 14.5315C12.3311 13.9964 13.4353 13.0902 14.2122 11.9276C14.989 10.7649 15.4037 9.398 15.4037 7.99969C15.401 6.12542 14.6553 4.32867 13.33 3.00336C12.0047 1.67806 10.2079 0.932333 8.33367 0.929688ZM8.33367 13.7297C7.20039 13.7297 6.09255 13.3936 5.15026 12.764C4.20796 12.1344 3.47354 11.2395 3.03985 10.1925C2.60616 9.14544 2.49268 7.99333 2.71378 6.88182C2.93487 5.77031 3.4806 4.74932 4.28195 3.94797C5.08331 3.14661 6.1043 2.60088 7.21581 2.37979C8.32732 2.15869 9.47943 2.27217 10.5265 2.70586C11.5735 3.13955 12.4684 3.87398 13.098 4.81627C13.7276 5.75856 14.0637 6.8664 14.0637 7.99969C14.061 9.51857 13.4565 10.9745 12.3825 12.0485C11.3085 13.1225 9.85255 13.727 8.33367 13.7297ZM9.00357 6.52969H7.66357V12.1497H9.00357V6.52969ZM7.77805 4.01823C7.9425 3.90835 8.13584 3.8497 8.33362 3.8497C8.59884 3.8497 8.85319 3.95506 9.04073 4.14259C9.22826 4.33013 9.33362 4.58448 9.33362 4.8497C9.33362 5.04748 9.27497 5.24082 9.16509 5.40527C9.05521 5.56972 8.89903 5.69789 8.7163 5.77358C8.53358 5.84927 8.33251 5.86907 8.13853 5.83049C7.94455 5.7919 7.76636 5.69666 7.62651 5.55681C7.48666 5.41696 7.39142 5.23877 7.35283 5.04479C7.31425 4.85081 7.33405 4.64974 7.40974 4.46702C7.48543 4.28429 7.6136 4.12811 7.77805 4.01823Z" fill="#007AC2"/>
+																</svg>
+															</span>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор места при регистрации в аэропорту (за 3 часа до вылета)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Бесплатно
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор стандартного места
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Бесплатно
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Выбор комфортного места
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															от 1 500 ₽
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Начисление «Алмазных миль» (% от тарифа)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															100%
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Срок годности билета (с даты вылета рейса)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															12 месяцев
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Стоповер — стыковка между рейсами более 24ч
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="#387E23"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Обмен билета при изменении даты вылета более, чем за 40 минут до вылета рейса
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M7.3335 13H17.3335V11H7.3335V13ZM12.3335 22C10.9502 22 9.65016 21.7375 8.4335 21.2125C7.21683 20.6875 6.1585 19.975 5.2585 19.075C4.3585 18.175 3.646 17.1167 3.121 15.9C2.596 14.6833 2.3335 13.3833 2.3335 12C2.3335 10.6167 2.596 9.31667 3.121 8.1C3.646 6.88333 4.3585 5.825 5.2585 4.925C6.1585 4.025 7.21683 3.3125 8.4335 2.7875C9.65016 2.2625 10.9502 2 12.3335 2C13.7168 2 15.0168 2.2625 16.2335 2.7875C17.4502 3.3125 18.5085 4.025 19.4085 4.925C20.3085 5.825 21.021 6.88333 21.546 8.1C22.071 9.31667 22.3335 10.6167 22.3335 12C22.3335 13.3833 22.071 14.6833 21.546 15.9C21.021 17.1167 20.3085 18.175 19.4085 19.075C18.5085 19.975 17.4502 20.6875 16.2335 21.2125C15.0168 21.7375 13.7168 22 12.3335 22ZM12.3335 20C14.5668 20 16.4585 19.225 18.0085 17.675C19.5585 16.125 20.3335 14.2333 20.3335 12C20.3335 9.76667 19.5585 7.875 18.0085 6.325C16.4585 4.775 14.5668 4 12.3335 4C10.1002 4 8.2085 4.775 6.6585 6.325C5.1085 7.875 4.3335 9.76667 4.3335 12C4.3335 14.2333 5.1085 16.125 6.6585 17.675C8.2085 19.225 10.1002 20 12.3335 20Z" fill="#E4002B"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Обмен билета при изменении в билете менее, чем за 40 минут до вылета рейса (услуга в аэропорту)
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="#387E23"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Возврат добровольный более 40 минут до вылета рейса
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="#387E23"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Возврат добровольный менее 40 минут до вылета либо после вылета рейса	
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="#387E23"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Меню бортового питания
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Напитки
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Закуски
+														</span>
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															Горячее питание
+														</span>
+													</div>
+												</div>
+
+												<div class="flex bg-white p-[12px] md:p-[16px] gap-[8px] flex-col justify-center rounded-[2px]">
+													<h3 class="text-[15px] leading-[22px] font-[400] text-[#97999B] text-center">
+														Оформление Несопровождаемые дети от 6 до 12 и от 12 до 16 лет
+													</h3>
+													<div class="flex flex-col justify-center items-center">
+														<span class="text-[15px] leading-[24px] font-[450] text-[#212529] text-center flex items-center gap-[6px]">
+															<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M10.6 16.6L17.65 9.55L16.25 8.15L10.6 13.8L7.75 10.95L6.35 12.35L10.6 16.6ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z" fill="#387E23"/>
+															</svg>
+														</span>
+													</div>
+												</div>
+												<!-- ... -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="business" class="tabcontent hidden">
+								<div class="flex flex-col gap-[24px]">
+									business
+								</div>
+							</div>
+						</div>
+
+						<section
+							class="bg-[#DEF4FD] md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								1 Предельное время оформления билета зависит от количества дней до вылета рейса и устанавливается системой продажи автоматически.
+							</p>
+						</section>
+
 						<section
 							class="bg-white md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
 						>
 							<h2
 								class="text-[#212529] font-[450] text-[18px] leading-[24px] md:text-[22px] md:leading-[24px]"
 							>
-								Пример заголовка карточки
+								Важная информация!
 							</h2>
 							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
-								Для всех участников программы лояльности «Алмазная миля»
-								предусмотрены особые привилегии для элитных статусов. В
-								программе «Алмазная миля» предусмотрены три основных элитных
-								статуса:
+								В случае, если рейс выполняется в рамках код-шер соглашения, то действуют правила и Условия применения тарифов оперирующего перевозчика (т. е. той авиакомпании, которая фактически осуществляет перевозку пассажиров).
 							</p>
-							<ul class="list-disc pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ul>
-							<ol class="list-decimal pl-6">
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Москва, Москва — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Санкт-Петербург, Санкт-Петербург — Мирный.
-									</p>
-								</li>
-								<li>
-									<p
-										class="text-[#212529] font-[400] text-[18px] leading-[28px]"
-									>
-										Мирный — Новосибирск, Новосибирск — Мирный.
-									</p>
-								</li>
-							</ol>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Авиакомпании-партнеры: Авиакомпания Якутия (R3), Авиакомпания ИрАэро (IO), Авиакомпания ЮТэйр (UT), Авиакомпания РусЛайн (7R).
+							</p>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								Условия по тарифам относятся к внутренним регулярным рейсам. Информацию по дополнительным, а так же международным рейсам, уточняйте в контактном центре Авиакомпании АЛРОСА по телефону: 8 800 500 50 95. С полными условиями применения тарифов вы можете ознакомиться при покупке авиабилета.
+							</p>
+							<p class="text-[#212529] font-[450] text-[18px] leading-[28px]">
+								В случае расхождения информации, содержащейся на сайте, и в условиях применения тарифов, большую силу имеют условия применения тарифов.
+							</p>
+							<div class="pl-[16px] my-[24px] mx-[16px] md:my-0 md:mx-0 border-l border-l-4 border-l-[#428FDE]">
+								<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+									Внимание! При оформлении дополнительных услуг, агентом может взиматься сбор, установленный в аэропорту вылета. Справочная информация об аэропортах доступна по <a href="#" class="underline">ссылке</a>.
+								</p>
+							</div>
+						</section>
+
+						<section
+							class="bg-[#DEF4FD] md:shadow-[0px_2px_16px_0px_rgba(0,0,0,0.05)] flex flex-col flex-shrink-0 px-[16px] py-[24px] md:px-[24px] md:py-[24px] xl:px-[36px] xl:py-[36px] md:rounded-[8px] gap-[24px]"
+						>
+							<p class="text-[#212529] font-[450] text-[18px] leading-[28px]">
+								Обращаем Ваше внимание:
+							</p>
+							<p class="text-[#212529] font-[400] text-[18px] leading-[28px]">
+								На рейсах Авиакомпании АЛРОСА по маршрутам Мирный-Москва-Мирный и Полярный-Москва-Полярный установлены квоты (2 места на каждом рейсе) для военнослужащих, следующих по воинским перевозочным документам из зоны СВО. Время выкупа билета (тайм-лимит) по таким квотам – за сутки до вылета. Оформление билетов по специальным квотам осуществляется только в офисах продаж Авиакомпании АЛРОСА.
+							</p>
 						</section>
 					</div>
 				</div>
