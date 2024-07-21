@@ -127,6 +127,17 @@ legend {
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {
